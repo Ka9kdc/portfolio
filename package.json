@@ -1,0 +1,47 @@
+{
+  "name": "myprofoliowebsite",
+  "version": "1.0.0",
+  "description": "My Profolio Website",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npm run start-server & npm run build-watch",
+    "start-server": "nodemon server/index.js --ignore public",
+    "build-watch": "webpack -w",
+    "start": "npm run start:dev",
+    "test": "NODE_ENV='test' mocha \"./client/**/*.spec.js\" \"./server/**/*.spec.js\" --require @babel/polyfill --require ignore-styles",
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "lint-fix": "npm run lint -- --fix",
+    "prettier": "npm run lint-fix && prettier --write ./ --ignore-path .gitignore"
+  },
+  "author": "Kelsey Schroeder",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.2.1",
+    "morgan": "^1.10.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.17.0",
+    "eslint-config-fullstack": "^6.0.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-react": "^7.22.0",
+    "ignore-styles": "^5.0.1",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1",
+    "sinon": "^9.2.2",
+    "style-loader": "^2.0.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
