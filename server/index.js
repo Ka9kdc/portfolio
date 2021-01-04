@@ -8,24 +8,24 @@ const app = express();
 app.use(morgan('dev'));
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false}));
+app.use(express.urlencoded({ extended: false }));
 
-app.use(express.static(path.join(__dirname, '../public')))
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
-})
+  res.sendFile(path.join(__dirname, '../public/index.html'));
+});
 
 const init = async () => {
-    try{
-        app.listen(PORT, () => {
-            console.log(`Listening at http://localhost:${PORT}`)
-        })
-    } catch (error){
-        console.error('Error starting server:', error)
-    }
-}
+  try {
+    app.listen(PORT, () => {
+      console.log(`Listening at http://localhost:${PORT}`);
+    });
+  } catch (error) {
+    console.error('Error starting server:', error);
+  }
+};
 
-init()
+init();
 
 module.exports = app;

@@ -6,7 +6,6 @@ import Main from './main';
 import Header from './Header';
 import Routes from './routes';
 
-
 describe('Main', () => {
   let wrapper;
   before(() => {
