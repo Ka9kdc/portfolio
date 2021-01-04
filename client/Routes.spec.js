@@ -1,10 +1,11 @@
 import React from 'react';
 import { expect } from 'chai';
 import { mount, shallow } from 'enzyme';
+import {render} from 'react-dom'
 import sinon from 'sinon';
 import * as rrd from 'react-router-dom';
 
-import Routes from './Routes';
+import Main from './Main';
 import Home from './Home'
 import Projects from './Projects'
 import Skills from './Skills'
@@ -19,44 +20,49 @@ describe('Routes', () => {
   afterEach(() => {
     rrd.BrowserRouter.restore();
   });
-  it.only('renders <Home /> at path /', () => {
-    const wrapper = shallow(
-          <Routes />
-    );
-    let routes = wrapper.map(node => node.get(0).props)
-    console.log(routes)
-      console.log(wrapper.find(Home).map(node => node.get(0)))
-    expect(wrapper.find(Home)).to.have.length(1);
-    expect(wrapper.find(MemberPage)).to.have.length(0);
+  it('renders <Home /> at path /', () => {
+    const root = document.createElement('div');
+  document.body.appendChild(root)
+  render(
+      <rrd.MemoryRouter initialEntries={['/']}>
+          <Main />
+        </rrd.MemoryRouter>, root
+     );
+        expect(document.body).to.contain(Home)
+    expect(document.body).to.not.contain(Projects);
   });
-  it.only('render <Projects /> at path /Projects', () => {
-    const wrapper = shallow(
+  it('render <Projects /> at path /Projects', () => {
+    const root = document.createElement('div');
+    document.body.appendChild(root)
+    render(
       <rrd.MemoryRouter initialEntries={['/Projects']}>
-        <Routes />
-      </rrd.MemoryRouter>
+        <Main />
+      </rrd.MemoryRouter>, root
     );
-    let routes = wrapper.map(node => node.get(0).props.history.location)
-    console.log(routes)
-    expect(wrapper.find(Projects)).to.have.length(1);
-    expect(wrapper.find(Home)).to.have.length(0);
+    expect(document.body).to.contain(Projects)
+    expect(document.body).to.not.contain(Home)
   });
   it('render <Skills /> at path /Skills', () => {
-    const wrapper = mount(
+    const root = document.createElement('div');
+    document.body.appendChild(root)
+    render(
       <rrd.MemoryRouter initialEntries={['/Skills']}>
-        <Routes />
-      </rrd.MemoryRouter>
+        <Main />
+      </rrd.MemoryRouter>, root
     );
 
-    expect(wrapper.find(Skills)).to.have.length(1);
-    expect(wrapper.find(Home)).to.have.length(0);
+    expect(document.body).to.contain(Skills);
+    expect(document.body).to.not.contain(Home);
   });
   it('render <About /> at path /About', () => {
-    const wrapper = mount(
+    const root = document.createElement('div');
+    document.body.appendChild(root)
+    render(
       <rrd.MemoryRouter initialEntries={['/']}>
-        <Routes />
-      </rrd.MemoryRouter>
+        <Main />
+      </rrd.MemoryRouter>, root
     );
-    expect(wrapper.find(About)).to.have.length(1);
-    expect(wrapper.find(Home)).to.have.length(0);
+    expect(document.body).to.contain(About);
+    expect(document.body).to.not.contain(Home);
   });
 });
