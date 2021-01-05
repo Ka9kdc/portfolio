@@ -1,4 +1,5 @@
 import React from 'react'
+import ADogsJourney from './ADogsJourney'
 import Createmates from './Createmates'
 import './Projects.css'
 
@@ -7,6 +8,7 @@ const Projects = () => {
         <div>
             <h1>Projects Place holder</h1>
             <Createmates />
+            <ADogsJourney />
         </div>
     )
 }
