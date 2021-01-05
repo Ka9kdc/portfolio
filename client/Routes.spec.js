@@ -7,7 +7,7 @@ import * as rrd from 'react-router-dom';
 
 import Main from './Main';
 import Home from './Home'
-import Projects from './Projects'
+import Projects from './projects'
 import Skills from './Skills'
 import About from './About'
 

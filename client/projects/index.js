@@ -1,5 +1,6 @@
 import React from 'react'
-import Createmates from './projects/Createmates'
+import Createmates from './Createmates'
+import './Projects.css'
 
 const Projects = () => {
     return (
