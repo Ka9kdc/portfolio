@@ -1,36 +1,34 @@
-
-
-.content{
-    background-color: skyblue;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: space-between;
-    justify-content: center;
+.content {
+  background-color: skyblue;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .content h1 {
-    font-size: 5em;
-    text-align: center;
+  font-size: 5em;
+  text-align: center;
 }
 
 .content h2 {
-    font-size: 2.5em;
-    margin: 0em;
+  font-size: 2.5em;
+  margin: 0em;
 }
 
 .content h3 {
-    font-size: 1.5em;
-    margin: 0em;
-    margin-bottom: 1em;
+  font-size: 1.5em;
+  margin: 0em;
+  margin-bottom: 1em;
 }
 
 .flexbox_reverse {
+  padding: 1em;
   display: flex;
   flex-flow: row-reverse wrap;
   width: 95%;
   justify-content: space-around;
   align-items: center;
+  align-self: center;
 }
 
 .flexbox {
@@ -39,6 +37,7 @@
   width: 95%;
   justify-content: space-around;
   align-items: center;
+  align-self: center;
 }
 
 .flexItem {

@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Header.css'
+import './Header.css';
 
 const Header = () => {
+  const [menuClass, setMenuClass] = useState('header');
+
+  function showOrHideMenu() {
+    if (menuClass === 'header') {
+      setMenuClass('header responsive');
+    } else {
+      setMenuClass('header');
+    }
+  }
+
+  console.log(menuClass);
   return (
-    <div className="header">
+    <div className={menuClass}>
       <nav>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/About">About</NavLink>
@@ -13,6 +24,9 @@ const Header = () => {
         <NavLink to="/Skills">Skills</NavLink>
       </nav>
       <h1>Kelsey Schroeder</h1>
+      <button className="nav_icon" onClick={() => showOrHideMenu()}>
+        menu
+      </button>
     </div>
   );
 };
