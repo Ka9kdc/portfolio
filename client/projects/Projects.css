@@ -1,25 +1,25 @@
 .flexbox_reverse {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .flexbox {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.flexItem{
-    width: 45%;
-    padding: 1em;
-    background-color: aqua;
-    text-align: center;
+.flexItem {
+  width: 45%;
+  padding: 1em;
+  background-color: aqua;
+  text-align: center;
 }
 
 .flexItem img {
-    width: 100%;
+  width: 100%;
 }

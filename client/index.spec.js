@@ -1,5 +1,5 @@
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 const { JSDOM } = require('jsdom');
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -9,4 +9,4 @@ const { window } = jsdom;
 
 global.window = window;
 global.document = window.document;
-global.navigator = { userAgent: 'node.js',}
+global.navigator = { userAgent: 'node.js' };

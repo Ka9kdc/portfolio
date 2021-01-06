@@ -1,13 +1,13 @@
 import React from 'react';
 import { expect } from 'chai';
-import {  shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 
 import Header from './Header';
 
 describe('Header component', () => {
   let navbar;
   before(() => {
-    const wrapper = shallow(  <Header />  );
+    const wrapper = shallow(<Header />);
     navbar = wrapper.find('NavLink').map((node) => node.get(0).props);
   });
   it('renders a Home Link', () => {
