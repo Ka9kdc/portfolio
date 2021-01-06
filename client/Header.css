@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: darkblue;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.header a {
+    padding: 1em;
+    font-size: 2em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: grey;
+}
+
+.header a:active{
+    color: hotpink;
+}
