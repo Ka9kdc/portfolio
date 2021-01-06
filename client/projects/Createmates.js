@@ -7,11 +7,11 @@ const Createmates = () => {
       <div className="flexItem">
         <div>
           <h2>Createmates</h2>
-          <p>
+          <h3>
             | <Link to="htts://createmate.herokuapp.com">Deployment</Link> | |{' '}
             <Link to="https://github.com/createmates/createmates">Github</Link>{' '}
             |
-          </p>
+          </h3>
         </div>
         <img
           src="./smartmockups_kjkhgdqm.png"
@@ -19,7 +19,7 @@ const Createmates = () => {
         />
       </div>
       <div className="flexItem">
-      <div className="videoWrapper">
+        <div className="videoWrapper">
           <iframe
             width="560"
             height="315"
