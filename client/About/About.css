@@ -1,5 +1,3 @@
-
-
 .flexItem {
   display: flex;
   flex-flow: column nowrap;
@@ -9,25 +7,25 @@
 }
 
 .flexItem img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 900px) {
-    .flexItem {
-      width: 100%;
-      background-color: burlywood;
-    }
-    .flexItem img {
-      width: 75%;
-    }
+  .flexItem {
+    width: 100%;
+    background-color: burlywood;
   }
-  
-  @media only screen and (max-width: 450px) {
-    .flexItem img {
-      width: 100%;
-    }
+  .flexItem img {
+    width: 75%;
   }
+}
+
+@media only screen and (max-width: 450px) {
+  .flexItem img {
+    width: 100%;
+  }
+}

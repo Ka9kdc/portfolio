@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 const Hobbies = () => {
-    const [showList, setShowList] = useState('hidden')
+  const [showList, setShowList] = useState('hidden');
 
-    function showOrHide () {
-        if(showList === 'hidden'){
-            setShowList('')
-        } else {
-            setShowList('hidden')
-        }
+  function showOrHide() {
+    if (showList === 'hidden') {
+      setShowList('');
+    } else {
+      setShowList('hidden');
     }
-    
+  }
+
   return (
     <div className="flexItem">
       <h2 onClick={showOrHide}>Hobbies</h2>

@@ -10,7 +10,7 @@ import Home from './Home';
 import Projects from './projects';
 import Skills from './Skills';
 import About from './About';
-import Publications from './Publications'
+import Publications from './Publications';
 
 describe('Routes', () => {
   beforeEach(() => {

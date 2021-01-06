@@ -30,5 +30,4 @@ describe('Header component', () => {
     expect(navbar[4].children).to.be.equal('Skills');
     expect(navbar[4].to).to.be.equal('/Skills');
   });
-
 });
