@@ -11,6 +11,7 @@ const ADogsJourney = () => {
         />
       </div>
       <div className="flexItem">
+        <div>
         <h2>A Dog's Journey</h2>
         <h3>
           |{' '}
@@ -19,6 +20,7 @@ const ADogsJourney = () => {
           </Link>{' '}
           | | <Link to="https://github.com/Ka9kdc/aDogsJourney">Github</Link> |
         </h3>
+        </div>
         <div>
           <p>
             A simple 3D browser game built with Three.js where the player moves

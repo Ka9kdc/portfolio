@@ -11,6 +11,7 @@ const BrosApothacary = () => {
         />
       </div>
       <div className="flexItem">
+        <div>
         <h2>Bros-Apothecary</h2>
         <h3>
           | <Link to="http://bros-apothecary.herokuapp.com/">Deployment</Link> |
@@ -19,7 +20,7 @@ const BrosApothacary = () => {
             Github
           </Link>{' '}
           |
-        </h3>
+        </h3></div>
         <div>
           <p>
             A mock e-Commerce website selling your everyday (hu)man apothecary

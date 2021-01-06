@@ -1,21 +1,44 @@
+
+
+.content{
+    background-color: skyblue;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    margin: 0em;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin: 0em;
+    margin-bottom: 1em;
+}
+
 .flexbox_reverse {
   display: flex;
   flex-flow: row-reverse wrap;
-  width: 100%;
+  width: 95%;
   justify-content: space-around;
   align-items: center;
-  background-color: aqua;
-  border: 5px solid black;
 }
 
 .flexbox {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
+  width: 95%;
   justify-content: space-around;
   align-items: center;
-  background-color: aqua;
-  border: 5px solid black;
 }
 
 .flexItem {
