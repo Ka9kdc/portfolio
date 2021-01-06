@@ -4,6 +4,8 @@
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  background-color: aqua;
+  border: 5px solid black;
 }
 
 .flexbox {
@@ -11,15 +13,56 @@
   flex-flow: row wrap;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
+  background-color: aqua;
+  border: 5px solid black;
 }
 
 .flexItem {
+    display: flex;
+    flex-flow: column nowrap;
   width: 45%;
   padding: 1em;
-  background-color: aqua;
   text-align: center;
 }
 
 .flexItem img {
   width: 100%;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    align-items: center;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    width: 90%;
+    height: 90%;
+  }
+
+@media only screen and (max-width: 900px){
+    .flexItem{
+        width: 100%;
+        background-color: burlywood;
+    }
+    .flexbox{
+        flex-flow: column-reverse nowrap;
+
+    }
+    .flexbox_reverse{
+        flex-flow: column-reverse nowrap;
+    }
+    .flexItem img {
+        width: 75%;
+      }
+}
+
+@media only screen and (max-width: 450px){
+    .flexItem img {
+        width: 100%;
+      }
 }

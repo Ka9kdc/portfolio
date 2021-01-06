@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import './Projects.css';
 
 const Createmates = () => {
   return (
     <div className="flexbox_reverse">
-      {/* video, Header with mini project decription(sub header), discrition with tech stack - larger description - group members, Photo/mock up */}
       <div className="flexItem">
         <div>
           <h2>Createmates</h2>
@@ -21,7 +19,7 @@ const Createmates = () => {
         />
       </div>
       <div className="flexItem">
-        <div>
+      <div className="videoWrapper">
           <iframe
             width="560"
             height="315"
