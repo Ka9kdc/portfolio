@@ -10,6 +10,7 @@ import Home from './Home';
 import Projects from './projects';
 import Skills from './Skills';
 import About from './About';
+import Publications from './Publications'
 
 describe('Routes', () => {
   beforeEach(() => {
@@ -61,12 +62,24 @@ describe('Routes', () => {
     const root = document.createElement('div');
     document.body.appendChild(root);
     render(
-      <rrd.MemoryRouter initialEntries={['/']}>
+      <rrd.MemoryRouter initialEntries={['/About']}>
         <Main />
       </rrd.MemoryRouter>,
       root
     );
     expect(document.body).to.contain(About);
+    expect(document.body).to.not.contain(Home);
+  });
+  it('render <Publications /> at path /Publications', () => {
+    const root = document.createElement('div');
+    document.body.appendChild(root);
+    render(
+      <rrd.MemoryRouter initialEntries={['/Publications']}>
+        <Main />
+      </rrd.MemoryRouter>,
+      root
+    );
+    expect(document.body).to.contain(Publications);
     expect(document.body).to.not.contain(Home);
   });
 });

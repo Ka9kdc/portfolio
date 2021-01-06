@@ -5,6 +5,7 @@ import Home from './Home';
 import Projects from './projects';
 import Skills from './Skills';
 import About from './About';
+import Publications from './Publications';
 
 const Routes = () => {
   return (
@@ -13,6 +14,7 @@ const Routes = () => {
       <Route path="/Projects" component={Projects} />
       <Route path="/Skills" component={Skills} />
       <Route path="/About" component={About} />
+      <Route path="/Publications" component={Publications} />
     </Switch>
   );
 };
