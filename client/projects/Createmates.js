@@ -14,7 +14,7 @@ const Createmates = () => {
           </h3>
         </div>
         <img
-          src="./smartmockups_kjkhgdqm.png"
+          src="images/smartmockups_kjkhgdqm.png"
           alt="Mock up of the createmate's wep application"
         />
       </div>

@@ -6,7 +6,7 @@ const BrosApothacary = () => {
     <div className="flexbox_reverse">
       <div className="flexItem">
         <img
-          src="./smartmockups_kjkotk4z.png"
+          src="images/smartmockups_kjkotk4z.png"
           alt="Mock up of the Bros Apothacary e-commerce store."
         />
       </div>
