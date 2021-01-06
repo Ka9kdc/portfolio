@@ -1,11 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 const Exprience = () => {
+    const [showList, setShowList] = useState('hidden')
+
+    function showOrHide () {
+        if(showList === 'hidden'){
+            setShowList('')
+        } else {
+            setShowList('hidden')
+        }
+    }
   return (
     <div className="flexItem">
-      <h2>Exprience</h2>
-      <div>
+      <h2 onClick={showOrHide}>Exprience</h2>
+      <div className={showList}>
+          <div>
         <img src="images/LittleLogo.png" alt="WCRA Logo" />
         <h3>Wheaton Community Radio Amateurs</h3>
         <h4><Link to="https://w9ccu.org">w9ccu.org</Link> Webmaster</h4>
@@ -55,7 +65,7 @@ const Exprience = () => {
           <li>Brought in $2000 each year for the club </li>
         </ul>
       </div>
-    </div>
+    </div></div>
   );
 };
 

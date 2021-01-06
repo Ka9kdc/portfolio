@@ -1,10 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Education = () => {
+  const [showList, setShowList] = useState('hidden')
+
+  function showOrHide () {
+      if(showList === 'hidden'){
+          setShowList('')
+      } else {
+          setShowList('hidden')
+      }
+  }
   return (
     <div className="flexItem">
-      <h2>Education</h2>
-      <div>
+      <h2 onClick={showOrHide}>Education</h2>
+      <div className={showList}>
+        <div>
         <div>
           <img
             src="images/GraceHopperLongLogo.jpeg"
@@ -38,7 +48,7 @@ const Education = () => {
           </p>
         </div>
       </div>
-    </div>
+    </div></div>
   );
 };
 
