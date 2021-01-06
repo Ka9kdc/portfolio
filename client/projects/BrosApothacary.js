@@ -12,15 +12,16 @@ const BrosApothacary = () => {
       </div>
       <div className="flexItem">
         <div>
-        <h2>Bros-Apothecary</h2>
-        <h3>
-          | <Link to="http://bros-apothecary.herokuapp.com/">Deployment</Link> |
-          |{' '}
-          <Link to="https://github.com/grace-shopper-team-c/grace-shopper">
-            Github
-          </Link>{' '}
-          |
-        </h3></div>
+          <h2>Bros-Apothecary</h2>
+          <h3>
+            | <Link to="http://bros-apothecary.herokuapp.com/">Deployment</Link>{' '}
+            | |{' '}
+            <Link to="https://github.com/grace-shopper-team-c/grace-shopper">
+              Github
+            </Link>{' '}
+            |
+          </h3>
+        </div>
         <div>
           <p>
             A mock e-Commerce website selling your everyday (hu)man apothecary

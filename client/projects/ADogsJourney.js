@@ -12,14 +12,15 @@ const ADogsJourney = () => {
       </div>
       <div className="flexItem">
         <div>
-        <h2>A Dog's Journey</h2>
-        <h3>
-          |{' '}
-          <Link to="https://kmschroeder91.medium.com/building-a-game-with-three-js-f5796ecf15cf">
-            Medium
-          </Link>{' '}
-          | | <Link to="https://github.com/Ka9kdc/aDogsJourney">Github</Link> |
-        </h3>
+          <h2>A Dog's Journey</h2>
+          <h3>
+            |{' '}
+            <Link to="https://kmschroeder91.medium.com/building-a-game-with-three-js-f5796ecf15cf">
+              Medium
+            </Link>{' '}
+            | | <Link to="https://github.com/Ka9kdc/aDogsJourney">Github</Link>{' '}
+            |
+          </h3>
         </div>
         <div>
           <p>
