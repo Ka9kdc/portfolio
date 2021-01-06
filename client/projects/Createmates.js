@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Createmates = () => {
   return (
     <div className="flexbox_reverse">
-      <div className="flexItem">
+      <div className="flexItem_project">
         <div>
           <h2>Createmates</h2>
           <h3>
@@ -18,7 +18,7 @@ const Createmates = () => {
           alt="Mock up of the createmate's wep application"
         />
       </div>
-      <div className="flexItem">
+      <div className="flexItem_project">
         <div className="videoWrapper">
           <iframe
             width="560"

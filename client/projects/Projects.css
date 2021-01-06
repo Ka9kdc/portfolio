@@ -32,6 +32,7 @@
 }
 
 .flexbox {
+    padding: 1em;
   display: flex;
   flex-flow: row wrap;
   width: 95%;
@@ -40,7 +41,7 @@
   align-self: center;
 }
 
-.flexItem {
+.flexItem_project {
   display: flex;
   flex-flow: column nowrap;
   width: 45%;
@@ -48,7 +49,7 @@
   text-align: center;
 }
 
-.flexItem img {
+.flexItem_project img {
   width: 100%;
 }
 
@@ -67,7 +68,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .flexItem {
+  .flexItem_project {
     width: 100%;
     background-color: burlywood;
   }
@@ -77,13 +78,13 @@
   .flexbox_reverse {
     flex-flow: column-reverse nowrap;
   }
-  .flexItem img {
+  .flexItem_project img {
     width: 75%;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .flexItem img {
+  .flexItem_project img {
     width: 100%;
   }
 }

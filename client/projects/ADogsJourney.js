@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 const ADogsJourney = () => {
   return (
     <div className="flexbox">
-      <div className="flexItem">
+      <div className="flexItem_project">
         <img
           src="images/smartmockups_kjkmxumj.png"
           alt="Mock up of the A Dog's Journey Game"
         />
       </div>
-      <div className="flexItem">
+      <div className="flexItem_project">
         <div>
           <h2>A Dog's Journey</h2>
           <h3>
