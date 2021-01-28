@@ -13,8 +13,20 @@ const Exprience = () => {
   }
   return (
     <div className="flexItem">
-      <h2 onClick={showOrHide}>Exprience</h2>
+      <button type='button' onClick={showOrHide}><h2>Exprience</h2></button>
       <div className={showList}>
+        <div>
+          <img src="images/FullstackLogoNoWords.jpg" alt="Fullstack Academy Logo" />
+          <h3>Fullstack Academy</h3>
+          <h4>Software Engineering Teaching Fellow</h4>
+          <h4>November 2020 - February 2021</h4>
+          <ul>
+            <li>Teaching assistant to a cohort of 40+ students covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design</li>
+            <li>Acted as project manager and technical mentor for teams of 4 students during 4 projects, employing the use of agile methodologies</li>
+            <li>Conducted technical admissions interviews</li>
+            <li>Ran weekly whiteboarding lectures</li>
+          </ul>
+        </div>
         <div>
           <img src="images/LittleLogo.png" alt="WCRA Logo" />
           <h3>Wheaton Community Radio Amateurs</h3>
