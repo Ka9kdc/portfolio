@@ -31,10 +31,11 @@
 
 .header div:hover {
   background-image: url('../public/images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png');
+  mix-blend-mode: difference;
 }
 
 .header div:hover a {
-  color: salmon
+  color: whitesmoke
 }
 
 .nav_icon {
@@ -44,25 +45,32 @@
 @media only screen and (max-width: 900px) {
   .nav_icon {
     display: block;
-    float: right;
   }
 
   .header div:not(:first-child) {
     display: none;
   }
 
-  .header.responsive {
+   .header.responsive {
     position: relative;
+    display: flex;
+    flex-direction: row wrap;
   }
-  .header.responsive .nav_icon {
+  /* .header.responsive .nav_icon {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  } */
 
-  /* .header.responsive div {
+  .header.responsive div {
     float: none;
-    display: block;
+    display: flex;
+    flex-direction: row wrap;
+  }
+/*  .header.responsive div a{
+     float: none;
+    display: block; 
+    align-items: center;
   } */
 }
 
