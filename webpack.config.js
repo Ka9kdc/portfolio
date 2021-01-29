@@ -11,6 +11,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.png/,
+        type: 'asset/resource'
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },

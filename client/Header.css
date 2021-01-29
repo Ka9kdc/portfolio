@@ -1,23 +1,40 @@
 .header {
+  position: fixed;
+  left:0px;
+  top:0px;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  background-color: darkblue;
   justify-content: space-around;
   align-items: center;
-  color: whitesmoke;
 }
-
+.header div {
+  width: 120%;
+  max-width: 225.29px;
+  height:  4em;
+  max-height: 100px;
+  background-image: url('../public/images/Clouds/394-3944151_white-cloud-day-1-clouds-sprite-png1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 6px;
+  display: flex;
+  align-items: center;
+}
 .header a {
-  padding: 0.5em;
-  font-size: 2em;
-  color: whitesmoke;
+  width: 100%;
+  max-width: 225.29px;
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
   text-decoration: none;
 }
 
-.header a:hover {
-  color: darkgrey;
-  background-color: whitesmoke;
+.header div:hover {
+  background-image: url('../public/images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png');
+}
+
+.header div:hover a {
+  color: salmon
 }
 
 .nav_icon {
@@ -30,24 +47,23 @@
     float: right;
   }
 
-  .header a:not(:first-child) {
+  .header div:not(:first-child) {
     display: none;
   }
 
   .header.responsive {
     position: relative;
   }
-  /* .header.responsive .nav_icon {
+  .header.responsive .nav_icon {
     position: absolute;
     right: 0;
     top: 0;
-  } */
+  }
 
-  .header.responsive a {
+  /* .header.responsive div {
     float: none;
     display: block;
-    text-align: left;
-  }
+  } */
 }
 
 @media only screen and (max-width: 450px) {

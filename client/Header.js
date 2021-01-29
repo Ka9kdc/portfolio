@@ -14,18 +14,29 @@ const Header = () => {
   }
 
   return (
-    <div className={menuClass}>
-      <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/About">About</NavLink>
-        <NavLink to="/Projects">Projects</NavLink>
-        <NavLink to="/Publications">Publications</NavLink>
-        <NavLink to="/Skills">Skills</NavLink>
-      </nav>
-      <h1>Kelsey Schroeder</h1>
+    <div >
+      <nav className={menuClass}>
+        {/* <h1>Kelsey Schroeder</h1> */}
+        <div>
+          <NavLink to="/">Home</NavLink>
+        </div>
+        <div>
+          <NavLink to="/About">About</NavLink>
+        </div>
+        <div>
+          <NavLink to="/Projects">Projects</NavLink>
+        </div>
+        {/* <div>
+          <NavLink to="/Publications">Publications</NavLink>
+        </div> */}
+        <div>
+          <NavLink to="/Skills">Skills</NavLink>
+        </div>
+      
+      
       <button className="nav_icon" onClick={() => showOrHideMenu()}>
         menu
-      </button>
+      </button></nav>
     </div>
   );
 };
