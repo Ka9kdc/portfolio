@@ -11,18 +11,20 @@ const BrosApothacary = () => {
         />
       </div>
       <div className="flexItem_project">
-        <div>
+        <div className="cloudHeader">
           <h2>Bros-Apothecary</h2>
-          <h3>
-            | <Link to="http://bros-apothecary.herokuapp.com/">Deployment</Link>{' '}
-            | |{' '}
+        </div>
+        <div className="cloudTitles">
+          <div className="cloudLink">
+            <Link to="http://bros-apothecary.herokuapp.com/">Deployed</Link>
+          </div>
+          <div className="cloudLink">
             <Link to="https://github.com/grace-shopper-team-c/grace-shopper">
               Github
             </Link>{' '}
-            |
-          </h3>
+          </div>
         </div>
-        <div>
+        <div className="flexItem_project_text">
           <p>
             A mock e-Commerce website selling your everyday (hu)man apothecary
             essentials.

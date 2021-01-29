@@ -11,18 +11,20 @@ const ADogsJourney = () => {
         />
       </div>
       <div className="flexItem_project">
-        <div>
+        <div className="cloudHeader">
           <h2>A Dog's Journey</h2>
-          <h3>
-            |{' '}
+        </div>
+        <div className="cloudTitles">
+          <div className="cloudLink">
             <Link to="https://kmschroeder91.medium.com/building-a-game-with-three-js-f5796ecf15cf">
               Medium
-            </Link>{' '}
-            | | <Link to="https://github.com/Ka9kdc/aDogsJourney">Github</Link>{' '}
-            |
-          </h3>
+            </Link>
+          </div>
+          <div className="cloudLink">
+            <Link to="https://github.com/Ka9kdc/aDogsJourney">Github</Link>{' '}
+          </div>
         </div>
-        <div>
+        <div className="flexItem_project_text">
           <p>
             A simple 3D browser game built with Three.js where the player moves
             a dog around the field collecting dog bones and avoid obstacles.

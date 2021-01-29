@@ -4,21 +4,12 @@ import { Link } from 'react-router-dom';
 const Createmates = () => {
   return (
     <div className="flexbox_reverse">
-      <div className="flexItem_project">
-        <div>
-          <h2>Createmates</h2>
-          <h3>
-            | <Link to="htts://createmate.herokuapp.com">Deployment</Link> | |{' '}
-            <Link to="https://github.com/createmates/createmates">Github</Link>{' '}
-            |
-          </h3>
-        </div>
+      <div className="flexItem_project"> 
+       
         <img
           src="images/smartmockups_kjkhgdqm.png"
           alt="Mock up of the createmate's wep application"
         />
-      </div>
-      <div className="flexItem_project">
         <div className="videoWrapper">
           <iframe
             width="560"
@@ -29,7 +20,19 @@ const Createmates = () => {
             allowFullScreen
           />
         </div>
-        <div>
+      </div>
+      <div className="flexItem_project">
+        <div className="cloudHeader">
+       <h2>Createmates</h2></div>
+        <div className="cloudTitles">
+          
+          <div className="cloudLink">
+            <Link to="htts://createmate.herokuapp.com">Deployed</Link>
+            </div><div className="cloudLink">
+            <Link to="https://github.com/createmates/createmates">Github</Link>
+          </div>
+        </div>
+        <div className="flexItem_project_text">
           <p>
             A Progressive Web Application for artists seeking to connect and
             collaborate. Artists can link up, chat, and enter a video conference
