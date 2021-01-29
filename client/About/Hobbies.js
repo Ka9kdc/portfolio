@@ -13,7 +13,8 @@ const Hobbies = () => {
 
   return (
     <div className="flexItem">
-      <h2 onClick={showOrHide}>Hobbies</h2>
+      <button type='button' onClick={showOrHide}><h2>Hobbies</h2></button>
+      {/* added images */}
       <ul className={showList}>
         <li>Reading</li>
         <li>Archery</li>

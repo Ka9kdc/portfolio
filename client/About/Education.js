@@ -12,7 +12,7 @@ const Education = () => {
   }
   return (
     <div className="flexItem">
-      <h2 onClick={showOrHide}>Education</h2>
+      <button type='button' onClick={showOrHide}><h2>Education</h2></button>
       <div className={showList}>
         <div>
           <div>

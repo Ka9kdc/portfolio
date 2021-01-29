@@ -13,7 +13,7 @@ const Contact = () => {
   }
   return (
     <div className="flexItem">
-      <h2 onClick={showOrHide}>Contact</h2>
+      <button type='button' onClick={showOrHide}><h2>Contact</h2></button>
       <div className={showList}>
         | <Link to="github.com/Ka9kdc">Github: github.com/Ka9kdc</Link> | |{' '}
         <Link to="https://www.linkedin.com/in/kelsey-m-schroeder/">

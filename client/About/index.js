@@ -6,6 +6,15 @@ import Exprience from './Exprience';
 import './About.css';
 
 const About = () => {
+  const [showList, setShowList] = useState();
+
+  function showOrHide() {
+    if (showList === 'hidden') {
+      setShowList('');
+    } else {
+      setShowList('hidden');
+    }
+  }
   return (
     <div className="content">
       <div>
