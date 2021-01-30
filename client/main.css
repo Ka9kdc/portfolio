@@ -3,3 +3,15 @@ body {
     margin: 0;
     background-color: #82b9eb;
 }
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 2em;
+  }
+  
+  .content h1 {
+    font-size: 5em;
+    text-align: center;
+  }

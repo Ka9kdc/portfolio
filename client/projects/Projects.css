@@ -1,14 +1,3 @@
-.content {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.content h1 {
-  font-size: 5em;
-  text-align: center;
-}
-
 .cloudHeader {
   width: 350px;
 height: 350px;
