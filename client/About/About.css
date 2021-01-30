@@ -1,4 +1,4 @@
-.flexItem {
+/* .flexItem {
   display: flex;
   flex-flow: column nowrap;
   width: 45%;
@@ -8,11 +8,35 @@
 
 .flexItem img {
   max-width: 100%;
-}
+} */
 
 .hidden {
   display: none;
 }
+#about_Buttons {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-self: center;
+}
+#about_Buttons button {
+  width: 50%;
+  height: 250px;
+  background-image: url('../../public/images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-color: unset;
+
+border: unset;
+color: black;
+font-size: 3.5em;
+}
+
+#about_Buttons button:hover {
+mix-blend-mode: difference;
+}
+
 
 @media only screen and (max-width: 900px) {
   .flexItem {

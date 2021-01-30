@@ -1,20 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Exprience = () => {
-  const [showList, setShowList] = useState('hidden');
-
-  function showOrHide() {
-    if (showList === 'hidden') {
-      setShowList('');
-    } else {
-      setShowList('hidden');
-    }
-  }
+const Exprience = (props) => {
   return (
-    <div className="flexItem">
-      <button type='button' onClick={showOrHide}><h2>Exprience</h2></button>
-      <div className={showList}>
+    <div className={props.showList === "experience" ? '' : 'hidden'}>
         <div>
           <img src="images/FullstackLogoNoWords.jpg" alt="Fullstack Academy Logo" />
           <h3>Fullstack Academy</h3>
@@ -80,7 +69,7 @@ const Exprience = () => {
           </ul>
         </div>
       </div>
-    </div>
+
   );
 };
 

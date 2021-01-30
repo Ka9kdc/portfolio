@@ -1,19 +1,8 @@
 import React, { useState } from 'react';
 
-const Education = () => {
-  const [showList, setShowList] = useState('hidden');
-
-  function showOrHide() {
-    if (showList === 'hidden') {
-      setShowList('');
-    } else {
-      setShowList('hidden');
-    }
-  }
+const Education = (props) => {
   return (
-    <div className="flexItem">
-      <button type='button' onClick={showOrHide}><h2>Education</h2></button>
-      <div className={showList}>
+    <div className={props.showList === "education" ? '' : 'hidden'}>
         <div>
           <div>
             <img
@@ -57,7 +46,7 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
