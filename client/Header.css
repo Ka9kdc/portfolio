@@ -1,7 +1,7 @@
 .header {
   position: fixed;
-  left:0px;
-  top:0px;
+  left: 0px;
+  top: 0px;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -11,7 +11,7 @@
 .header div {
   width: 120%;
   max-width: 225.29px;
-  height:  4em;
+  height: 4em;
   max-height: 100px;
   background-image: url('../public/images/Clouds/394-3944151_white-cloud-day-1-clouds-sprite-png1.png');
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 }
 
 .header div:hover a {
-  color: whitesmoke
+  color: whitesmoke;
 }
 
 .nav_icon {
@@ -51,7 +51,7 @@
     display: none;
   }
 
-   .header.responsive {
+  .header.responsive {
     position: relative;
     display: flex;
     flex-direction: row wrap;
@@ -67,7 +67,7 @@
     display: flex;
     flex-direction: row wrap;
   }
-/*  .header.responsive div a{
+  /*  .header.responsive div a{
      float: none;
     display: block; 
     align-items: center;

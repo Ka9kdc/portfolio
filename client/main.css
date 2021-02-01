@@ -1,17 +1,16 @@
-
 body {
-    margin: 0;
-    background-color: #82b9eb;
+  margin: 0;
+  background-color: #82b9eb;
 }
 
 .content {
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    margin-top: 50px;
-  }
-  
-  .content h1 {
-    font-size: 5em;
-    text-align: center;
-  }
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 50px;
+}
+
+.content h1 {
+  font-size: 5em;
+  text-align: center;
+}

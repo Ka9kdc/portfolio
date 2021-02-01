@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    <div >
+    <div>
       <nav className={menuClass}>
         {/* <h1>Kelsey Schroeder</h1> */}
         <div>
@@ -32,11 +32,11 @@ const Header = () => {
         <div>
           <NavLink to="/Skills">Skills</NavLink>
         </div>
-      
-      
-      <button className="nav_icon" onClick={() => showOrHideMenu()}>
-        menu
-      </button></nav>
+
+        <button className="nav_icon" onClick={() => showOrHideMenu()}>
+          menu
+        </button>
+      </nav>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Header from './Header';
 
 import Routes from './routes';
 
-import "./main.css"
+import './main.css';
 
 const Main = () => {
   return (
