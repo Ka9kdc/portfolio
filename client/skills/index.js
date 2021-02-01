@@ -9,7 +9,10 @@ const Skills = () => {
       <div className="skills_flex_container">
         {librariesUsed.map((tech) =>
           tech.transparent ? (
-            <div key={tech.key} className={`skills_flex_box ${tech.comfortLevel}`}>
+            <div
+              key={tech.key}
+              className={`skills_flex_box ${tech.comfortLevel}`}
+            >
               <img
                 src="images/using/Clouds/394-3944151_white-cloud-day-1-clouds-sprite-png1.png"
                 alt={`${tech.name} logo on a cloud`}
@@ -22,9 +25,12 @@ const Skills = () => {
               />
             </div>
           ) : (
-            <div key={tech.key} className={`skills_flex_box ${tech.comfortLevel}`}>
+            <div
+              key={tech.key}
+              className={`skills_flex_box ${tech.comfortLevel}`}
+            >
               <img
-                src="images/using/other/fatRedPlanePullingBanner.png"
+                src="images/using/fatRedPlanePullingBanner.png"
                 alt={`${tech.name} logo pulled by a banner plane`}
                 className="skills_flex_background"
               />
