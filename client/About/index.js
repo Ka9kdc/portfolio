@@ -12,7 +12,7 @@ const About = () => {
     <div className="content">
       <div className={showList === '' ? 'about_Header' : 'hidden'}>
         <div>
-          <img src="images/kelsey.png" />
+          <img src="images/using/kelsey.png" />
         </div>
         <div>
           <h1>Kelsey Schroeder</h1>
@@ -42,7 +42,7 @@ const About = () => {
           {showList !== 'Experience' ? (
             <button type="button" onClick={() => setShowList('Experience')}>
               <img
-                src="images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
+                src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
                 alt="dark-cloud button for Experience"
               />
               <p>Experience</p>
@@ -53,7 +53,7 @@ const About = () => {
           {showList !== 'Education' ? (
             <button type="button" onClick={() => setShowList('Education')}>
               <img
-                src="images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
+                src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
                 alt="dark-cloud button for Education"
               />
               <p>Education</p>
@@ -64,7 +64,7 @@ const About = () => {
           {showList !== 'Hobbies' ? (
             <button type="button" onClick={() => setShowList('Hobbies')}>
               <img
-                src="images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
+                src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
                 alt="dark-cloud button for hobbies"
               />
               <p>Hobbies</p>
@@ -75,7 +75,7 @@ const About = () => {
           {showList !== 'Contact' ? (
             <button type="button" onClick={() => setShowList('Contact')}>
               <img
-                src="images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
+                src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
                 alt="dark-cloud button for Contact"
               />
               <p>Contact</p>

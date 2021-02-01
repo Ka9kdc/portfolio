@@ -1,15 +1,3 @@
-/* .flexItem {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 45%;
-  padding: 1em;
-  text-align: center;
-}
-
-.flexItem img {
-  max-width: 100%;
-} */
-
 .about_row {
   display: flex;
   flex-flow: row wrap;
@@ -120,7 +108,7 @@
 }
 .about_Section_Name {
   width: 100%;
-  background-image: url('../../public/images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png');
+  background-image: url('../Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: unset;

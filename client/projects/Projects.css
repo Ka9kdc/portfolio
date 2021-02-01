@@ -1,7 +1,7 @@
 .cloudHeader {
   width: 350px;
   height: 350px;
-  background-image: url('../../public/images/Clouds/fumée-cartoon-png-2.png');
+  background-image: url('../Clouds/fumée-cartoon-png-2.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
@@ -24,7 +24,7 @@
 .cloudLink {
   width: 100px;
   height: 100px;
-  background-image: url('../../public/images/Clouds/fumée-cartoon-png-2.png');
+  background-image: url('../Clouds/fumée-cartoon-png-2.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -150px;
@@ -103,7 +103,6 @@
 @media only screen and (max-width: 900px) {
   .flexItem_project {
     width: 100%;
-    /* background-color: burlywood; */
   }
   .flexbox {
     flex-flow: column-reverse nowrap;

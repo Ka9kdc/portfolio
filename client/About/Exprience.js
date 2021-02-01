@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const workHistory = [
   {
     key: 1,
-    companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
+    companyLogo: 'images/using/fullstack-academy-logo-color-on-white.png',
     companyName: 'Fullstack Academy',
     JobTitle: 'Software Engineering/Development Teaching Fellow',
     start: 'November 2020',
@@ -17,7 +17,7 @@ const workHistory = [
   },
   {
     key: 2,
-    companyLogo: 'images/LittleLogo.png',
+    companyLogo: 'images/using/LittleLogo.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Webmaster',
     start: 'November 2019',
@@ -31,7 +31,7 @@ const workHistory = [
   },
   {
     key: 3,
-    companyLogo: 'images/209-2092285_office-depot-office-max-png-logo.png',
+    companyLogo: 'images/using/209-2092285_office-depot-office-max-png-logo.png',
     companyName: 'Office Depot',
     JobTitle: 'Print and Copy Supervisor',
     start: 'April 2015',
@@ -45,7 +45,7 @@ const workHistory = [
   },
   {
     key: 4,
-    companyLogo: 'images/LittleLogo.png',
+    companyLogo: 'images/using/LittleLogo.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Hamfest Chairman',
     start: 'February 2016',

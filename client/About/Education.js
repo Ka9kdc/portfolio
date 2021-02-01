@@ -8,13 +8,13 @@ const Education = (props) => {
       <div className="about_education_place">
         <div>
           <img
-            src="images/GraceHopperAcademyLogo.png"
+            src="images/using/GraceHopperAcademyLogo.png"
             alt="Grace Hopper Program Logo"
           />
           <br />
           <br />
           <img
-            src="images/fullstack-academy-logo-color-on-white.png"
+            src="images/using/fullstack-academy-logo-color-on-white.png"
             alt="Fullstack Logo"
           />
         </div>
@@ -39,7 +39,7 @@ const Education = (props) => {
       <div className="about_education_place">
         <div>
           <img
-            src="images/SIUSportLogo.png"
+            src="images/using/SIUSportLogo.png"
             alt="Southern Illinios University Carbondale Logo"
           />
         </div>

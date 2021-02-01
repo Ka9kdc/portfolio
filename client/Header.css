@@ -13,7 +13,7 @@
   max-width: 225.29px;
   height: 4em;
   max-height: 100px;
-  background-image: url('../public/images/Clouds/394-3944151_white-cloud-day-1-clouds-sprite-png1.png');
+  background-image: url('./Clouds/394-3944151_white-cloud-day-1-clouds-sprite-png1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 6px;
@@ -30,7 +30,7 @@
 }
 
 .header div:hover {
-  background-image: url('../public/images/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png');
+  background-image: url('./Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png');
   mix-blend-mode: difference;
 }
 

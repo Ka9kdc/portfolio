@@ -6,7 +6,7 @@ const Createmates = () => {
     <div className="flexbox_reverse">
       <div className="flexItem_project">
         <img
-          src="images/smartmockups_kjkhgdqm.png"
+          src="images/using/smartmockups_kjkhgdqm.png"
           alt="Mock up of the createmate's wep application"
         />
         <div className="videoWrapper">

@@ -6,7 +6,7 @@ const ADogsJourney = () => {
     <div className="flexbox">
       <div className="flexItem_project">
         <img
-          src="images/smartmockups_kjkmxumj.png"
+          src="images/using/smartmockups_kjkmxumj.png"
           alt="Mock up of the A Dog's Journey Game"
         />
       </div>
