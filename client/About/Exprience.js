@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const workHistory = [
   {
+    key: 1,
     companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
     companyName: 'Fullstack Academy',
     JobTitle: 'Software Engineering/Development Teaching Fellow',
@@ -15,6 +16,7 @@ const workHistory = [
     ],
   },
   {
+    key: 2,
     companyLogo: 'images/LittleLogo.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Webmaster',
@@ -28,6 +30,7 @@ const workHistory = [
     ],
   },
   {
+    key: 3,
     companyLogo: 'images/209-2092285_office-depot-office-max-png-logo.png',
     companyName: 'Office Depot',
     JobTitle: 'Print and Copy Supervisor',
@@ -41,13 +44,14 @@ const workHistory = [
     ],
   },
   {
+    key: 4,
     companyLogo: 'images/LittleLogo.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Hamfest Chairman',
     start: 'February 2016',
     end: 'January 2020',
     discription: [
-      ' Organized a radio, computer and electronics expo with over 750 attendees',
+      'Organized a radio, computer and electronics expo with over 750 attendees',
       'Handled communication with vendors and six subcommittees',
       'Brought in $2000 each year for the club',
     ],
@@ -58,7 +62,7 @@ const Exprience = (props) => {
   return (
     <div className={props.showList === 'Experience' ? 'about_row' : 'hidden'}>
       {workHistory.map((job) => (
-        <div className="about_experience_width">
+        <div className="about_experience_width" key={job.key}>
           <div className="about_row">
             <img src={job.companyLogo} alt={`${job.companyName} Logo`} />
             <div>
@@ -76,8 +80,8 @@ const Exprience = (props) => {
             )}
           </div>
           <div>
-            {job.discription.map((task) => (
-              <p>{task}</p>
+            {job.discription.map((task, idx) => (
+              <p key={idx}>{task}</p>
             ))}
           </div>
         </div>
