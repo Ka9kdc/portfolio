@@ -7,10 +7,10 @@ body {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  margin-top: 50px;
 }
 
 .content h1 {
   font-size: 5em;
   text-align: center;
+  margin: 0em;
 }
