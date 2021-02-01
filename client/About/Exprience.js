@@ -1,83 +1,26 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+const workHistory = [
+  {companyLogo: "images/fullstack-academy-logo-color-on-white.png", companyName: 'Fullstack Academy', JobTitle: "Software Engineering/Development Teaching Fellow", start: "November 2020", end: "February 2021", discription: ["Teaching assistant to a cohort of 40+ students covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design","Acted as project manager and technical mentor for teams of 4 students during 4 projects, employing the use of agile methodologies","Conducted technical admissions interviews","Ran weekly whiteboarding lectures"]},
+  {companyLogo: "images/LittleLogo.png", companyName: 'Wheaton Community Radio Amateurs', JobTitle: "Webmaster", start: "November 2019", end: "Present", link: "w9ccu.org",discription: ["Integrate PayPal allowing membership dues, Hamfest tickets and vendor orders to be processed and paid online","Update website monthly with meeting minutes and notices for club membership","Enhanced online renewals form using Javascript, PHP, HTML and CSS allowing for emails are sent upon submission."]},
+  {companyLogo: "images/209-2092285_office-depot-office-max-png-logo.png", companyName: 'Office Depot', JobTitle: "Print and Copy Supervisor", start: "April 2015", end: "February 2020", discription: ["Trained co-workers on new equipment and procedures","Ensured supplies were in-stock to produce client orders","Handled placing and producing orders for over 50 clients a week","Achieved over department sales goals almost every quarter"]},
+  {companyLogo: "images/LittleLogo.png", companyName: 'Wheaton Community Radio Amateurs', JobTitle: "Hamfest Chairman", start: "February 2016", end: "January 2020", discription: [" Organized a radio, computer and electronics expo with over 750 attendees","Handled communication with vendors and six subcommittees","Brought in $2000 each year for the club"]},
+]
+
 const Exprience = (props) => {
   return (
-    <div className={props.showList === 'Experience' ? '' : 'hidden'}>
-      <div>
-        <img
-          src="images/FullstackLogoNoWords.jpg"
-          alt="Fullstack Academy Logo"
-        />
-        <h3>Fullstack Academy</h3>
-        <h4>Software Engineering Teaching Fellow</h4>
-        <h4>November 2020 - February 2021</h4>
-        <ul>
-          <li>
-            Teaching assistant to a cohort of 40+ students covering: software
-            engineering concepts, computer science fundamentals, debugging
-            techniques, schema design
-          </li>
-          <li>
-            Acted as project manager and technical mentor for teams of 4
-            students during 4 projects, employing the use of agile methodologies
-          </li>
-          <li>Conducted technical admissions interviews</li>
-          <li>Ran weekly whiteboarding lectures</li>
-        </ul>
-      </div>
-      <div>
-        <img src="images/LittleLogo.png" alt="WCRA Logo" />
-        <h3>Wheaton Community Radio Amateurs</h3>
-        <h4>
-          <Link to="https://w9ccu.org">w9ccu.org</Link> Webmaster
-        </h4>
-        <h4>November 2019 - Present</h4>
-        <ul>
-          <li>
-            Integrate PayPal allowing membership dues, Hamfest tickets and
-            vendor orders to be processed and paid online
-          </li>
-          <li>
-            Update website monthly with meeting minutes and notices for club
-            membership
-          </li>
-          <li>
-            Enhanced online renewals form using Javascript, PHP, HTML and CSS
-            allowing for emails are sent upon submission.
-          </li>
-        </ul>
-      </div>
-      <div>
-        <img
-          src="images/209-2092285_office-depot-office-max-png-logo.png"
-          alt="Office Depot Logo"
-        />
-        <h3>Office Depot</h3>
-        <h4>Print and Copy Supervisor</h4> <h4>April 2015 – February 2020</h4>
-        <ul>
-          <li> Trained co-workers on new equipment and procedures</li>
-          <li>Ensured supplies were in-stock to produce client orders</li>
-          <li>
-            Handled placing and producing orders for over 50 clients a week
-          </li>
-          <li>Achieved over department sales goals almost every quarter</li>
-        </ul>
-      </div>
-      <div>
-        <img src="images/LittleLogo.png" alt="WCRA Logo" />
-        <h3>Wheaton Community Radio Amateurs</h3>
-        <h4>Hamfest Chairman</h4>
-        <h4>February 2016 – January 2020</h4>
-        <ul>
-          <li>
-            Organized a radio, computer and electronics expo with over 750
-            attendees
-          </li>
-          <li>Handled communication with vendors and six subcommittees</li>
-          <li>Brought in $2000 each year for the club </li>
-        </ul>
-      </div>
+    <div className={props.showList === 'Experience' ? 'about_row' : 'hidden'}>
+      {workHistory.map(job => (<div className="about_column">
+        <div className="about_row"><img src={job.companyLogo} alt={`${job.companyName} Logo`} />
+        <div>
+          <h2>{job.JobTitle}</h2>
+          <p>{job.start} - {job.end}</p>
+        </div>
+        {job.link ? <div className="cloudLink zero_top_margin" ><a href={`http://${job.link}`}>{job.link}</a></div>: ''}
+        </div>
+        <div>{job.discription.map(task => <p>{task}</p>)}</div>
+      </div>))}
     </div>
   );
 };

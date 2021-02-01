@@ -9,6 +9,31 @@
 .flexItem img {
   max-width: 100%;
 } */
+
+
+.about_row{
+  display: flex;
+  flex-flow: row wrap;
+  /* width: 100%; */
+  /* background-color: aquamarine; */
+  justify-content: space-around;
+  text-align: center;
+}
+
+.about_column {
+width: 45%;
+/* background-color: brown; */
+/* padding: 2em .5em; */
+}
+
+.about_row img {
+  max-width: 40%;
+}
+
+.zero_top_margin{
+  margin-top: 0px;
+}
+
 #button_row {
   width: 95%;
   display: flex;
