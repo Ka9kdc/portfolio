@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 
 const Education = (props) => {
   return (
-    <div className={props.showList === 'Education' ? '' : 'hidden'}>
-      <div>
+    <div className={props.showList === 'Education' ? 'about_education' : 'hidden'}>
+      <div className="about_education_place">
         <div>
           <img
-            src="images/GraceHopperLongLogo.jpeg"
+            src="images/GraceHopperAcademyLogo.png"
             alt="Grace Hopper Program Logo"
           />
+          <br />
+          <br />
           <img
             src="images/fullstack-academy-logo-color-on-white.png"
             alt="Fullstack Logo"
@@ -16,13 +18,14 @@ const Education = (props) => {
         </div>
         <div>
           <h3>Grace Hopper Program at Fullstack Academy of Code</h3>
-          <h4>August 2020 - October 2020</h4>
+          <h4>October 2020</h4>
+          <p>Certification in JavaScript Web Development</p>
           <p>
             Fullstack Academy is a top-ranked software development school based
             in New York City. A full-time immersive program covers a broad
             curriculum centered on full-stack JavaScript. Topics taught include
-            Node.js, React, Express, SQL & NoSQL databases, advanced HTML & CSS,
-            and CS fundamentals.
+            Node.js, React, Express, SQL databases, advanced HTML & CSS, and CS
+            fundamentals.
           </p>
           <p>
             Fullstack Academy's Educational structure is project based and
@@ -31,18 +34,20 @@ const Education = (props) => {
           </p>
         </div>
       </div>
-      <div>
-        <img
-          src="images/SIUSportLogo.png"
-          alt="Southern Illinios University Carbondale Logo"
-        />
+      <div className="about_education_place">
+        <div>
+          <img
+            src="images/SIUSportLogo.png"
+            alt="Southern Illinios University Carbondale Logo"
+          />
+        </div>
         <div>
           <h3>Southern Illinois University Carbondale</h3>
-          <h4>August 2010 - March 2015</h4>
-          <p>
-            Bachelor of Science in Aviation Management, Associate of Applied
-            Sciences in Aviation Flight, Minor in German, Magna Cum Laude
-          </p>
+          <h4>March 2015</h4>
+          <p>Bachelor of Science in Aviation Management</p>
+          <p> Associate of Applied Sciences in Aviation Flight</p>
+          <p> Minor in German</p>
+          <p> Magna Cum Laude</p>
         </div>
       </div>
     </div>

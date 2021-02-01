@@ -10,27 +10,48 @@
   max-width: 100%;
 } */
 
-
-.about_row{
+.about_row {
   display: flex;
   flex-flow: row wrap;
-  /* width: 100%; */
-  /* background-color: aquamarine; */
   justify-content: space-around;
   text-align: center;
 }
 
-.about_column {
-width: 45%;
-/* background-color: brown; */
-/* padding: 2em .5em; */
+.about_experience_width {
+  width: 45%;
 }
 
+.about_education {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.about_education_place{
+  margin: 1em;
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-self: center;
+  text-align: center;
+}
+.about_education_place div {
+  width: 50%;
+  margin: .5em;
+  align-self: center;
+}
+.about_education_place img {
+  max-width: 95%;
+  height: auto;
+}
 .about_row img {
   max-width: 40%;
+  height: auto;
 }
 
-.zero_top_margin{
+.zero_top_margin {
   margin-top: 0px;
 }
 
