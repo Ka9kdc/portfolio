@@ -1,14 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const Contact = (props) => {
   return (
     <div className={props.showList === 'Contact' ? '' : 'hidden'}>
-      | <Link to="github.com/Ka9kdc">Github: github.com/Ka9kdc</Link> | |{' '}
-      <Link to="https://www.linkedin.com/in/kelsey-m-schroeder/">
-        Linkedin: https://www.linkedin.com/in/kelsey-m-schroeder/
-      </Link>{' '}
-      |
+      <div className="banner_plane">
+        <img src="images/Airplanes/fatRedPlanePullingBanner.png" alt="" />
+        <p className="big_text">Kelsey Schroeder</p>
+      </div>
+      <div id="contact_links">
+        <a href="github.com/Ka9kdc">
+          <img
+            src="images/Libraries/github-logo.png"
+            alt="Github logo and link to my github"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/kelsey-m-schroeder/">
+          <img
+            src="images/linkedin-logo.png"
+            alt="linkedin logo and link to my linked in profile"
+          />
+        </a>
+      </div>
     </div>
   );
 };
