@@ -1,7 +1,4 @@
 .header {
-  position: fixed;
-  left: 0px;
-  top: 0px;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -34,9 +31,6 @@
   mix-blend-mode: difference;
 }
 
-.header div:hover a {
-  color: whitesmoke;
-}
 
 .nav_icon {
   display: none;
