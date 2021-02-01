@@ -28,7 +28,7 @@
   align-self: center;
 }
 
-.about_education_place{
+.about_education_place {
   margin: 1em;
   width: 50%;
   display: flex;
@@ -39,7 +39,7 @@
 }
 .about_education_place div {
   width: 50%;
-  margin: .5em;
+  margin: 0.5em;
   align-self: center;
 }
 .about_education_place img {

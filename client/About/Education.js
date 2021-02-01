@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 
 const Education = (props) => {
   return (
-    <div className={props.showList === 'Education' ? 'about_education' : 'hidden'}>
+    <div
+      className={props.showList === 'Education' ? 'about_education' : 'hidden'}
+    >
       <div className="about_education_place">
         <div>
           <img
