@@ -39,8 +39,8 @@
   padding: 5px;
 }
 
-#contact_links img:hover{
-  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+#contact_links img:hover {
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
 }
 
@@ -158,14 +158,14 @@
   align-self: center;
   width: 30%;
   text-align: center;
-  padding: .5em .3em .2em;
+  padding: 0.5em 0.3em 0.2em;
 }
 
 .big_text {
   font-size: 200%;
 }
 
-.hobby_planes{
+.hobby_planes {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -175,9 +175,9 @@
   width: 90%;
 }
 
-.hobby_planes div{
+.hobby_planes div {
   width: 35%;
-  margin: .5% 2%;
+  margin: 0.5% 2%;
 }
 
 .about_Header div {
