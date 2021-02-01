@@ -16,12 +16,12 @@ const BrosApothacary = () => {
         </div>
         <div className="cloudTitles">
           <div className="cloudLink">
-            <Link to="http://bros-apothecary.herokuapp.com/">Deployed</Link>
+            <a href="http://bros-apothecary.herokuapp.com/">Deployed</a>
           </div>
           <div className="cloudLink">
-            <Link to="https://github.com/grace-shopper-team-c/grace-shopper">
+            <a href="https://github.com/grace-shopper-team-c/grace-shopper">
               Github
-            </Link>{' '}
+            </a>{' '}
           </div>
         </div>
         <div className="flexItem_project_text">

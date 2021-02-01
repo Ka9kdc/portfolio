@@ -26,10 +26,10 @@ const Createmates = () => {
         </div>
         <div className="cloudTitles">
           <div className="cloudLink">
-            <Link to="htts://createmate.herokuapp.com">Deployed</Link>
+            <a href="htts://createmate.herokuapp.com">Deployed</a>
           </div>
           <div className="cloudLink">
-            <Link to="https://github.com/createmates/createmates">Github</Link>
+            <a href="https://github.com/createmates/createmates">Github</a>
           </div>
         </div>
         <div className="flexItem_project_text">

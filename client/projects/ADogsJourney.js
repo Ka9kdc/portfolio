@@ -16,12 +16,12 @@ const ADogsJourney = () => {
         </div>
         <div className="cloudTitles">
           <div className="cloudLink">
-            <Link to="https://kmschroeder91.medium.com/building-a-game-with-three-js-f5796ecf15cf">
+            <a href="https://kmschroeder91.medium.com/building-a-game-with-three-js-f5796ecf15cf">
               Medium
-            </Link>
+            </a>
           </div>
           <div className="cloudLink">
-            <Link to="https://github.com/Ka9kdc/aDogsJourney">Github</Link>{' '}
+            <a href="https://github.com/Ka9kdc/aDogsJourney">Github</a>{' '}
           </div>
         </div>
         <div className="flexItem_project_text">
