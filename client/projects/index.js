@@ -7,7 +7,10 @@ import './Projects.css';
 const Projects = () => {
   return (
     <div className="content">
-      <h1>Projects</h1>
+      <div id="projectTitle">
+
+      <h1 >Projects</h1>
+      </div>
       <Createmates />
       <ADogsJourney />
       <BrosApothacary />
