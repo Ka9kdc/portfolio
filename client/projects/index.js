@@ -2,6 +2,7 @@ import React from 'react';
 import ADogsJourney from './ADogsJourney';
 import BrosApothacary from './BrosApothacary';
 import Createmates from './Createmates';
+import NotesForFriends from './NotesForFriends';
 import './Projects.css';
 
 const Projects = () => {
@@ -13,6 +14,10 @@ const Projects = () => {
       <Createmates />
       <ADogsJourney />
       <BrosApothacary />
+      <div >
+      <h2 style={{"fontSize": "5em", "textAlign": 'center', "marginBottom": "-1em"}}>Hackathon Submissions</h2>
+      <NotesForFriends />
+      </div>
     </div>
   );
 };
