@@ -40,7 +40,7 @@
 }
 
 .about_education_place {
-  margin: -.5em 1em ;
+  margin: -0.5em 1em;
   width: 50%;
   display: flex;
   flex-flow: row nowrap;

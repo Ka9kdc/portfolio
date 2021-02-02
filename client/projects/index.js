@@ -8,8 +8,7 @@ const Projects = () => {
   return (
     <div className="content">
       <div id="projectTitle">
-
-      <h1 >Projects</h1>
+        <h1>Projects</h1>
       </div>
       <Createmates />
       <ADogsJourney />

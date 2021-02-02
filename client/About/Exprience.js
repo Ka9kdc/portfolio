@@ -31,7 +31,8 @@ const workHistory = [
   },
   {
     key: 3,
-    companyLogo: 'images/using/209-2092285_office-depot-office-max-png-logo.png',
+    companyLogo:
+      'images/using/209-2092285_office-depot-office-max-png-logo.png',
     companyName: 'Office Depot',
     JobTitle: 'Print and Copy Supervisor',
     start: 'April 2015',
