@@ -1,7 +1,8 @@
 const path = require('path');
+const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
-  mode: 'development',
+  mode: isDev ? 'development' : 'production',
   entry: './client/index.js',
   output: {
     path: path.join(__dirname, '/public'),
