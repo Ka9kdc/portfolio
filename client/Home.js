@@ -1,10 +1,12 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Kelsey Schroeder</h1>
-    </div>
+    <Redirect to="/About" />
+    // <div>
+    //   <h1>Kelsey Schroeder</h1>
+    // </div>
   );
 };
 

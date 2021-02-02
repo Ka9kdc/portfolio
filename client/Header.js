@@ -17,9 +17,9 @@ const Header = () => {
     <div>
       <nav className={menuClass}>
         {/* <h1>Kelsey Schroeder</h1> */}
-        <div>
+        {/* <div>
           <NavLink to="/">Home</NavLink>
-        </div>
+        </div> */}
         <div>
           <NavLink to="/About">About</NavLink>
         </div>
