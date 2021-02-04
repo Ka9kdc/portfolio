@@ -16,7 +16,7 @@ const Createmates = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title="demo video of createmates"
+            title="demo video of c"
           />
         </div>
       </div>

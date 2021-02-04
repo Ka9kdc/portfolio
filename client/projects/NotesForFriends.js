@@ -3,7 +3,7 @@ import React from 'react';
 const NotesForFriends = () => {
   return (
     <div className="flexbox">
-      <div className="flexItem_project">
+      <div className="flexItem_project">  <div className="videoWrapper">
         <iframe
           width="560"
           height="315"
@@ -13,7 +13,7 @@ const NotesForFriends = () => {
           allowfullscreen
           title="submittion video for notes for friends"
         />
-      </div>
+      </div></div>
       <div className="flexItem_project">
         <div className="cloudHeader">
           <h2>Notes For Friends</h2>
