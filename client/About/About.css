@@ -149,14 +149,14 @@
 }
 
 .about_Header div {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   background-color: purple;
 }
 
 .about_Header div img {
   height: 11em;
   background-color: red;
-  margin-bottom: -.5em;
+  margin-bottom: -0.5em;
 }
 
 .banner_plane {
@@ -168,7 +168,8 @@
   grid-area: 1/1;
 }
 
-.banner_plane p, .banner_plane h2 {
+.banner_plane p,
+.banner_plane h2 {
   grid-area: 1/1;
   align-self: center;
   width: 30%;

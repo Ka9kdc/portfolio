@@ -49,9 +49,8 @@
   background-image: url('../Clouds/sunrise-fumée-cartoon-png-2_no_innier_lines.png');
 }
 
-.cloudLink:hover a{
- background-color: transparent;
-
+.cloudLink:hover a {
+  background-color: transparent;
 }
 
 .flexbox_reverse {

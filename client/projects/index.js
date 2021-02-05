@@ -15,9 +15,7 @@ const Projects = () => {
       <ADogsJourney />
       <BrosApothacary />
       <div>
-        <h2
-          style={{ fontSize: '5em', textAlign: 'center'}}
-        >
+        <h2 style={{ fontSize: '5em', textAlign: 'center' }}>
           Hackathon Submissions
         </h2>
         <NotesForFriends />
