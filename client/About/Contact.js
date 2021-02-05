@@ -5,7 +5,7 @@ const Contact = (props) => {
     <div className={props.showList === 'Contact' ? '' : 'hidden'}>
       <div className="banner_plane">
         <img src="images/using/fatRedPlanePullingBanner.png" alt="" />
-        <p className="big_text">Kelsey Schroeder</p>
+        <h2 className="big_text">Kelsey Schroeder</h2>
       </div>
       <div id="contact_links">
         <a href="github.com/Ka9kdc">
