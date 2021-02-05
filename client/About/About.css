@@ -145,17 +145,14 @@
   width: 90%;
   align-self: center;
   align-items: center;
-  background-color: red;
 }
 
 .about_Header div {
   padding: 0.5em 1em;
-  background-color: purple;
 }
 
 .about_Header div img {
   height: 11em;
-  background-color: red;
   margin-bottom: -0.5em;
 }
 
