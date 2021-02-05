@@ -145,6 +145,18 @@
   width: 90%;
   align-self: center;
   align-items: center;
+  background-color: red;
+}
+
+.about_Header div {
+  padding: .5em 1em;
+  background-color: purple;
+}
+
+.about_Header div img {
+  height: 11em;
+  background-color: red;
+  margin-bottom: -.5em;
 }
 
 .banner_plane {
@@ -181,14 +193,6 @@
 .hobby_planes div {
   width: 35%;
   margin: 0.5% 2%;
-}
-
-.about_Header div {
-  padding: 1em;
-}
-
-.about_Header div img {
-  height: 15em;
 }
 
 .limit_padding {
