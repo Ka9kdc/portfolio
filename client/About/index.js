@@ -45,7 +45,7 @@ const About = () => {
                 src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
                 alt="dark-cloud button for Experience"
               />
-              <p>Experience</p>
+              <h2>Experience</h2>
             </button>
           ) : (
             ''
@@ -56,7 +56,7 @@ const About = () => {
                 src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
                 alt="dark-cloud button for Education"
               />
-              <p>Education</p>
+              <h2>Education</h2>
             </button>
           ) : (
             ''
@@ -67,7 +67,7 @@ const About = () => {
                 src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
                 alt="dark-cloud button for hobbies"
               />
-              <p>Hobbies</p>
+              <h2>Hobbies</h2>
             </button>
           ) : (
             ''
@@ -78,7 +78,7 @@ const About = () => {
                 src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
                 alt="dark-cloud button for Contact"
               />
-              <p>Contact</p>
+              <h2>Contact</h2>
             </button>
           ) : (
             ''

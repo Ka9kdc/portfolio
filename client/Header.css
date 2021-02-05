@@ -27,8 +27,7 @@
 }
 
 .header div:hover {
-  background-image: url('./Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png');
-  mix-blend-mode: difference;
+  background-image: url('./Clouds/sunrise_cloud_3_with_transparant_background.png');
 }
 
 .nav_icon {
