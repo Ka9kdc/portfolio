@@ -14,9 +14,13 @@ const Projects = () => {
       <Createmates />
       <ADogsJourney />
       <BrosApothacary />
-      <div >
-      <h2 style={{"fontSize": "5em", "textAlign": 'center', "marginBottom": "-1em"}}>Hackathon Submissions</h2>
-      <NotesForFriends />
+      <div>
+        <h2
+          style={{ fontSize: '5em', textAlign: 'center', marginBottom: '-1em' }}
+        >
+          Hackathon Submissions
+        </h2>
+        <NotesForFriends />
       </div>
     </div>
   );

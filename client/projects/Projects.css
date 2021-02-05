@@ -11,6 +11,7 @@
   justify-content: center;
   align-self: center;
 }
+
 .cloudTitles {
   width: 100%;
   max-width: 550px;
@@ -20,6 +21,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 .cloudLink {
   width: 100px;
   height: 100px;
@@ -32,6 +34,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .cloudHeader h2 {
   margin-top: 1.3em;
   font-size: 2.3em;
@@ -47,6 +50,7 @@
 .cloudLink:hover {
   mix-blend-mode: difference;
 }
+
 .flexbox_reverse {
   padding: 1em;
   display: flex;
@@ -91,6 +95,7 @@
   height: 0;
   align-items: center;
 }
+
 .videoWrapper iframe {
   position: absolute;
   top: 1em;

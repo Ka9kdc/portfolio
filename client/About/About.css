@@ -16,12 +16,14 @@
   justify-self: center;
   align-self: center;
 }
+
 #contact_links a {
   width: 50%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
 }
+
 #contact_links img {
   width: 50%;
   padding: 5px;
@@ -48,15 +50,18 @@
   align-self: center;
   text-align: center;
 }
+
 .about_education_place div {
   width: 50%;
   margin: 0.5em;
   align-self: center;
 }
+
 .about_education_place img {
   max-width: 95%;
   height: auto;
 }
+
 .about_row img {
   max-width: 40%;
   height: auto;
@@ -77,6 +82,7 @@
 .hidden {
   display: none;
 }
+
 .about_Buttons {
   width: 100%;
   display: flex;
@@ -84,6 +90,7 @@
   justify-content: space-evenly;
   align-self: center;
 }
+
 .about_Buttons button {
   width: 50%;
   background-color: unset;
@@ -92,7 +99,7 @@
 }
 
 .about_Buttons button:hover {
-  background-image: url("../Clouds/sunrise_cloud_3_with_transparant_background.png");
+  background-image: url('../Clouds/sunrise_cloud_3_with_transparant_background.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -103,9 +110,8 @@
 }
 
 .about_Buttons button img:hover {
-  opacity: .1;
+  opacity: 0.1;
 }
-
 
 .about_Buttons button h2 {
   width: 100%;
@@ -113,9 +119,10 @@
   grid-area: 1/1;
   align-self: center;
 }
+
 .about_Section_Name {
   width: 100%;
-  background-image: url("../Clouds/sunrise_cloud_3_with_transparant_background.png");
+  background-image: url('../Clouds/sunrise_cloud_3_with_transparant_background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: unset;
@@ -144,9 +151,11 @@
   display: grid;
   justify-content: center;
 }
+
 .banner_plane img {
   grid-area: 1/1;
 }
+
 .banner_plane p {
   grid-area: 1/1;
   align-self: center;
@@ -185,15 +194,18 @@
 .limit_padding {
   margin-bottom: -10em;
 }
+
 .limit_padding button {
   margin-top: -1em;
   margin-bottom: -3em;
 }
+
 @media only screen and (max-width: 900px) {
   .flexItem {
     width: 100%;
     background-color: burlywood;
   }
+
   .flexItem img {
     width: 75%;
   }

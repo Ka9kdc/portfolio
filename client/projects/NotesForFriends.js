@@ -3,17 +3,20 @@ import React from 'react';
 const NotesForFriends = () => {
   return (
     <div className="flexbox">
-      <div className="flexItem_project">  <div className="videoWrapper">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/KF1bfWFr1vI"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          title="submittion video for notes for friends"
-        />
-      </div></div>
+      <div className="flexItem_project">
+        {' '}
+        <div className="videoWrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/KF1bfWFr1vI"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="submittion video for notes for friends"
+          />
+        </div>
+      </div>
       <div className="flexItem_project">
         <div className="cloudHeader">
           <h2>Notes For Friends</h2>
