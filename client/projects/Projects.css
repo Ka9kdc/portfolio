@@ -1,9 +1,9 @@
 .cloudHeader {
   width: 350px;
-  height: 350px;
-  background-image: url('../Clouds/fumée-cartoon-png-2.png');
+  height: 175px;
+  background-image: url('../Clouds/fumée-cartoon-png-2_no_innier_lines.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -24,11 +24,11 @@
 
 .cloudLink {
   width: 100px;
-  height: 100px;
-  background-image: url('../Clouds/fumée-cartoon-png-2.png');
+  height: 50px;
+  background-image: url('../Clouds/fumée-cartoon-png-2_no_innier_lines.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -150px;
+  background-size: contain;
+  margin-top: -50px;
   padding: 0px;
   display: flex;
   align-items: center;
@@ -38,17 +38,20 @@
 .cloudHeader h2 {
   margin-top: 1.3em;
   font-size: 2.3em;
-  background-color: white;
 }
 
 .cloudLink a {
-  background-color: white;
   color: black;
   text-decoration: none;
 }
 
 .cloudLink:hover {
-  mix-blend-mode: difference;
+  background-image: url('../Clouds/sunrise-fumée-cartoon-png-2_no_innier_lines.png');
+}
+
+.cloudLink:hover a{
+ background-color: transparent;
+
 }
 
 .flexbox_reverse {
@@ -85,9 +88,9 @@
   align-self: center;
 }
 
-.flexItem_project_text {
+/* .flexItem_project_text {
   margin-top: -50px;
-}
+} */
 
 .videoWrapper {
   position: relative;

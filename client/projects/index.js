@@ -16,7 +16,7 @@ const Projects = () => {
       <BrosApothacary />
       <div>
         <h2
-          style={{ fontSize: '5em', textAlign: 'center', marginBottom: '-1em' }}
+          style={{ fontSize: '5em', textAlign: 'center'}}
         >
           Hackathon Submissions
         </h2>

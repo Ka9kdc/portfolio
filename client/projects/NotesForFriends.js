@@ -25,7 +25,7 @@ const NotesForFriends = () => {
           <div className="cloudLink">
             <a href="https://notes-with-friends.herokuapp.com/">Deployed</a>
           </div>
-          <div className="cloudLink" style={{ alignSelf: 'center' }}>
+          <div className="cloudLink" style={{ marginTop: '-25px' }}>
             <a href="https://devpost.com/software/notes-for-friends">Devpost</a>{' '}
           </div>
           <div className="cloudLink">
