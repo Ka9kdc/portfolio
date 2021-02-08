@@ -185,8 +185,9 @@
   align-self: center;
   width: 30%;
   text-align: center;
-  padding: 0.5em 0.3em 0.2em;
-  font-family: 'Permanent Marker', cursive;
+  padding: 0.7em 0.3em 0.2em;
+  font-family: 'Charm', cursive;
+  line-height: 1.2;
 }
 
 .big_text {
@@ -197,6 +198,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  /* font-size: 1.5em; */
 }
 
 .hobby_planes img {
@@ -224,6 +226,10 @@
   }
 
   .flexItem img {
+    width: 75%;
+  }
+
+  .about_Buttons button {
     width: 75%;
   }
 }
