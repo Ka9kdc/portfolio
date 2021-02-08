@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .cloudHeader {
   width: 350px;
   height: 175px;
@@ -20,6 +22,7 @@
   justify-content: space-between;
   margin: 0px;
   padding: 0px;
+  align-self: center;
 }
 
 .cloudLink {
@@ -38,20 +41,21 @@
 .cloudHeader h2 {
   margin-top: 1.3em;
   font-size: 2.3em;
+  font-family: 'Indie Flower', cursive;
+  max-width: 75%;
+  line-height: 1;
 }
 
 .cloudLink a {
   color: black;
   text-decoration: none;
+  font-family: 'Indie Flower', cursive;
 }
 
 .cloudLink:hover {
   background-image: url('../Clouds/sunrise-fumée-cartoon-png-2_no_innier_lines.png');
 }
 
-.cloudLink:hover a {
-  background-color: transparent;
-}
 
 .flexbox_reverse {
   padding: 1em;
@@ -79,7 +83,6 @@
   width: 45%;
   padding: 1em;
   text-align: center;
-  align-self: center;
 }
 
 .flexItem_project img {
@@ -87,9 +90,6 @@
   align-self: center;
 }
 
-/* .flexItem_project_text {
-  margin-top: -50px;
-} */
 
 .videoWrapper {
   position: relative;
@@ -111,6 +111,7 @@
   margin-bottom: -7em;
   padding-top: 2em;
 }
+
 
 @media only screen and (max-width: 900px) {
   .flexItem_project {
