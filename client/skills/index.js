@@ -1,6 +1,14 @@
 import React from 'react';
 import './skills.css';
 import librariesUsed from './data';
+// import anime from 'animejs'
+
+// anime({
+//   targets: '.comfortable',
+//   translateX: 570,
+//   delay: anime.stagger(100, {from: 'center'})
+
+// })
 
 const Skills = () => {
   return (
