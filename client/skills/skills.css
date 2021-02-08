@@ -16,12 +16,19 @@
   align-self: center;
 }
 
+.comfortable {
+  width: 35%;
+  min-width: 375px;
+}
+
 .okay_with {
   width: 25%;
+  min-width: 275px;
 }
 
 .played_with {
   width: 15%;
+  min-width: 175px;
 }
 
 .logo {
