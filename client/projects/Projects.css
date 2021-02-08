@@ -90,7 +90,6 @@
   align-self: center;
 }
 
-
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -117,18 +116,27 @@
   .flexItem_project {
     width: 100%;
   }
+
   .flexbox {
     flex-flow: column-reverse nowrap;
   }
+
   .flexbox_reverse {
     flex-flow: column-reverse nowrap;
   }
+
   .flexItem_project img {
     width: 75%;
     align-self: center;
   }
+
   .cloudTitles {
     align-self: center;
+  }
+  
+  #projectTitle{
+    margin-bottom: 0em;
+    width: 100%;
   }
 }
 
