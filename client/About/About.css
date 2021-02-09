@@ -18,6 +18,7 @@
   justify-content: space-between;
   justify-self: center;
   align-self: center;
+  margin-top: 2em;
 }
 
 #contact_links a {
@@ -25,6 +26,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+
 }
 
 #contact_links img {
@@ -174,11 +176,13 @@
   display: grid;
   justify-content: center;
   min-width: 425px;
+  background-color: darkgreen;
 }
 
 .banner_plane img {
   grid-area: 1/1;
   width: 90%;
+  background-color: darkgoldenrod;
 }
 
 .banner_plane p,
@@ -220,6 +224,20 @@
   align-self: center;
 }
 
+.contact_planes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: center;
+  /* width: 100%; */
+  background-color: darkkhaki;
+}
+
+.contact_planes .banner_plane img,
+.contact_planes .cloud img {
+  width: 100%;
+}
+
 .limit_padding {
   margin-bottom: -10em;
 }
@@ -246,27 +264,52 @@
   .cloud img {
     width: 100%;
   }
-
+  .contact_planes .cloud {
+    display: none;
+  }
   .banner_plane img {
     width: 100%;
   }
+  #contact_links img {
+    width: 75%;
+  }
 }
+
+@media only screen and (max-width: 650px) {
+  .big_text{
+    font-size: 1.6em;
+  }
+
+  #contact_links{
+    flex-flow: column nowrap;
+  }
+
+  #contact_links a {
+    margin: 1em;
+    width: 100%;
+  }
+}
+
 
 @media only screen and (max-width: 450px) {
   .flexItem img {
     width: 100%;
   }
-  
+
   .cloud {
     display: none;
   }
 
-  .hobby_planes{
-   width: 100%;
-   align-self: center;
+  .hobby_planes {
+    width: 100%;
+    align-self: center;
   }
 
   .banner_plane {
     min-width: 95%;
+  }
+
+  .big_text{
+    font-size: 1.2em;
   }
 }
