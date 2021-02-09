@@ -14,11 +14,8 @@ const Projects = () => {
       <Createmates />
       <ADogsJourney />
       <BrosApothacary />
-        <h1>
-          Hackathon Submissions
-        </h1>
-        <NotesForFriends />
-      
+      <h1>Hackathon Submissions</h1>
+      <NotesForFriends />
     </div>
   );
 };

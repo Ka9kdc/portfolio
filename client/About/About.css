@@ -203,7 +203,6 @@
   font-size: 1.3em;
 }
 
-
 .hobby_planes div {
   max-width: 32%;
   margin: 1% 0%;
@@ -218,7 +217,7 @@
 
 .cloud img {
   width: 80%;
-align-self: center;
+  align-self: center;
 }
 
 .limit_padding {

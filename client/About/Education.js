@@ -19,7 +19,9 @@ const Education = (props) => {
           />
         </div>
         <div>
-          <h2>Grace Hopper Program <br /> at Fullstack Academy of Code</h2>
+          <h2>
+            Grace Hopper Program <br /> at Fullstack Academy of Code
+          </h2>
           <h3>October 2020</h3>
           <p>Certification in JavaScript Web Development</p>
           <p>
