@@ -242,10 +242,31 @@
   .about_Buttons button {
     width: 75%;
   }
+
+  .cloud img {
+    width: 100%;
+  }
+
+  .banner_plane img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .flexItem img {
     width: 100%;
+  }
+  
+  .cloud {
+    display: none;
+  }
+
+  .hobby_planes{
+   width: 100%;
+   align-self: center;
+  }
+
+  .banner_plane {
+    min-width: 95%;
   }
 }
