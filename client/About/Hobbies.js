@@ -1,42 +1,28 @@
 import React, { useState } from 'react';
 
+const myHobbies = [ "", "Reading", "", "Archery","", "Flying", "Amateur Radio", "Baking", "", "Watching Anime", "", "Photography"]
+
 const Hobbies = (props) => {
   return (
     <div className={props.showList === 'Hobbies' ? '' : 'hidden'}>
       {/* added images */}
       <div className="hobby_planes">
-        <div className="banner_plane">
-          <img src="images/using/fatRedPlanePullingBanner.png" alt="" />
-          <p>Reading</p>
+        {myHobbies.map((hobby, idx) => {
+          if(hobby === "") return (
+            <div className="cloud" key={idx}>
+        <img src="images/using/Clouds/fumée-cartoon-png-2_no_innier_lines.png" />
+</div>
+          )
+          else return (
+        <div className="banner_plane" key={idx}>
+          <img src="images/using/fatRedPlanePullingBanner.png" alt={hobby} />
+          <p>{hobby}</p>
         </div>
-        <div className="banner_plane">
-          <img src="images/using/fatRedPlanePullingBanner.png" alt="" />
-          <p>Archery</p>
-        </div>
-      </div>
-      <div className="hobby_planes">
-        <div className="banner_plane">
-          <img src="images/using/fatRedPlanePullingBanner.png" alt="" />
-          <p>Flying</p>
-        </div>
-        <div className="banner_plane">
-          <img src="images/using/fatRedPlanePullingBanner.png" alt="" />
-          <p>Amateur Radio</p>
-        </div>
-        <div className="banner_plane">
-          <img src="images/using/fatRedPlanePullingBanner.png" alt="" />
-          <p>Baking</p>
-        </div>
-      </div>
-      <div className="hobby_planes">
-        <div className="banner_plane">
-          <img src="images/using/fatRedPlanePullingBanner.png" alt="" />
-          <p>Watching Anime</p>
-        </div>
-        <div className="banner_plane">
-          <img src="images/using/fatRedPlanePullingBanner.png" alt="" />
-          <p>Photography</p>
-        </div>
+
+          )
+        })}
+
+
       </div>
     </div>
   );

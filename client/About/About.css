@@ -173,10 +173,12 @@
 .banner_plane {
   display: grid;
   justify-content: center;
+  min-width: 425px;
 }
 
 .banner_plane img {
   grid-area: 1/1;
+  width: 90%;
 }
 
 .banner_plane p,
@@ -185,7 +187,7 @@
   align-self: center;
   width: 30%;
   text-align: center;
-  padding: 0.7em 0.3em 0.2em;
+  padding: 0.6em 0.3em 0.2em;
   font-family: 'Charm', cursive;
   line-height: 1.2;
 }
@@ -196,18 +198,27 @@
 
 .hobby_planes {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  /* font-size: 1.5em; */
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: 1.3em;
 }
 
-.hobby_planes img {
-  width: 90%;
-}
 
 .hobby_planes div {
-  width: 35%;
-  margin: 0.5% 2%;
+  max-width: 32%;
+  margin: 1% 0%;
+}
+
+.cloud {
+  width: 10%;
+  min-width: 120px;
+  display: flex;
+  align-content: center;
+}
+
+.cloud img {
+  width: 80%;
+align-self: center;
 }
 
 .limit_padding {
