@@ -26,7 +26,6 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-
 }
 
 #contact_links img {
@@ -276,7 +275,7 @@
   .about_education_place {
     width: 90%;
   }
-  .about_education_place img{
+  .about_education_place img {
     width: 75%;
   }
   .about_experience_width {
@@ -285,11 +284,11 @@
 }
 
 @media only screen and (max-width: 650px) {
-  .big_text{
+  .big_text {
     font-size: 1.6em;
   }
 
-  #contact_links{
+  #contact_links {
     flex-flow: column nowrap;
   }
 
@@ -302,7 +301,7 @@
     flex-flow: column nowrap;
   }
 
-  .about_education_place div{
+  .about_education_place div {
     width: 75%;
   }
   .about_row img {
@@ -310,7 +309,6 @@
     height: auto;
   }
 }
-
 
 @media only screen and (max-width: 450px) {
   .flexItem img {
@@ -330,11 +328,11 @@
     min-width: 95%;
   }
 
-  .big_text{
+  .big_text {
     font-size: 1.2em;
   }
 
-  .about_education_place div{
+  .about_education_place div {
     width: 90%;
   }
 }
