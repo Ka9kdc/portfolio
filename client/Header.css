@@ -40,6 +40,22 @@
 @media only screen and (max-width: 900px) {
   .nav_icon {
     display: block;
+    background-color: unset;
+    border: unset;
+    width: 100%;
+    max-width: 225.29px;
+    height: 3em;
+    max-height: 100px;
+    font-size: 1.5em;
+    background-image: url('./Clouds/394-3944151_white-cloud-day-1-clouds-sprite-png1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-family: 'Charm', cursive;
+  }
+
+  .nav_icon:hover {
+    background-image: url('./Clouds/sunrise_cloud_3_with_transparant_background.png');
   }
 
   .header div:not(:first-child) {
@@ -52,27 +68,32 @@
     flex-direction: row wrap;
   }
 
-  /* .header.responsive .nav_icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
 
   .header.responsive div {
     float: none;
     display: flex;
     flex-direction: row wrap;
   }
+}
 
-  /*  .header.responsive div a{
-     float: none;
-    display: block; 
-    align-items: center;
-  } */
+@media only screen and (max-width: 650px) {
+  .header div{
+    width: 90%;
+    background-position: center;
+    background-size: contain;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-  .header a {
+  .header div {
     display: none;
+  }
+
+  .header {
+    flex-flow: row wrap-reverse;
+  }
+
+  .nav_icon {
+   justify-self:end
   }
 }

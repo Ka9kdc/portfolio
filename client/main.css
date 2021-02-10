@@ -20,11 +20,6 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-  .content {
-    /* width: 90%;
-    margin: 0; */
-    background-color: brown;
-  }
   .content h1 {
     font-size: 4em;
   }
