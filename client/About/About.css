@@ -245,12 +245,11 @@
 }
 
 @media only screen and (max-width: 900px) {
-
   #button_row {
     flex-flow: row wrap-reverse;
     margin-bottom: 1em;
   }
- 
+
   .about_Buttons button {
     width: 75%;
   }
@@ -258,15 +257,19 @@
   .cloud img {
     width: 100%;
   }
+
   .contact_planes .cloud {
     display: none;
   }
+
   .banner_plane img {
     width: 100%;
   }
+
   #contact_links img {
     width: 75%;
   }
+
   .about_education {
     flex-flow: column nowrap;
   }
@@ -274,9 +277,11 @@
   .about_education_place {
     width: 90%;
   }
+
   .about_education_place img {
     width: 75%;
   }
+
   .about_experience_width {
     width: 85%;
   }
@@ -284,10 +289,10 @@
   .about_Buttons.smallHeader {
     flex-flow: row nowrap;
   }
+
   .about_Section_Name {
     background-size: 100%;
     background-position: center;
-
   }
 }
 
@@ -295,8 +300,9 @@
   .big_text {
     font-size: 1.6em;
   }
+
   .about_Buttons button {
-   width: 85%;
+    width: 85%;
   }
 
   #contact_links {
@@ -315,6 +321,7 @@
   .about_education_place div {
     width: 75%;
   }
+
   .about_row img {
     max-width: 50%;
     height: auto;
@@ -332,14 +339,15 @@
     margin-top: 0;
     margin-bottom: -1.5em;
   }
+
   .about_Buttons.smallHeader {
     flex-flow: row wrap;
   }
-  .about_Buttons.smallHeader button{
+
+  .about_Buttons.smallHeader button {
     max-width: 45%;
     margin-bottom: 0em;
   }
-
 }
 
 @media only screen and (max-width: 450px) {
@@ -350,8 +358,8 @@
   .about_Buttons button h2 {
     font-size: 1.5em;
   }
-  
-  .about_Section_Name{
+
+  .about_Section_Name {
     font-size: 2em;
   }
 
