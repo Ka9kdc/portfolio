@@ -24,7 +24,7 @@ const Hobbies = (props) => {
           if (hobby === '') {
             return (
               <div className="cloud" key={idx}>
-                <img src="images/using/Clouds/fumée-cartoon-png-2_no_innier_lines.png" />
+                <img src="images/using/Clouds/fumée-cartoon-png-2_no_innier_lines.png" alt="cartoon cloud" />
               </div>
             );
           } else {
@@ -32,7 +32,7 @@ const Hobbies = (props) => {
               <div className="banner_plane" key={idx}>
                 <img
                   src="images/using/fatRedPlanePullingBanner.png"
-                  alt={hobby}
+                  alt={`red banner plane pulling a banner that reads ${hobby}`}
                 />
                 <p>{hobby}</p>
               </div>
