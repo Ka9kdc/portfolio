@@ -34,7 +34,7 @@ const Header = () => {
         </div>
 
         <button className="nav_icon" onClick={() => showOrHideMenu()}>
-          menu
+          Menu
         </button>
       </nav>
     </div>
