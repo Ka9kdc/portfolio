@@ -176,13 +176,11 @@
   display: grid;
   justify-content: center;
   min-width: 425px;
-  background-color: darkgreen;
 }
 
 .banner_plane img {
   grid-area: 1/1;
   width: 90%;
-  background-color: darkgoldenrod;
 }
 
 .banner_plane p,
@@ -229,8 +227,6 @@
   flex-flow: row nowrap;
   justify-content: space-around;
   align-content: center;
-  /* width: 100%; */
-  background-color: darkkhaki;
 }
 
 .contact_planes .banner_plane img,
@@ -273,6 +269,16 @@
   #contact_links img {
     width: 75%;
   }
+  .about_education {
+    flex-flow: column nowrap;
+  }
+
+  .about_education_place {
+    width: 90%;
+  }
+  .about_education_place img{
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -287,6 +293,14 @@
   #contact_links a {
     margin: 1em;
     width: 100%;
+  }
+
+  .about_education_place {
+    flex-flow: column nowrap;
+  }
+
+  .about_education_place div{
+    width: 75%;
   }
 }
 
@@ -311,5 +325,9 @@
 
   .big_text{
     font-size: 1.2em;
+  }
+
+  .about_education_place div{
+    width: 90%;
   }
 }
