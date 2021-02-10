@@ -25,4 +25,13 @@ body {
     margin: 0; */
     background-color: brown;
   }
+  .content h1 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+.content h1 {
+  font-size: 3em;
+}
 }

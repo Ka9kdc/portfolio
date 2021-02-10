@@ -308,6 +308,15 @@
     max-width: 50%;
     height: auto;
   }
+
+  .about_Header div {
+    padding: 0em;
+  }
+
+  .about_Header div img {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
