@@ -17,7 +17,7 @@ const workHistory = [
   },
   {
     key: 2,
-    companyLogo: 'images/using/LittleLogo.png',
+    companyLogo: 'images/using/LittleLogoTransparent.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Webmaster',
     start: 'November 2019',
@@ -46,7 +46,7 @@ const workHistory = [
   },
   {
     key: 4,
-    companyLogo: 'images/using/LittleLogo.png',
+    companyLogo: 'images/using/LittleLogoTransparent.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Hamfest Chairman',
     start: 'February 2016',

@@ -19,10 +19,10 @@ body {
   font-family: 'Permanent Marker', cursive;
 }
 
-/* @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .content {
-    width: 90%;
-    margin: 0;
+    /* width: 90%;
+    margin: 0; */
     background-color: brown;
   }
-} */
+}

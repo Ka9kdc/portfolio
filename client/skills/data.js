@@ -89,7 +89,7 @@ const librariesUsed = [
   },
   {
     name: 'php',
-    logo: 'images/using/libraries/white/php-logo.png',
+    logo: 'images/using/libraries/white/php-logoTransparent.png',
     comfortLevel: played_with,
     transparent: false,
     key: 13,

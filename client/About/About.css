@@ -279,6 +279,9 @@
   .about_education_place img{
     width: 75%;
   }
+  .about_experience_width {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -301,6 +304,10 @@
 
   .about_education_place div{
     width: 75%;
+  }
+  .about_row img {
+    max-width: 50%;
+    height: auto;
   }
 }
 
