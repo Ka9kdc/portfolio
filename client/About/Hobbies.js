@@ -24,7 +24,10 @@ const Hobbies = (props) => {
           if (hobby === '') {
             return (
               <div className="cloud" key={idx}>
-                <img src="images/using/Clouds/fumée-cartoon-png-2_no_innier_lines.png" alt="cartoon cloud" />
+                <img
+                  src="images/using/Clouds/fumée-cartoon-png-2_no_innier_lines.png"
+                  alt="cartoon cloud"
+                />
               </div>
             );
           } else {

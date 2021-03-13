@@ -30,7 +30,7 @@ const About = () => {
           onClick={() => setShowList('')}
           className={showList !== '' ? 'about_Section_Name' : 'hidden'}
         >
-          {showList || "placeholder for section title"}
+          {showList || 'placeholder for section title'}
         </button>
         <div
           className={
