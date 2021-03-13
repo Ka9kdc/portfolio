@@ -82,6 +82,7 @@ const Exprience = (props) => {
           </div>
           <div>
             {job.discription.map((task, idx) => (
+              // eslint-disable-next-line react/no-array-index-key
               <p key={idx}>{task}</p>
             ))}
           </div>

@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const okay_with = 'okay_with';
 const played_with = 'played_with';
 const comfortable = 'comfortable';
