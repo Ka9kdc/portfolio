@@ -33,7 +33,11 @@ const Header = () => {
           <NavLink to="/Skills">Skills</NavLink>
         </div>
 
-        <button className="nav_icon" onClick={() => showOrHideMenu()}>
+        <button
+          type="button"
+          className="nav_icon"
+          onClick={() => showOrHideMenu()}
+        >
           Menu
         </button>
       </nav>

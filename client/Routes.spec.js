@@ -1,6 +1,5 @@
 import React from 'react';
 import { expect } from 'chai';
-import { mount, shallow } from 'enzyme';
 import { render } from 'react-dom';
 import sinon from 'sinon';
 import * as rrd from 'react-router-dom';

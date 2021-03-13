@@ -4,6 +4,7 @@ import Education from './Education';
 import Hobbies from './Hobbies';
 import Exprience from './Exprience';
 import './About.css';
+import ButtonRow from './ButtonRow';
 
 const About = () => {
   const [showList, setShowList] = useState('');
@@ -24,67 +25,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div id="button_row">
-        <button
-          type="button"
-          onClick={() => setShowList('')}
-          className={showList !== '' ? 'about_Section_Name' : 'hidden'}
-        >
-          {showList || 'placeholder for section title'}
-        </button>
-        <div
-          className={
-            showList !== ''
-              ? 'about_Buttons smallHeader'
-              : 'about_Buttons limit_padding'
-          }
-        >
-          {showList !== 'Experience' ? (
-            <button type="button" onClick={() => setShowList('Experience')}>
-              <img
-                src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
-                alt="dark-cloud button for Experience"
-              />
-              <h2>Experience</h2>
-            </button>
-          ) : (
-            ''
-          )}
-          {showList !== 'Education' ? (
-            <button type="button" onClick={() => setShowList('Education')}>
-              <img
-                src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
-                alt="dark-cloud button for Education"
-              />
-              <h2>Education</h2>
-            </button>
-          ) : (
-            ''
-          )}
-          {showList !== 'Hobbies' ? (
-            <button type="button" onClick={() => setShowList('Hobbies')}>
-              <img
-                src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
-                alt="dark-cloud button for hobbies"
-              />
-              <h2>Hobbies</h2>
-            </button>
-          ) : (
-            ''
-          )}
-          {showList !== 'Contact' ? (
-            <button type="button" onClick={() => setShowList('Contact')}>
-              <img
-                src="images/using/Clouds/4-45408_dark-clouds-png-cloud-sprite-sheet-png.png"
-                alt="dark-cloud button for Contact"
-              />
-              <h2>Contact</h2>
-            </button>
-          ) : (
-            ''
-          )}
-        </div>
-      </div>
+      <ButtonRow showList={showList} setShowList={setShowList} />
 
       <div>
         <Contact showList={showList} />
