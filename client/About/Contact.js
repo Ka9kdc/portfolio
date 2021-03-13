@@ -16,7 +16,7 @@ const Contact = (props) => {
         </div>
       </div>
       <div id="contact_links">
-        <a href="github.com/Ka9kdc">
+        <a href="https://github.com/Ka9kdc">
           <img
             src="images/using/github-logo.png"
             alt="Github logo and link to my github"
@@ -28,6 +28,9 @@ const Contact = (props) => {
             alt="linkedin logo and link to my linked in profile"
           />
         </a>
+      </div>
+      <div  id="contact_links">
+        <a href="https://calendly.com/kmschroeder91">Book a time to meet with me!</a>
       </div>
     </div>
   );
