@@ -24,7 +24,7 @@ const Contact = (props) => {
           />
         </div>
       </div>
-      <div id="contact_links">
+      <div className="contact_links">
         <a href="https://github.com/Ka9kdc">
           <img
             src="images/using/github-logo.png"
@@ -38,9 +38,9 @@ const Contact = (props) => {
           />
         </a>
       </div>
-      <div id="contact_links">
+      <div className="contact_links" style={{justifyContent: 'center', marginTop: '0em'}}>
         <a href="https://calendly.com/kmschroeder91">
-          Book a time to meet with me!
+          <img src="images/using/calendly.png" alt="Link to am calendly appointment book" />
         </a>
       </div>
     </div>

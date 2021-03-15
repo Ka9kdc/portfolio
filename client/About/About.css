@@ -12,7 +12,7 @@
   margin: 1em;
 }
 
-#contact_links {
+.contact_links {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -21,19 +21,19 @@
   margin-top: 2em;
 }
 
-#contact_links a {
+.contact_links a {
   width: 50%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
 }
 
-#contact_links img {
+.contact_links img {
   width: 50%;
   padding: 5px;
 }
 
-#contact_links img:hover {
+.contact_links img:hover {
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
 }
