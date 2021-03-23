@@ -38,9 +38,15 @@ const Contact = (props) => {
           />
         </a>
       </div>
-      <div className="contact_links" style={{justifyContent: 'center', marginTop: '0em'}}>
+      <div
+        className="contact_links"
+        style={{ justifyContent: 'center', marginTop: '0em' }}
+      >
         <a href="https://calendly.com/kmschroeder91">
-          <img src="images/using/calendly.png" alt="Link to am calendly appointment book" />
+          <img
+            src="images/using/calendly.png"
+            alt="Link to am calendly appointment book"
+          />
         </a>
       </div>
     </div>
