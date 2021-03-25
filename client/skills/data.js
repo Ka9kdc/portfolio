@@ -110,10 +110,22 @@ const librariesUsed = [
     key: 15,
   },
 
-  {name: "React", logo: "images/using/libraries/transparent/react-logo.png", comfortLevel: comfortable, transparent: true, key: 16},
+  {
+    name: 'React',
+    logo: 'images/using/libraries/transparent/react-logo.png',
+    comfortLevel: comfortable,
+    transparent: true,
+    key: 16,
+  },
   // {name: "React-Hooks", logo: "images/using/libraries/white/ReactHooksWhiteBackground.png", comfortLevel: comfortable, transparent: false, key: 17},
-  {name: "html", logo: "images/using/libraries/transparent/html5-logo-31819.png", comfortLevel: comfortable, transparent: true, key: 18},
-  
+  {
+    name: 'html',
+    logo: 'images/using/libraries/transparent/html5-logo-31819.png',
+    comfortLevel: comfortable,
+    transparent: true,
+    key: 18,
+  },
+
   // {name: "PostgreSQL", logo: "", comfortLevel: comfortable, transparent: false, key: 17},
   // {name: "heroku", logo: "", comfortLevel: okay_with, transparent: false, key: 19},
   // {name: "SQL", logo: "", comfortLevel: okay_with, transparent: false, key: 20},
