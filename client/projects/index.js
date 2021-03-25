@@ -1,5 +1,6 @@
 import React from 'react';
 import ADogsJourney from './ADogsJourney';
+import BlockCrusher from './BlockCrusher';
 import BrosApothacary from './BrosApothacary';
 import Createmates from './Createmates';
 import NotesForFriends from './NotesForFriends';
@@ -15,6 +16,7 @@ const Projects = () => {
       <ADogsJourney />
       <BrosApothacary />
       <h1>Hackathon Submissions</h1>
+      <BlockCrusher />
       <NotesForFriends />
     </div>
   );

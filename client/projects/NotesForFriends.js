@@ -31,7 +31,7 @@ const NotesForFriends = () => {
           <div className="cloudLink">
             <a href="https://github.com/HKLT-Together-Hackaton/Notes-For-Friends">
               Github
-            </a>{' '}
+            </a>
           </div>
         </div>
         <div className="flexItem_project_text">
