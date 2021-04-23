@@ -3,7 +3,6 @@ import React from 'react';
 const NotesForFriends = () => {
   return (
     <div className="flexbox_reverse">
-
       <div className="flexItem_project">
         <div className="cloudHeader">
           <h2>Notes For Friends</h2>

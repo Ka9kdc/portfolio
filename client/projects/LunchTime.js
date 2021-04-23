@@ -13,9 +13,9 @@ const LunchTime = () => {
   return (
     <div className="flexbox_reverse">
       <div className="flexItem_project">
-      <div className="cloudHeader">
-        <h2>{project.name}</h2>
-      </div>
+        <div className="cloudHeader">
+          <h2>{project.name}</h2>
+        </div>
         <ProjectHeader project={project} />
         <div className="flexItem_project_text">
           <p>
