@@ -171,6 +171,7 @@
 .about_Header div img {
   height: 11em;
   margin-bottom: -0.5em;
+  border-radius: 50%;
 }
 
 .banner_plane {

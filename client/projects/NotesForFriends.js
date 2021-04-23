@@ -4,7 +4,6 @@ const NotesForFriends = () => {
   return (
     <div className="flexbox">
       <div className="flexItem_project">
-        {' '}
         <div className="videoWrapper">
           <iframe
             width="560"

@@ -1,27 +1,21 @@
 import React from 'react';
+import MintbeanLogo from './MintbeanLogo';
+import ProjectHeader from './projectheaders';
 
 export default function BlockCrusher() {
+  const project =  {
+    name: "Block Crusher",
+    deployURL: "https://ka9kdc.github.io/BlockCrusherPuzzleGame/",
+    submissionURL: "",
+    githubURL: "https://github.com/Ka9kdc/BlockCrusherPuzzleGame",
+}
   return (
     <div className="flexbox">
       <div className="flexItem_project">
-        <div className="cloudHeader">
-          <h2>Block Crusher</h2>
-        </div>
-        <div className="cloudTitles">
-          <div className="cloudLink">
-            <a href="https://ka9kdc.github.io/BlockCrusherPuzzleGame/">
-              Deployed
-            </a>
-          </div>
-          <div className="cloudLink" style={{ marginTop: '-25px' }}>
-            <a href="submission">Submission</a>
-          </div>
-          <div className="cloudLink">
-            <a href="https://github.com/Ka9kdc/BlockCrusherPuzzleGame">
-              Github
-            </a>
-          </div>
-        </div>
+      <div className="cloudHeader">
+        <h2>{project.name}</h2>
+      </div>
+       <ProjectHeader project={project} />
         <div className="flexItem_project_text">
           <p>Block Crusher is a candy crush style puzzle game</p>
           <p>
@@ -46,14 +40,7 @@ export default function BlockCrusher() {
             the button with randomly reassign the visable tiles to the bottom
             rows allowing for more tiles to fall down on to the game board.
           </p>
-          <div className="contact_links" style={{ justifyContent: 'center' }}>
-            <a href="https://mintbean.io">
-              <img
-                src="/images/using/mintbean.png"
-                alt="mintbean logo and link to the mintbean website"
-              />
-            </a>
-          </div>
+         <MintbeanLogo />
         </div>
       </div>
       <div className="flexItem_project">
