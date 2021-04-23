@@ -3,6 +3,7 @@ import ADogsJourney from './ADogsJourney';
 import BlockCrusher from './BlockCrusher';
 import BrosApothacary from './BrosApothacary';
 import Createmates from './Createmates';
+import LunchTime from './LunchTime';
 import NotesForFriends from './NotesForFriends';
 import './Projects.css';
 
@@ -16,6 +17,7 @@ const Projects = () => {
       <ADogsJourney />
       <BrosApothacary />
       <h1>Hackathon Submissions</h1>
+      <LunchTime />
       <BlockCrusher />
       <NotesForFriends />
     </div>

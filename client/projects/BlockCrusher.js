@@ -6,7 +6,7 @@ export default function BlockCrusher() {
   const project =  {
     name: "Block Crusher",
     deployURL: "https://ka9kdc.github.io/BlockCrusherPuzzleGame/",
-    submissionURL: "",
+    submissionURL: "https://mintbean.io/meets/7c1ff845-3410-4b5c-8965-b80de1374d77/projects/2bdb4831-aa6e-4c9a-a6d8-b64fec1d2484",
     githubURL: "https://github.com/Ka9kdc/BlockCrusherPuzzleGame",
 }
   return (
