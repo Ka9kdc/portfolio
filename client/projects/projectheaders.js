@@ -7,9 +7,11 @@ const ProjectHeader = (props) => {
       <div className="cloudLink">
         <a href={project.deployURL}>Deployed</a>
       </div>
-      <div className="cloudLink" style={{ marginTop: '-25px' }}>
-        <a href={project.submissionURL}>Submission</a>
-      </div>
+      {project.submissionURL ? (
+        <div className="cloudLink" style={{ marginTop: '-25px' }}>
+          <a href={project.submissionURL}>Submission</a>
+        </div>
+      ) : null}
       <div className="cloudLink">
         <a href={project.githubURL}>Github</a>
       </div>

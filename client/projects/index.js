@@ -6,6 +6,7 @@ import Createmates from './Createmates';
 import LunchTime from './LunchTime';
 import NotesForFriends from './NotesForFriends';
 import './Projects.css';
+import Tetrix from './Tetrix';
 
 const Projects = () => {
   return (
@@ -17,6 +18,7 @@ const Projects = () => {
       <ADogsJourney />
       <BrosApothacary />
       <h1>Hackathon Submissions</h1>
+      <Tetrix />
       <LunchTime />
       <BlockCrusher />
       <NotesForFriends />

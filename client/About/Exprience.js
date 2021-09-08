@@ -2,21 +2,35 @@ import React from 'react';
 
 const workHistory = [
   {
-    key: 1,
+    key: 5,
     companyLogo: 'images/using/fullstack-academy-logo-color-on-white.png',
     companyName: 'Fullstack Academy',
-    JobTitle: 'Software Engineering/Development Teaching Fellow',
+    JobTitle: 'Software Engineering/Web Development Instructional Associate',
+    start: 'July 2021',
+    end: 'December 2021',
+    discription: [
+      'Teaching assistant to a cohort of 12 junoir web developers covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design, pair programming',
+      'Librarys and frameworks taught were: jquery, Javascript, React, Node, Express, CSS and HTML',
+      'Conducted mock technical interviews and impromptu lectures',
+      'Ran weekly Office Hours',
+    ],
+  },
+  {
+    key: 4,
+    companyLogo: 'images/using/fullstack-academy-logo-color-on-white.png',
+    companyName: 'Fullstack Academy',
+    JobTitle: 'Software Engineering/Web Development Teaching Fellow',
     start: 'November 2020',
     end: 'February 2021',
     discription: [
-      'Teaching assistant to a cohort of 40+ students covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design',
+      'Teaching assistant to a cohort of 40+ students covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design and pair programming',
       'Acted as project manager and technical mentor for teams of 4 students during 4 projects, employing the use of agile methodologies',
       'Conducted technical admissions interviews',
       'Ran weekly whiteboarding lectures',
     ],
   },
   {
-    key: 2,
+    key: 3,
     companyLogo: 'images/using/LittleLogoTransparent.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Webmaster',
@@ -29,8 +43,22 @@ const workHistory = [
       'Enhanced online renewals form using Javascript, PHP, HTML and CSS allowing for emails are sent upon submission.',
     ],
   },
+
   {
-    key: 3,
+    key: 1,
+    companyLogo: 'images/using/LittleLogoTransparent.png',
+    companyName: 'Wheaton Community Radio Amateurs',
+    JobTitle: 'Hamfest Chairman',
+    start: 'February 2016',
+    end: 'January 2020',
+    discription: [
+      'Organized a radio, computer and electronics expo with over 750 attendees',
+      'Handled communication with vendors and six subcommittees',
+      'Brought in $2000 each year for the club',
+    ],
+  },
+  {
+    key: 2,
     companyLogo:
       'images/using/209-2092285_office-depot-office-max-png-logo.png',
     companyName: 'Office Depot',
@@ -42,19 +70,6 @@ const workHistory = [
       'Ensured supplies were in-stock to produce client orders',
       'Handled placing and producing orders for over 50 clients a week',
       'Achieved over department sales goals almost every quarter',
-    ],
-  },
-  {
-    key: 4,
-    companyLogo: 'images/using/LittleLogoTransparent.png',
-    companyName: 'Wheaton Community Radio Amateurs',
-    JobTitle: 'Hamfest Chairman',
-    start: 'February 2016',
-    end: 'January 2020',
-    discription: [
-      'Organized a radio, computer and electronics expo with over 750 attendees',
-      'Handled communication with vendors and six subcommittees',
-      'Brought in $2000 each year for the club',
     ],
   },
 ];
