@@ -9,7 +9,7 @@ const workHistory = [
     start: 'July 2021',
     end: 'December 2021',
     discription: [
-      'Teaching assistant to a cohort of 12 junoir web developers covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design, pair programming',
+      'Teaching assistant to a cohort of 12 junior web developers covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design, pair programming',
       'Librarys and frameworks taught were: jquery, Javascript, React, Node, Express, CSS and HTML',
       'Conducted mock technical interviews and impromptu lectures',
       'Ran weekly Office Hours',

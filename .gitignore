@@ -1,7 +1,7 @@
 node_modules
 package-lock.json
-# public/bundle.js
-# public/bundle.js.map
-# public/bundle.js.LICENSE.txt
+public/bundle.js
+public/bundle.js.map
+public/bundle.js.LICENSE.txt
 public/images/imagesNotCurrentlyInUse
 client/Clouds/not_currently_using
