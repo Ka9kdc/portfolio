@@ -1,12 +1,13 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const Exprience = (props) => {
+const Exprience = () => {
   const [pastJobs, setPastJobs] = useState([]);
 
   useEffect(async () => {
     try {
-      const res = await fetch('/api/work');
-      const { data } = await res.json();
+      const res = await axios.get('/api/work');
+      const { data } = res;
       setPastJobs(data);
     } catch (err) {
       console.error(err);
@@ -35,7 +36,7 @@ const Exprience = (props) => {
           </div>
           <div>
             {job.description.map((task, idx) => (
-              <p key={idx}>{task}</p>
+              <p key={`${job.key}:${idx}`}>{task}</p>
             ))}
           </div>
         </div>
