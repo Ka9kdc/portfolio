@@ -2,7 +2,6 @@ import React from 'react';
 import './skills.css';
 import librariesUsed from './data';
 
-
 const Skills = () => {
   return (
     <div className="content">

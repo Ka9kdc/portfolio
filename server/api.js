@@ -1,8 +1,8 @@
-const router = require('express').Router()
-const {workHistory} = require('./data')
+const router = require('express').Router();
+const { workHistory } = require('./data');
 
-module.exports = router
+module.exports = router;
 
-router.get("/work", (req, res, next) => {
-   res.send(workHistory)
-})
+router.get('/work', (req, res, next) => {
+  res.send(workHistory);
+});
