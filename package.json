@@ -21,7 +21,6 @@
   "author": "Kelsey Schroeder",
   "license": "ISC",
   "dependencies": {
-    "animejs": "^3.2.1",
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
@@ -54,6 +53,7 @@
     "simple-git": "^2.31.0",
     "sinon": "^9.2.2",
     "style-loader": "^2.0.0",
+    "supertest": "^6.1.6",
     "url-loader": "^4.1.1",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",
