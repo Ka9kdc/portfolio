@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { fakeJob } from '../index.spec';
 
 
 export const SingleJob = ({job}) => {
@@ -31,7 +32,11 @@ export const SingleJob = ({job}) => {
 }
 
 const Exprience = () => {
-  const [pastJobs, setPastJobs] = useState([]);
+  const [pastJobs, setPastJobs] = useState([fakeJob]);
+
+
+
+
 useEffect(() => {
     axios.get('/api/work')
     .then(({data}) => {
@@ -58,11 +63,11 @@ useEffect(() => {
     <div>
     <h1>Experience</h1>
 
-      {pastJobs.map((job) => {
+      {pastJobs.length ? pastJobs.map((job) => {
         return <SingleJob job={job} key={`Job#${job.key}`} />
       }
       
-      )}
+      ) : <p>HEllO</p>}
     </div>
   );
 };
