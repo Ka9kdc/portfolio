@@ -10,7 +10,7 @@ import About from './About';
 
 import { getExperience, mockAxios } from './index.spec';
 
-describe.only('Routes', () => {
+describe('Routes', () => {
   beforeEach(() => {
     sinon.stub(rrd, 'BrowserRouter').callsFake(({ childern }) => {
       return <div>{childern}</div>;

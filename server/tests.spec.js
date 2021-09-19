@@ -3,7 +3,7 @@ const request = require('supertest');
 const app = require('./index');
 const { workHistory } = require('./data');
 
-describe.only('express routes', () => {
+describe('express routes', () => {
   describe('api/work', () => {
     it('has an api/work route', async () => {
       await request(app).get('/api/work').expect(200);

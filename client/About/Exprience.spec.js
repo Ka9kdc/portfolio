@@ -5,7 +5,7 @@ import { mockAxios, getExperience, fakeJob } from '../index.spec';
 
 import Exprience, { SingleJob } from './Exprience';
 
-describe.only('Experince Component', () => {
+describe('Experince Component', () => {
   let container;
 
   describe('shallow render', () => {

@@ -6,10 +6,18 @@ import Main from './main';
 // import Header from './Header';
 // import Routes from './Routes';
 
-describe.only('Main', () => {
+describe('Main', () => {
   let wrapper;
   before(() => {
     wrapper = shallow(<Main />);
+  });
+  xit('containers header and routers', () => {
+    expect(
+      wrapper.containsAllMatchingElements([
+        <Header key="3" />,
+        <Routes key="2" />,
+      ])
+    ).to.equal(true);
   });
   xit('renders header', () => {
     expect(wrapper.find(Header)).to.have.lengthOf(1);
