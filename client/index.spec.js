@@ -1,12 +1,11 @@
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import axios from 'axios';
-import MockAdaptor from 'axios-mock-adapter'
+import MockAdaptor from 'axios-mock-adapter';
 // import jsdom from 'mocha-jsdom'
 const { JSDOM } = require('jsdom');
 
 Enzyme.configure({ adapter: new Adapter() });
-
 
 // global.document = jsdom({
 //     url: "http://localhost:3000"
@@ -16,11 +15,14 @@ const { window } = jsdom;
 
 function copyProps(src, target) {
   const props = Object.getOwnPropertyNames(src)
-    .filter(prop => typeof target[prop] === 'undefined')
-    .reduce((result, prop) => ({
-      ...result,
-      [prop]: Object.getOwnPropertyDescriptor(src, prop),
-    }), {});
+    .filter((prop) => typeof target[prop] === 'undefined')
+    .reduce(
+      (result, prop) => ({
+        ...result,
+        [prop]: Object.getOwnPropertyDescriptor(src, prop),
+      }),
+      {}
+    );
   Object.defineProperties(target, props);
 }
 
@@ -30,10 +32,9 @@ global.navigator = {
   userAgent: 'node.js',
 };
 
-copyProps(window, global)
+copyProps(window, global);
 
-
-export const fakeJob =  {
+export const fakeJob = {
   key: 1,
   companyLogo: 'images/using/LittleLogoTransparent.png',
   companyName: 'Wheaton Community Radio Amateurs',
@@ -45,15 +46,10 @@ export const fakeJob =  {
     'Handled communication with vendors and six subcommittees',
     'Brought in $2000 each year for the club',
   ],
+};
+
+export const mockAxios = new MockAdaptor(axios);
+
+export async function getExperience() {
+  await mockAxios.onGet('/api/work').replyOnce(200, [fakeJob]);
 }
-
-
-export const mockAxios = new MockAdaptor(axios)
-
-export async function getExperience(){
-   await mockAxios.onGet('/api/work').replyOnce(200, [
-       fakeJob
-    ])
-}
-
-

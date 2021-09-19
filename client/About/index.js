@@ -1,12 +1,12 @@
-import React from 'react'
-import Exprience from './Exprience'
+import React from 'react';
+import Exprience from './Exprience';
 
 const About = () => {
-    return (
-        <>
-        <Exprience />
-        </>
-    )
-}
+  return (
+    <>
+      <Exprience />
+    </>
+  );
+};
 
-export default About
+export default About;
