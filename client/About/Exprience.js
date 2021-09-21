@@ -17,16 +17,16 @@ export const fakeJob = {
 
 export const SingleJob = ({ job }) => {
   return (
-    <section>
-      <div>
+    <section className="box">
+      <div className="flex_wrap_row">
         <img src={job.companyLogo} alt={`${job.companyName} Logo`} />
-        <>
+        <div>
           <h2>{job.JobTitle}</h2>
           <p>
             {job.start} - {job.end}
           </p>
-        </>
-        {job.link ? <a href={`http://${job.link}`}>{job.link}</a> : null}
+          {job.link ? <a href={`http://${job.link}`}>{job.link}</a> : null}
+        </div>
       </div>
       <ul>
         {job.description.map((task, idx) => (
@@ -51,11 +51,12 @@ const Exprience = () => {
 
   return (
     <article>
-      <h1>Experience</h1>
-
-      {pastJobs.map((job) => {
-        return <SingleJob job={job} key={`Job#${job.key}`} />;
-      })}
+      <h1 className="section_title">Experience</h1>
+      <div className="grid">
+        {pastJobs.map((job) => {
+          return <SingleJob job={job} key={`Job#${job.key}`} />;
+        })}
+      </div>
     </article>
   );
 };

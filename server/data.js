@@ -14,20 +14,6 @@ const workHistory = [
     ],
   },
   {
-    key: 4,
-    companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
-    companyName: 'Fullstack Academy',
-    JobTitle: 'Software Engineering/Web Development Teaching Fellow',
-    start: 'November 2020',
-    end: 'February 2021',
-    description: [
-      'Teaching assistant to a cohort of 40+ students covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design and pair programming',
-      'Acted as project manager and technical mentor for teams of 4 students during 4 projects, employing the use of agile methodologies',
-      'Conducted technical admissions interviews',
-      'Ran weekly whiteboarding lectures',
-    ],
-  },
-  {
     key: 3,
     companyLogo: 'images/LittleLogoTransparent.png',
     companyName: 'Wheaton Community Radio Amateurs',
@@ -39,6 +25,21 @@ const workHistory = [
       'Integrate PayPal allowing membership dues, Hamfest tickets and vendor orders to be processed and paid online',
       'Update website monthly with meeting minutes and notices for club membership',
       'Enhanced online renewals form using Javascript, PHP, HTML and CSS allowing for emails are sent upon submission.',
+      'rebuild and redesigned website with Wordpress',
+    ],
+  },
+  {
+    key: 4,
+    companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
+    companyName: 'Fullstack Academy',
+    JobTitle: 'Software Engineering/Web Development Teaching Fellow',
+    start: 'November 2020',
+    end: 'February 2021',
+    description: [
+      'Teaching assistant to a cohort of 40+ students covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design and pair programming',
+      'Acted as project manager and technical mentor for teams of 4 students during 4 projects, employing the use of agile methodologies',
+      'Conducted technical admissions interviews',
+      'Ran weekly whiteboarding lectures',
     ],
   },
   {

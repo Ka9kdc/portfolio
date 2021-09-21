@@ -1,5 +1,6 @@
 import React from 'react';
 import Exprience from './Exprience';
+import './About.css';
 
 const About = () => {
   return (

@@ -1,0 +1,44 @@
+.section_title {
+  font-family: 'Architects Daughter', Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.box {
+  border-radius: 20px;
+  border: 10px gray solid;
+  box-shadow: inset 0px 0px 18px rgb(59, 20, 20);
+  padding: 1rem;
+}
+
+.flex_wrap_row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.flex_wrap_row img {
+  max-width: 90%;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flex_wrap_row {
+    object-fit: contain;
+    flex-wrap: nowrap;
+    justify-self: center;
+    align-content: center;
+    gap: 1.5rem;
+  }
+  .flex_wrap_row img {
+    max-width: 50%;
+    height: fit-content;
+  }
+}
