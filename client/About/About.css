@@ -26,6 +26,20 @@
   max-width: 90%;
 }
 
+  .multi_img img{
+      width: auto;
+    max-width: 90%;
+    max-height: 25vh;
+    height: auto;
+    justify-self: center;
+}
+
+.title{
+    font-family: 'Architects Daughter', Impact, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
+
 @media (min-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -41,4 +55,5 @@
     max-width: 50%;
     height: fit-content;
   }
+
 }
