@@ -7,7 +7,10 @@ const About = () => {
   return (
     <>
       <h1 className="section_title">About</h1>
-      {/* <Exprience /> */}
+      <div>
+        <a href="#Education">Education</a>
+      </div>
+      <Exprience />
       <Education />
     </>
   );
