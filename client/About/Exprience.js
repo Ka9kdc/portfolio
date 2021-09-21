@@ -1,22 +1,34 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { fakeJob } from '../index.spec';
+import React, { useEffect, useState } from 'react'
+
+
+export const fakeJob = {
+  key: 1,
+  companyLogo: 'images/using/LittleLogoTransparent.png',
+  companyName: 'Wheaton Community Radio Amateurs',
+  JobTitle: 'Hamfest Chairman',
+  start: 'February 2016',
+  end: 'January 2020',
+  description: [
+    'Organized a radio, computer and electronics expo with over 750 attendees',
+    'Handled communication with vendors and six subcommittees',
+    'Brought in $2000 each year for the club',
+  ],
+};
 
 export const SingleJob = ({ job }) => {
   return (
-    <div className="about_experience_width">
-      <div className="about_row">
+    <section >
+      <div >
         <img src={job.companyLogo} alt={`${job.companyName} Logo`} />
-        <div>
+        <>
           <h2>{job.JobTitle}</h2>
           <p>
             {job.start} - {job.end}
           </p>
-        </div>
+        </>
         {job.link ? (
-          <div className="cloudLink zero_top_margin">
             <a href={`http://${job.link}`}>{job.link}</a>
-          </div>
         ) : (
           ''
         )}
@@ -27,7 +39,7 @@ export const SingleJob = ({ job }) => {
           <li key={`${job.key}:${idx}`}>{task}</li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 
@@ -43,13 +55,13 @@ const Exprience = () => {
   }, []);
 
   return (
-    <div>
+    <article>
       <h1>Experience</h1>
 
       {pastJobs.map((job) => {
         return <SingleJob job={job} key={`Job#${job.key}`} />;
       })}
-    </div>
+    </article>
   );
 };
 

@@ -1,9 +1,9 @@
 import { expect } from 'chai';
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import { mockAxios, getExperience, fakeJob } from '../index.spec';
+import { mockAxios, getExperience} from '../index.spec';
 
-import Exprience, { SingleJob } from './Exprience';
+import Exprience, { fakeJob, SingleJob } from './Exprience';
 
 describe('Experince Component', () => {
   let container;
