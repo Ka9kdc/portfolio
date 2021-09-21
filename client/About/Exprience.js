@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 export const fakeJob = {
   key: 1,
-  companyLogo: 'images/using/LittleLogoTransparent.png',
+  companyLogo: 'images/LittleLogoTransparent.png',
   companyName: 'Wheaton Community Radio Amateurs',
   JobTitle: 'Hamfest Chairman',
   start: 'February 2016',

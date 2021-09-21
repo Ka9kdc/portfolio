@@ -1,7 +1,7 @@
 const workHistory = [
   {
     key: 5,
-    companyLogo: 'images/using/fullstack-academy-logo-color-on-white.png',
+    companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
     companyName: 'Fullstack Academy',
     JobTitle: 'Software Engineering/Web Development Instructional Associate',
     start: 'July 2021',
@@ -15,7 +15,7 @@ const workHistory = [
   },
   {
     key: 4,
-    companyLogo: 'images/using/fullstack-academy-logo-color-on-white.png',
+    companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
     companyName: 'Fullstack Academy',
     JobTitle: 'Software Engineering/Web Development Teaching Fellow',
     start: 'November 2020',
@@ -29,7 +29,7 @@ const workHistory = [
   },
   {
     key: 3,
-    companyLogo: 'images/using/LittleLogoTransparent.png',
+    companyLogo: 'images/LittleLogoTransparent.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Webmaster',
     start: 'November 2019',
@@ -43,7 +43,7 @@ const workHistory = [
   },
   {
     key: 1,
-    companyLogo: 'images/using/LittleLogoTransparent.png',
+    companyLogo: 'images/LittleLogoTransparent.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Hamfest Chairman',
     start: 'February 2016',
@@ -56,8 +56,7 @@ const workHistory = [
   },
   {
     key: 2,
-    companyLogo:
-      'images/using/209-2092285_office-depot-office-max-png-logo.png',
+    companyLogo: 'images/209-2092285_office-depot-office-max-png-logo.png',
     companyName: 'Office Depot',
     JobTitle: 'Print and Copy Supervisor',
     start: 'April 2015',
