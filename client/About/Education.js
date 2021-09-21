@@ -54,6 +54,10 @@ const Southern = () => {
           src="images/SIUSportLogo.png"
           alt="Southern Illinios University Carbondale Logo"
         />
+          <img
+          src="images/siuAviationPLane.png"
+          alt="Southern Illinios University Aviation Logo"
+        />
       </div>
       <div className="title">
         <h2>Southern Illinois University Carbondale</h2>
