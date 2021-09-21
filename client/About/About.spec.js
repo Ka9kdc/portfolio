@@ -4,6 +4,7 @@ import { mount, shallow } from 'enzyme';
 import { mockAxios } from '../index.spec';
 import About from '.';
 import Exprience, { SingleJob } from './Exprience';
+import Education, { Institute } from './Education';
 
 describe('About Component', () => {
   let container;
@@ -22,6 +23,14 @@ describe('About Component', () => {
     it('contains Expriences', () => {
       expect(container.find(Exprience)).to.have.lengthOf(1);
     });
+    it('contains Education', () => {
+      expect(
+        container.containsMatchingElement([<Education key="8" />])
+      ).to.equal(true);
+    });
+    it('contains Education', () => {
+      expect(container.find(Education)).to.have.lengthOf(1);
+    });
   });
   describe('mount render', () => {
     before(() => {
@@ -37,6 +46,17 @@ describe('About Component', () => {
     });
     it('contains SingleJob', () => {
       expect(container.find(SingleJob)).to.have.lengthOf(1);
+    });
+    it('contianers education and Institute', () => {
+      expect(
+        container.containsAllMatchingElements([
+          <Education key="7" />,
+          <Institute key="Grace Hopper Program at Fullstack Academy of Code" />,
+        ])
+      ).to.equal(true);
+    });
+    it('contains Institute', () => {
+      expect(container.find(Institute)).to.have.lengthOf(2);
     });
     it('makes an axois call', () => {
       const [getRequest] = mockAxios.history.get;
