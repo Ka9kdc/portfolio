@@ -1,6 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-
+import React, { useEffect, useState } from 'react';
 
 export const fakeJob = {
   key: 1,
@@ -18,8 +17,8 @@ export const fakeJob = {
 
 export const SingleJob = ({ job }) => {
   return (
-    <section >
-      <div >
+    <section>
+      <div>
         <img src={job.companyLogo} alt={`${job.companyName} Logo`} />
         <>
           <h2>{job.JobTitle}</h2>
@@ -27,11 +26,7 @@ export const SingleJob = ({ job }) => {
             {job.start} - {job.end}
           </p>
         </>
-        {job.link ? (
-            <a href={`http://${job.link}`}>{job.link}</a>
-        ) : (
-          ''
-        )}
+        {job.link ? <a href={`http://${job.link}`}>{job.link}</a> : null}
       </div>
       <ul>
         {job.description.map((task, idx) => (

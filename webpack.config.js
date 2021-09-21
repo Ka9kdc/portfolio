@@ -1,5 +1,5 @@
 const path = require('path');
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   mode: isDev ? 'development' : 'production',
@@ -13,7 +13,7 @@ module.exports = {
     rules: [
       {
         test: /\.png/,
-        type: 'asset/resource'
+        type: 'asset/resource',
       },
       {
         test: /\.css$/,

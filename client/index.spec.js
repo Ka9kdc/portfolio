@@ -7,7 +7,6 @@ const { JSDOM } = require('jsdom');
 
 Enzyme.configure({ adapter: new Adapter() });
 
-
 const jsdom = new JSDOM('<!doctype html><html><body></body></html>');
 const { window } = jsdom;
 
@@ -31,7 +30,6 @@ global.navigator = {
 };
 
 copyProps(window, global);
-
 
 export const mockAxios = new MockAdaptor(axios);
 

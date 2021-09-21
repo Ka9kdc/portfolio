@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { mount, shallow } from 'enzyme';
-import { mockAxios} from '../index.spec';
+import { mockAxios } from '../index.spec';
 import About from '.';
 import Exprience, { SingleJob } from './Exprience';
 
