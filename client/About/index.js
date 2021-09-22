@@ -3,6 +3,7 @@ import Exprience from './Exprience';
 import './About.css';
 import Education from './Education';
 import Summary from './Summary';
+import ContactLinks from './Contact';
 
 const About = () => {
   return (
@@ -13,9 +14,11 @@ const About = () => {
         <a href="#Experience">Experience</a>
         <a href="#Education">Education</a>
       </div>
+
       <Summary />
       <Exprience />
       <Education />
+      <ContactLinks />
     </>
   );
 };

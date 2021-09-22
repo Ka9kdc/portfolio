@@ -33,9 +33,9 @@ describe('About Component', () => {
       expect(container.find(Education)).to.have.lengthOf(1);
     });
     it('contains Summary', () => {
-      expect(
-        container.containsMatchingElement([<Summary key="9" />])
-      ).to.equal(true);
+      expect(container.containsMatchingElement([<Summary key="9" />])).to.equal(
+        true
+      );
     });
     it('contains Summary', () => {
       expect(container.find(Summary)).to.have.lengthOf(1);
@@ -68,9 +68,9 @@ describe('About Component', () => {
       expect(container.find(Institute)).to.have.lengthOf(2);
     });
     it('contains Summary', () => {
-      expect(
-        container.containsMatchingElement([<Summary key="9" />])
-      ).to.equal(true);
+      expect(container.containsMatchingElement([<Summary key="9" />])).to.equal(
+        true
+      );
     });
     it('makes an axois call', () => {
       const [getRequest] = mockAxios.history.get;
