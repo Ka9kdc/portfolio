@@ -3,7 +3,7 @@ import React from 'react';
 import { expect } from 'chai';
 import Header from './Header';
 
-describe.only('Header component', () => {
+describe('Header component', () => {
   let container;
   let paths;
   let text;

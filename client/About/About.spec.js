@@ -9,6 +9,7 @@ import Summary from './Summary';
 import ContactLinks, { SingleLink } from './Contact';
 import Hobbies, { myHobbies, SingleHobby } from './Hobbies';
 import Resume from './Resume';
+import { BrowserRouter } from 'react-router-dom';
 
 describe('About Component', () => {
   let container;
@@ -73,7 +74,7 @@ describe('About Component', () => {
   describe('mount render', () => {
     let articles;
     before(() => {
-      container = mount(<About />);
+      container = mount(<BrowserRouter><About /></BrowserRouter>);
       articles = container.find('article').map((node) => node.props().id);
     });
     it('contianers exprience and singlejob', () => {

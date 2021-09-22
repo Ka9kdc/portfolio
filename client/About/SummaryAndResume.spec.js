@@ -16,7 +16,7 @@ describe('Summary Component', () => {
   });
 });
 
-describe('resume Componenet', () => {
+describe('Resume Componenet', () => {
   const container = shallow(<Resume />);
   it('renders an iframe', () => {
     expect(container.find('iframe')).to.have.lengthOf(1);
@@ -25,5 +25,17 @@ describe('resume Componenet', () => {
     const fileSrc = container.find('iframe').props().src;
     expect(fileSrc.includes('Resume')).to.equal(true);
     expect(fileSrc.includes('Kelsey')).to.equal(true);
+  });
+  it('renders an link and a button', () => {
+    const link = container.find('Link')
+    expect(link).to.have.lengthOf(1);
+    expect(link.props().children.type).to.equal("button");
+    expect(link.find("button").text()).to.equal("Download My Resume");
+
+  });
+  it('renders a down load my resume pdf button', () => {
+    const link = container.find('Link').props().to
+    expect(link.includes('Resume')).to.equal(true);
+    expect(link.includes('Kelsey')).to.equal(true);
   });
 });
