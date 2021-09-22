@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.circle {
+  border-radius: 50%;
+}
+
 .grid {
   display: grid;
   gap: 1rem;

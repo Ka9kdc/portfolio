@@ -50,7 +50,7 @@ const Exprience = () => {
   }, []);
 
   return (
-    <article>
+    <article id="Experience">
       <h1 className="section_title">Experience</h1>
       <div className="grid">
         {pastJobs.map((job) => {
