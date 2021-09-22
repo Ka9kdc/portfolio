@@ -2,21 +2,12 @@ import React from 'react';
 
 const Summary = () => {
   return (
-    <>
-      <section className="flex_wrap_row">
-        <img
-          src="images/kelsey.png"
-          alt="head shot of Kelsey"
-          className="circle"
-        />
-        <div>
-          <h1 className="section_title">Kelsey Schroeder</h1>
-          <div className="flex_wrap_row">
-            <a href="#Experience">Experience</a>
-            <a href="#Education">Education</a>
-          </div>
-        </div>
-      </section>
+    <section id="Summary">
+      <img
+        src="images/kelsey.png"
+        alt="head shot of Kelsey"
+        className="circle"
+      />
       <article>
         <p>
           I am a pilot and amateur radio operator who after taking on the
@@ -67,7 +58,7 @@ const Summary = () => {
           coding and web development.
         </p>
       </article>
-    </>
+    </section>
   );
 };
 

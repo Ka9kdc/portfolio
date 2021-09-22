@@ -8,6 +8,17 @@
   border-radius: 50%;
 }
 
+#Summary {
+  margin: 1rem;
+}
+
+#Summary img {
+  float: left;
+  max-width: 50%;
+  margin: 1rem;
+  border: 10px gray solid;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
@@ -58,5 +69,9 @@
   .flex_wrap_row img {
     max-width: 50%;
     height: fit-content;
+  }
+
+  #Summary img {
+    max-height: 50vh;
   }
 }

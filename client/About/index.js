@@ -7,8 +7,12 @@ import Summary from './Summary';
 const About = () => {
   return (
     <>
-      <h1 className="section_title">About</h1>
-
+      {/* <h1 className="section_title">About</h1> */}
+      <h1 className="section_title">Kelsey Schroeder</h1>
+      <div className="flex_wrap_row">
+        <a href="#Experience">Experience</a>
+        <a href="#Education">Education</a>
+      </div>
       <Summary />
       <Exprience />
       <Education />
