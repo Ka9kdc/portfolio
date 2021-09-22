@@ -7,6 +7,7 @@ import Exprience, { SingleJob } from './Exprience';
 import Education, { Institute } from './Education';
 import Summary from './Summary';
 import ContactLinks, { SingleLink } from './Contact';
+import Hobbies, { myHobbies, SingleHobby } from './Hobbies';
 
 describe('About Component', () => {
   let container;
@@ -46,6 +47,11 @@ describe('About Component', () => {
         container.containsMatchingElement([<ContactLinks key="10" />])
       ).to.equal(true);
     });
+    it('contains Hobbies', () => {
+      expect(
+        container.containsMatchingElement([<Hobbies key="10" />])
+      ).to.equal(true);
+    });
   });
 
   describe('mount render', () => {
@@ -79,13 +85,24 @@ describe('About Component', () => {
         true
       );
     });
-    it('contains ContactLinks', () => {
+    it('contains ContactLinks and Single link', () => {
       expect(
         container.containsAllMatchingElements([
           <ContactLinks key="10" />,
           <SingleLink key="11" />,
         ])
       ).to.equal(true);
+    });
+    it('contains hobbies and singleHobby', () => {
+      expect(
+        container.containsAllMatchingElements([
+          <Hobbies key="10" />,
+          <SingleHobby key="11" />,
+        ])
+      ).to.equal(true);
+    });
+    it('contains SingleHobby', () => {
+      expect(container.find(SingleHobby)).to.have.lengthOf(myHobbies.length);
     });
     it('makes an axois call', () => {
       const [getRequest] = mockAxios.history.get;
