@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 
 import Main from './main';
-// import Header from './Header';
+import Header from './Header';
 import Routes from './Routes';
 
 describe('Main', () => {
@@ -11,7 +11,7 @@ describe('Main', () => {
   before(() => {
     wrapper = shallow(<Main />);
   });
-  xit('containers header and routers', () => {
+  it('containers header and routers', () => {
     expect(
       wrapper.containsAllMatchingElements([
         <Header key="3" />,
@@ -19,7 +19,7 @@ describe('Main', () => {
       ])
     ).to.equal(true);
   });
-  xit('renders header', () => {
+  it('renders header', () => {
     expect(wrapper.find(Header)).to.have.lengthOf(1);
   });
   it('renders Routes', () => {
