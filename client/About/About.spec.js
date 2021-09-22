@@ -6,6 +6,7 @@ import About from '.';
 import Exprience, { SingleJob } from './Exprience';
 import Education, { Institute } from './Education';
 import Summary from './Summary';
+import ContactLinks, { SingleLink } from './Contact';
 
 describe('About Component', () => {
   let container;
@@ -40,7 +41,13 @@ describe('About Component', () => {
     it('contains Summary', () => {
       expect(container.find(Summary)).to.have.lengthOf(1);
     });
+    it('contains ContactLinks', () => {
+      expect(
+        container.containsMatchingElement([<ContactLinks key="10" />])
+      ).to.equal(true);
+    });
   });
+
   describe('mount render', () => {
     before(() => {
       container = mount(<About />);
@@ -71,6 +78,14 @@ describe('About Component', () => {
       expect(container.containsMatchingElement([<Summary key="9" />])).to.equal(
         true
       );
+    });
+    it('contains ContactLinks', () => {
+      expect(
+        container.containsAllMatchingElements([
+          <ContactLinks key="10" />,
+          <SingleLink key="11" />,
+        ])
+      ).to.equal(true);
     });
     it('makes an axois call', () => {
       const [getRequest] = mockAxios.history.get;
