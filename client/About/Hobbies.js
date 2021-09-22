@@ -54,9 +54,7 @@ export const SingleHobby = ({ hobby }) => {
 const Hobbies = () => {
   return (
     <article id="Hobbies">
-      <h2 className="section_title" >
-        Hobbies
-      </h2>
+      <h2 className="section_title">Hobbies</h2>
       <section className="image_flex_row">
         {myHobbies.map((hobby) => {
           return <SingleHobby hobby={hobby} key={hobby.activity} />;
