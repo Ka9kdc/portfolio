@@ -9,6 +9,8 @@ export const myHobbies = [
   { activity: 'Reading', image: 'istockphoto-466854335-612x612.jpeg' },
   { activity: 'Archery', image: 'archeryGirl.jpeg' },
   { activity: 'Flying', image: 'girl-flying-airplane.png' },
+  { activity: 'Hiking', image: 'istockphoto-1009952422-170667a.jpeg' },
+  { activity: 'Camping', image: 'image_processing20200910-13093-1mbf9lz.png' },
   {
     activity: 'Amateur Radio',
     image: 'ham-radio-ham-radio-clip-art-220_218.jpeg',
@@ -29,8 +31,7 @@ export const myHobbies = [
       '230-2308339_photographer-with-camera-silhouette-png-photography-clipart-transparent.png',
   },
   { activity: 'Sewing', image: 'TN_girl-hand-stitiching-a-garment.jpeg' },
-  { activity: 'Hiking', image: 'istockphoto-1009952422-170667a.jpeg' },
-  { activity: 'Camping', image: 'image_processing20200910-13093-1mbf9lz.png' },
+
   {
     activity: 'Writing',
     image:
@@ -40,13 +41,13 @@ export const myHobbies = [
 
 export const SingleHobby = ({ hobby }) => {
   return (
-    <>
+    <section>
       <img
         src={`images/hobbies/${hobby.image}`}
         alt={`Photo of ${hobby.activity}`}
       />
       <p className="title">{hobby.activity}</p>
-    </>
+    </section>
   );
 };
 
@@ -56,8 +57,7 @@ const Hobbies = () => {
       <h2 className="section_title" id="Hobbies">
         Hobbies
       </h2>
-      <section>
-        {/* className="flex_wrap_row" */}
+      <section className="image_flex_row">
         {myHobbies.map((hobby) => {
           return <SingleHobby hobby={hobby} key={hobby.activity} />;
         })}

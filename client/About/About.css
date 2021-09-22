@@ -19,6 +19,20 @@
   border: 10px gray solid;
 }
 
+.image_flex_row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem;
+  justify-content: center;
+  align-content: flex-end;
+  /* justify-self: center; */
+}
+
+.image_flex_row img {
+  height: 210px;
+  align-self: flex-end;
+}
+
 .grid {
   display: grid;
   gap: 1rem;

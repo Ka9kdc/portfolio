@@ -13,13 +13,14 @@ const About = () => {
       <div className="flex_wrap_row">
         <a href="#Experience">Experience</a>
         <a href="#Education">Education</a>
-        <a href="#Contacts">Contacts</a>
+        <a href="#Contacts">Contact</a>
+        <a href="#Hobbies">Hobbies</a>
       </div>
-      <Hobbies />
-      {/* <Summary />
+      <Summary />
+      <ContactLinks />
       <Exprience />
       <Education />
-      <ContactLinks /> */}
+      <Hobbies />
     </>
   );
 };
