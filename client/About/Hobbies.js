@@ -53,8 +53,8 @@ export const SingleHobby = ({ hobby }) => {
 
 const Hobbies = () => {
   return (
-    <>
-      <h2 className="section_title" id="Hobbies">
+    <article id="Hobbies">
+      <h2 className="section_title" >
         Hobbies
       </h2>
       <section className="image_flex_row">
@@ -62,7 +62,7 @@ const Hobbies = () => {
           return <SingleHobby hobby={hobby} key={hobby.activity} />;
         })}
       </section>
-    </>
+    </article>
   );
 };
 

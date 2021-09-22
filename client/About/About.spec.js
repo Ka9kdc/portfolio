@@ -18,6 +18,15 @@ describe('About Component', () => {
     it('contains a title', () => {
       expect(container.find('h1').text()).to.be.equal('Kelsey Schroeder');
     });
+    it("has a link to 4 of the 5 sections",() =>{
+      let links = container.find("a").map(node => node.props().href)
+      expect(links).to.be.lengthOf(4)
+      expect(links.indexOf("#Hobbies")).to.not.equal(-1)
+      expect(links.indexOf("#Education")).to.not.equal(-1)
+      expect(links.indexOf("#Contacts")).to.not.equal(-1)
+      expect(links.indexOf("#Experience")).to.not.equal(-1)
+      expect(links.indexOf("#Summary")).to.equal(-1)
+    })
     it('contains Expriences', () => {
       expect(
         container.containsMatchingElement([<Exprience key="5" />])
@@ -54,9 +63,11 @@ describe('About Component', () => {
     });
   });
 
-  describe('mount render', () => {
+  describe.only('mount render', () => {
+    let articles;
     before(() => {
       container = mount(<About />);
+      articles = container.find("article").map(node => node.props().id)
     });
     it('contianers exprience and singlejob', () => {
       expect(
@@ -66,6 +77,9 @@ describe('About Component', () => {
         ])
       ).to.equal(true);
     });
+    it("experience has an id of Experience", () =>{
+      expect(articles.indexOf("Experience")).to.not.equal(-1)
+    })
     it('contains SingleJob', () => {
       expect(container.find(SingleJob)).to.have.lengthOf(1);
     });
@@ -77,6 +91,9 @@ describe('About Component', () => {
         ])
       ).to.equal(true);
     });
+    it("Education has an id of Education", () =>{
+      expect(articles.indexOf("Education")).to.not.equal(-1)
+    })
     it('contains Institute', () => {
       expect(container.find(Institute)).to.have.lengthOf(2);
     });
@@ -93,6 +110,12 @@ describe('About Component', () => {
         ])
       ).to.equal(true);
     });
+    it("ContantLinks has an id of Contacts", () =>{
+      expect(articles.indexOf("Contacts")).to.not.equal(-1)
+    })
+    it('contains singlecontact', () => {
+      expect(container.find(SingleLink)).to.have.lengthOf(3);
+    });
     it('contains hobbies and singleHobby', () => {
       expect(
         container.containsAllMatchingElements([
@@ -101,6 +124,9 @@ describe('About Component', () => {
         ])
       ).to.equal(true);
     });
+    it("Hobbies has an id of Hobbies", () =>{
+      expect(articles.indexOf("Hobbies")).to.not.equal(-1)
+    })
     it('contains SingleHobby', () => {
       expect(container.find(SingleHobby)).to.have.lengthOf(myHobbies.length);
     });
