@@ -45,7 +45,6 @@ const Summary = () => {
           payment by mail or in person via cash or check.
         </p>
         <p>
-          {' '}
           At the time no one in the club knew how to write code for a website
           and the previous webmaster had written the site in php. So in the fall
           of 2019, I was given access to the club website. This allowed me to

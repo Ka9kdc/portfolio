@@ -5,6 +5,7 @@ import { mockAxios } from '../index.spec';
 import About from '.';
 import Exprience, { SingleJob } from './Exprience';
 import Education, { Institute } from './Education';
+import Summary from './Summary';
 
 describe('About Component', () => {
   let container;
@@ -13,7 +14,7 @@ describe('About Component', () => {
       container = shallow(<About />);
     });
     it('contains a title', () => {
-      expect(container.find('h1').text()).to.be.equal('About');
+      expect(container.find('h1').text()).to.be.equal('Kelsey Schroeder');
     });
     it('contains Expriences', () => {
       expect(
@@ -30,6 +31,14 @@ describe('About Component', () => {
     });
     it('contains Education', () => {
       expect(container.find(Education)).to.have.lengthOf(1);
+    });
+    it('contains Summary', () => {
+      expect(
+        container.containsMatchingElement([<Summary key="9" />])
+      ).to.equal(true);
+    });
+    it('contains Summary', () => {
+      expect(container.find(Summary)).to.have.lengthOf(1);
     });
   });
   describe('mount render', () => {
@@ -57,6 +66,11 @@ describe('About Component', () => {
     });
     it('contains Institute', () => {
       expect(container.find(Institute)).to.have.lengthOf(2);
+    });
+    it('contains Summary', () => {
+      expect(
+        container.containsMatchingElement([<Summary key="9" />])
+      ).to.equal(true);
     });
     it('makes an axois call', () => {
       const [getRequest] = mockAxios.history.get;
