@@ -5,6 +5,7 @@ import Education from './Education';
 import Summary from './Summary';
 import ContactLinks from './Contact';
 import Hobbies from './Hobbies';
+import Resume from './Resume';
 
 const About = () => {
   return (
@@ -15,9 +16,11 @@ const About = () => {
         <a href="#Education">Education</a>
         <a href="#Contacts">Contact</a>
         <a href="#Hobbies">Hobbies</a>
+        <a href="#Resume">Resume</a>
       </div>
       <Summary />
       <ContactLinks />
+      <Resume />
       <Exprience />
       <Education />
       <Hobbies />

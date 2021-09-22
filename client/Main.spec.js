@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 
 import Main from './main';
 // import Header from './Header';
-// import Routes from './Routes';
+import Routes from './Routes';
 
 describe('Main', () => {
   let wrapper;
@@ -22,7 +22,7 @@ describe('Main', () => {
   xit('renders header', () => {
     expect(wrapper.find(Header)).to.have.lengthOf(1);
   });
-  xit('renders Routes', () => {
+  it('renders Routes', () => {
     expect(wrapper.find(Routes)).to.have.lengthOf(1);
   });
 });

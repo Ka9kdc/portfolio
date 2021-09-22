@@ -8,6 +8,7 @@ import Education, { Institute } from './Education';
 import Summary from './Summary';
 import ContactLinks, { SingleLink } from './Contact';
 import Hobbies, { myHobbies, SingleHobby } from './Hobbies';
+import Resume from './Resume';
 
 describe('About Component', () => {
   let container;
@@ -18,13 +19,14 @@ describe('About Component', () => {
     it('contains a title', () => {
       expect(container.find('h1').text()).to.be.equal('Kelsey Schroeder');
     });
-    it('has a link to 4 of the 5 sections', () => {
+    it('has a link to 5 of the 6 sections', () => {
       let links = container.find('a').map((node) => node.props().href);
-      expect(links).to.be.lengthOf(4);
+      expect(links).to.be.lengthOf(5);
       expect(links.indexOf('#Hobbies')).to.not.equal(-1);
       expect(links.indexOf('#Education')).to.not.equal(-1);
       expect(links.indexOf('#Contacts')).to.not.equal(-1);
       expect(links.indexOf('#Experience')).to.not.equal(-1);
+      expect(links.indexOf('#Resume')).to.not.equal(-1);
       expect(links.indexOf('#Summary')).to.equal(-1);
     });
     it('contains Expriences', () => {
@@ -61,9 +63,14 @@ describe('About Component', () => {
         container.containsMatchingElement([<Hobbies key="10" />])
       ).to.equal(true);
     });
+    it('contains Resume', () => {
+      expect(container.containsMatchingElement([<Resume key="10" />])).to.equal(
+        true
+      );
+    });
   });
 
-  describe.only('mount render', () => {
+  describe('mount render', () => {
     let articles;
     before(() => {
       container = mount(<About />);
@@ -129,6 +136,11 @@ describe('About Component', () => {
     });
     it('contains SingleHobby', () => {
       expect(container.find(SingleHobby)).to.have.lengthOf(myHobbies.length);
+    });
+    it('contains Resume', () => {
+      expect(container.containsMatchingElement([<Resume key="10" />])).to.equal(
+        true
+      );
     });
     it('makes an axois call', () => {
       const [getRequest] = mockAxios.history.get;

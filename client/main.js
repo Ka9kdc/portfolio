@@ -1,9 +1,8 @@
 import React from 'react';
-import About from './About';
 
 // import Header from './Header';
 
-// import Routes from './routes';
+import Routes from './Routes';
 
 // import './main.css';
 
@@ -11,10 +10,8 @@ const Main = () => {
   return (
     <div>
       {/* <Header /> */}
-      {/* <Routes /> */}
-
-      {/* move to routes later */}
-      <About />
+      <Routes />
+      {/* <iframe style={{"width":"90vw", "height":"20vh"}} src="Kelsey_Schroeder_Resume September_2021.pdf"></iframe> */}
     </div>
   );
 };
