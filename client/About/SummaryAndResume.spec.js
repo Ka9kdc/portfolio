@@ -27,14 +27,13 @@ describe('Resume Componenet', () => {
     expect(fileSrc.includes('Kelsey')).to.equal(true);
   });
   it('renders an link and a button', () => {
-    const link = container.find('Link')
+    const link = container.find('Link');
     expect(link).to.have.lengthOf(1);
-    expect(link.props().children.type).to.equal("button");
-    expect(link.find("button").text()).to.equal("Download My Resume");
-
+    expect(link.props().children.type).to.equal('button');
+    expect(link.find('button').text()).to.equal('Download My Resume');
   });
   it('renders a down load my resume pdf button', () => {
-    const link = container.find('Link').props().to
+    const link = container.find('Link').props().to;
     expect(link.includes('Resume')).to.equal(true);
     expect(link.includes('Kelsey')).to.equal(true);
   });

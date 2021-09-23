@@ -74,7 +74,11 @@ describe('About Component', () => {
   describe('mount render', () => {
     let articles;
     before(() => {
-      container = mount(<BrowserRouter><About /></BrowserRouter>);
+      container = mount(
+        <BrowserRouter>
+          <About />
+        </BrowserRouter>
+      );
       articles = container.find('article').map((node) => node.props().id);
     });
     it('contianers exprience and singlejob', () => {
