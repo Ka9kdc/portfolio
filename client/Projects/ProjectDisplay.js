@@ -43,7 +43,9 @@ const ProjectDisplay = ({ project }) => {
           <li key={`${project.title}:${tech}`}>{tech}</li>
         ))}
       </ul>
-      {/* <Link to={`/project/${project.title}`}><button type="button">Find Out More</button></Link> */}
+      {/* <Link to={`/project/${project.title}`}> */}
+      <button type="button">Find Out More</button>
+      {/* </Link> */}
     </section>
   );
 };
