@@ -38,7 +38,7 @@ export const projectData = [
       },
     ],
     image: {
-      src: 'images/using/smartmockups_kjkotk4z.png',
+      src: 'images/smartmockups_kjkotk4z.png',
       alt: 'Mock up of the Bros Apothacary e-commerce store.',
     },
     text: [
@@ -75,7 +75,7 @@ export const projectData = [
       title: 'demo video of createmates',
     },
     image: {
-      src: 'images/using/smartmockups_kjkhgdqm.png',
+      src: 'images/smartmockups_kjkhgdqm.png',
       alt: "Mock up of the createmate's wep application",
     },
     text: [
@@ -194,9 +194,13 @@ export const projectData = [
         url: 'https://github.com/Ka9kdc/tetrix',
       },
     ],
-    image: {
+        image: {
+      src: '',
+      alt: '',
+    },
+    gif: {
       style: { width: '80%', height: 'auto' },
-      src: 'images/using/ezgif.com-gif-maker.gif',
+      src: 'images/ezgif.com-gif-maker.gif',
       title: 'gif of tetris blocks rotating',
     },
     text: [
@@ -205,7 +209,7 @@ export const projectData = [
       'In the game, there are seven types of blocks that will falling down one at a time. The blocks are in the shape of the letters: L, J, T, S, Z, I and O. All the blocks can be rotated and moved while falling, so you can control where they are placed.',
       'The goal is to a fill row with the falling blocks to clear the row and prevent your board from filling up. Everytime your clear five rows, your level will increase and the blocks will slowly start to fall faster. The game end when no more blocks can enter the board from the top.',
     ],
-    techUsed: [],
+    techUsed: ["HTML", "CSS", "Javascript"],
     hackathon: true,
     org: 'Mintbean',
     date: 'August 2021',
