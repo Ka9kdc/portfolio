@@ -13,10 +13,8 @@ const Main = () => {
       {/* removeLater */}
       <Projects />
 
-
       <Header />
       <Routes />
-
     </div>
   );
 };

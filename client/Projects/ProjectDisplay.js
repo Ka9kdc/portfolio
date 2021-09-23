@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const ProjectDisplay = ({ project }) => {
   return (
@@ -25,7 +25,11 @@ const ProjectDisplay = ({ project }) => {
           />
         </div>
       ) : (
-        <img className="image_wrapper" src={project.image.src} alt={project.image.alt} />
+        <img
+          className="image_wrapper"
+          src={project.image.src}
+          alt={project.image.alt}
+        />
       )}
 
       <h2 className="project_title">{project.title}</h2>
@@ -39,7 +43,7 @@ const ProjectDisplay = ({ project }) => {
           <li key={`${project.title}:${tech}`}>{tech}</li>
         ))}
       </ul>
-      {/* <Link to={`/project/${project.title}`}><button>Find Out More</button></Link> */}
+      {/* <Link to={`/project/${project.title}`}><button type="button">Find Out More</button></Link> */}
     </section>
   );
 };

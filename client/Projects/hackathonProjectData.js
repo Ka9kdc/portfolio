@@ -1,4 +1,4 @@
-export const projectData = [
+const projectData = [
   {
     title: "A Dog's Journey",
     links: [
@@ -194,7 +194,7 @@ export const projectData = [
         url: 'https://github.com/Ka9kdc/tetrix',
       },
     ],
-        image: {
+    image: {
       src: '',
       alt: '',
     },
@@ -209,7 +209,7 @@ export const projectData = [
       'In the game, there are seven types of blocks that will falling down one at a time. The blocks are in the shape of the letters: L, J, T, S, Z, I and O. All the blocks can be rotated and moved while falling, so you can control where they are placed.',
       'The goal is to a fill row with the falling blocks to clear the row and prevent your board from filling up. Everytime your clear five rows, your level will increase and the blocks will slowly start to fall faster. The game end when no more blocks can enter the board from the top.',
     ],
-    techUsed: ["HTML", "CSS", "Javascript"],
+    techUsed: ['HTML', 'CSS', 'Javascript'],
     hackathon: true,
     org: 'Mintbean',
     date: 'August 2021',
@@ -282,3 +282,5 @@ export const projectData = [
   //   date: '2021',
   // },
 ];
+
+export default projectData;
