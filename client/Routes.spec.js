@@ -10,6 +10,7 @@ import About from './About';
 
 import { getExperience, mockAxios } from './index.spec';
 import Projects from './Projects';
+import SingleProject from './Projects/SingleProject';
 
 //these tests dont work right. they just pass even if i change the route or component spelling
 describe.skip('Routes', () => {
@@ -44,5 +45,16 @@ describe.skip('Routes', () => {
       root
     );
     expect(document.body).to.contain(Projects);
+  });
+  it('renders <SingleProjects /> at path /Projects/:id', () => {
+    const root = document.createElement('div');
+    document.body.appendChild(root);
+    render(
+      <rrd.MemoryRouter initialEntries={['/Project/1']}>
+        <Main />
+      </rrd.MemoryRouter>,
+      root
+    );
+    expect(document.body).to.contain(SingleProject);
   });
 });

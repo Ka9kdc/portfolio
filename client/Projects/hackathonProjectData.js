@@ -1,5 +1,5 @@
 const projectData = [
-  {
+  {id:1,
     title: "A Dog's Journey",
     links: [
       {
@@ -25,7 +25,7 @@ const projectData = [
     org: 'FullStack',
     date: 'October 2020',
   },
-  {
+  {id:2,
     title: 'Bros-Apothecary',
     links: [
       {
@@ -52,7 +52,7 @@ const projectData = [
     org: 'FullStack',
     date: 'September/October 2020',
   },
-  {
+  {id:3,
     title: 'Createmates',
     links: [
       {
@@ -100,7 +100,7 @@ const projectData = [
     date: 'October 2020',
   },
 
-  {
+  {id:4,
     title: 'Lunch Time',
     links: [
       {
@@ -140,7 +140,7 @@ const projectData = [
     org: 'Mintbean',
     date: 'May 2021',
   },
-  {
+  {id:5,
     title: 'Block Crusher',
     links: [
       {
@@ -178,7 +178,7 @@ const projectData = [
     org: 'Mintbean',
     date: 'March 2021',
   },
-  {
+  {id:6,
     title: 'Tetrix',
     links: [
       {
@@ -214,7 +214,7 @@ const projectData = [
     org: 'Mintbean',
     date: 'August 2021',
   },
-  {
+  {id:7,
     title: 'Notes For Friends',
     links: [
       {
@@ -255,7 +255,7 @@ const projectData = [
     date: 'January 2021',
   },
 
-  // {
+  // {id:8,
   //   title: '',
   //   links: [
   //     {

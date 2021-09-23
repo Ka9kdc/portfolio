@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const ProjectDisplay = ({ project }) => {
   return (
@@ -43,9 +43,9 @@ const ProjectDisplay = ({ project }) => {
           <li key={`${project.title}:${tech}`}>{tech}</li>
         ))}
       </ul>
-      {/* <Link to={`/project/${project.title}`}> */}
+      <Link to={`/Project/${project.id}`}>
       <button type="button">Find Out More</button>
-      {/* </Link> */}
+      </Link>
     </section>
   );
 };
