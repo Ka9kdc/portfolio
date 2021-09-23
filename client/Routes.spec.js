@@ -9,8 +9,10 @@ import Main from './Main';
 import About from './About';
 
 import { getExperience, mockAxios } from './index.spec';
+import Projects from './Projects';
 
-describe('Routes', () => {
+//these tests dont work right. they just pass even if i change the route or component spelling
+describe.skip('Routes', () => {
   beforeEach(() => {
     sinon.stub(rrd, 'BrowserRouter').callsFake(({ childern }) => {
       return <div>{childern}</div>;
@@ -31,5 +33,16 @@ describe('Routes', () => {
       root
     );
     expect(document.body).to.contain(About);
+  });
+  it('renders <Projects /> at path /Projects', () => {
+    const root = document.createElement('div');
+    document.body.appendChild(root);
+    render(
+      <rrd.MemoryRouter initialEntries={['/Projects']}>
+        <Main />
+      </rrd.MemoryRouter>,
+      root
+    );
+    expect(document.body).to.contain(Projects);
   });
 });
