@@ -44,7 +44,7 @@ const ProjectDisplay = ({ project }) => {
         ))}
       </ul>
       <Link to={`/Project/${project.id}`}>
-      <button type="button">Find Out More</button>
+        <button type="button">Find Out More</button>
       </Link>
     </section>
   );

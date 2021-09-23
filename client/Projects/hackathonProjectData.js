@@ -1,5 +1,6 @@
 const projectData = [
-  {id:1,
+  {
+    id: 0,
     title: "A Dog's Journey",
     links: [
       {
@@ -24,8 +25,10 @@ const projectData = [
     hackathon: true,
     org: 'FullStack',
     date: 'October 2020',
+    solo: true,
   },
-  {id:2,
+  {
+    id: 1,
     title: 'Bros-Apothecary',
     links: [
       {
@@ -51,8 +54,10 @@ const projectData = [
     hackathon: false,
     org: 'FullStack',
     date: 'September/October 2020',
+    solo: true,
   },
-  {id:3,
+  {
+    id: 2,
     title: 'Createmates',
     links: [
       {
@@ -100,7 +105,8 @@ const projectData = [
     date: 'October 2020',
   },
 
-  {id:4,
+  {
+    id: 3,
     title: 'Lunch Time',
     links: [
       {
@@ -139,8 +145,10 @@ const projectData = [
     hackathon: true,
     org: 'Mintbean',
     date: 'May 2021',
+    solo: true,
   },
-  {id:5,
+  {
+    id: 4,
     title: 'Block Crusher',
     links: [
       {
@@ -177,8 +185,10 @@ const projectData = [
     hackathon: true,
     org: 'Mintbean',
     date: 'March 2021',
+    solo: true,
   },
-  {id:6,
+  {
+    id: 5,
     title: 'Tetrix',
     links: [
       {
@@ -213,8 +223,10 @@ const projectData = [
     hackathon: true,
     org: 'Mintbean',
     date: 'August 2021',
+    solo: true,
   },
-  {id:7,
+  {
+    id: 6,
     title: 'Notes For Friends',
     links: [
       {
