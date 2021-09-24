@@ -1,6 +1,6 @@
 .section_title {
   font-family: 'Architects Daughter', Impact, 'Arial Narrow Bold', sans-serif;
-  font-size: 5rem;
+  font-size: 12vw;
   text-align: center;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .image_flex_row img {
-  height: 210px;
+  height: 120px;
   align-self: flex-end;
 }
 
@@ -65,11 +65,16 @@
 }
 
 .title {
+
   font-family: 'Architects Daughter', Impact, 'Arial Narrow Bold', sans-serif;
   text-align: center;
 }
 
 @media (min-width: 900px) {
+.section_title{
+  font-size: 5rem;
+}
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -87,5 +92,9 @@
 
   #Summary img {
     max-height: 50vh;
+  }
+  .image_flex_row img {
+    height: 210px;
+    align-self: flex-end;
   }
 }

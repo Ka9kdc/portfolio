@@ -13,8 +13,9 @@ const Resume = () => {
         to="Kelsey_Schroeder_Resume September_2021.pdf"
         target="_blank"
         download
+        className="find_out_more_container "
       >
-        <button type="button" className="title">
+        <button type="button" className="title find_out_more">
           Download My Resume
         </button>
       </Link>
