@@ -65,15 +65,14 @@
 }
 
 .title {
-
   font-family: 'Architects Daughter', Impact, 'Arial Narrow Bold', sans-serif;
   text-align: center;
 }
 
 @media (min-width: 900px) {
-.section_title{
-  font-size: 5rem;
-}
+  .section_title {
+    font-size: 5rem;
+  }
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
