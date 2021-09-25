@@ -1,0 +1,49 @@
+import React from 'react';
+
+const ProjectImage = ({ project }) => {
+  return (
+    <section className="grid">
+      {project.video && project.video.src && (
+        <div className="box">
+          <div className="video_wrapper">
+            <iframe
+              src={project.video.src}
+              title={project.video.title}
+              className="responsive-iframe"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
+      {project.gif && project.gif.src && (
+        <div className="box">
+          <div className="video_wrapper">
+            <iframe
+              src={
+                project.name === 'Tetrix'
+                  ? `.././${project.gif.src}`
+                  : project.gif.src
+              }
+              title={project.gif.title}
+              className="responsive-iframe"
+              frameBorder="0"
+            />
+          </div>
+        </div>
+      )}
+      {project.image.src && (
+        <div className="box">
+          <img
+            className="image_wrapper"
+            src={`.././${project.image.src}`}
+            alt={project.image.alt}
+          />
+        </div>
+      )}
+    </section>
+  );
+};
+
+export default ProjectImage;

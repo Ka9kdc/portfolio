@@ -1,7 +1,7 @@
 const projectData = [
   {
     id: 0,
-    title: "A Dog's Journey",
+    name: "A Dog's Journey",
     links: [
       {
         name: 'Medium',
@@ -29,10 +29,10 @@ const projectData = [
   },
   {
     id: 1,
-    title: 'Bros-Apothecary',
+    name: 'Bros-Apothecary',
     links: [
       {
-        name: 'Deployment',
+        name: 'Deployed',
         url: 'http://bros-apothecary.herokuapp.com/',
       },
       {
@@ -47,7 +47,7 @@ const projectData = [
     text: [
       'A mock e-Commerce website selling your everyday (hu)man apothecary essentials.',
       'Wrote the vertical code slices and test using Express, Sequelize, Redux, React, Mocha and Chai for all items, single item and admin components ',
-      'Deployment website using Heroku and Travis CI ',
+      'Deployed website using Heroku and Travis CI ',
       'Designed site with CSS3 ',
     ],
     techUsed: ['Sequelize', 'Express', 'Node.js', 'React', 'Redux'],
@@ -58,10 +58,10 @@ const projectData = [
   },
   {
     id: 2,
-    title: 'Createmates',
+    name: 'Createmates',
     links: [
       {
-        name: 'Deployment',
+        name: 'Deployed',
         url: 'https://createmate.herokuapp.com',
       },
       {
@@ -107,14 +107,14 @@ const projectData = [
 
   {
     id: 3,
-    title: 'Lunch Time',
+    name: 'Lunch Time',
     links: [
       {
         name: 'Submission',
         url: 'https://mintbean.io/meets/1210c780-f910-4511-aec8-a364420f8333/projects/6f615a06-d879-48c1-9775-2480cb8578e0',
       },
       {
-        name: 'Deployment',
+        name: 'Deployed',
         url: 'https://lunchtime-62b9b.web.app/',
       },
       {
@@ -149,14 +149,14 @@ const projectData = [
   },
   {
     id: 4,
-    title: 'Block Crusher',
+    name: 'Block Crusher',
     links: [
       {
         name: 'Submission',
         url: 'https://mintbean.io/meets/7c1ff845-3410-4b5c-8965-b80de1374d77/projects/2bdb4831-aa6e-4c9a-a6d8-b64fec1d2484',
       },
       {
-        name: 'Deployment',
+        name: 'Deployed',
         url: 'https://ka9kdc.github.io/BlockCrusherPuzzleGame/',
       },
       {
@@ -189,14 +189,14 @@ const projectData = [
   },
   {
     id: 5,
-    title: 'Tetrix',
+    name: 'Tetrix',
     links: [
       {
         name: 'Submission',
         url: '',
       },
       {
-        name: 'Deployment',
+        name: 'Deployed',
         url: 'https://ka9kdc.github.io/tetrix/',
       },
       {
@@ -227,14 +227,14 @@ const projectData = [
   },
   {
     id: 6,
-    title: 'Notes For Friends',
+    name: 'Notes For Friends',
     links: [
       {
         name: 'DevPost Submission',
         url: 'https://devpost.com/software/notes-for-friends',
       },
       {
-        name: 'Deployment',
+        name: 'Deployed',
         url: 'https://notes-with-friends.herokuapp.com/',
       },
       {
@@ -275,7 +275,7 @@ const projectData = [
   //       url: '',
   //     },
   //     {
-  //       name: 'Deployment',
+  //       name: 'Deployed',
   //       url: '',
   //     },
   //     {
