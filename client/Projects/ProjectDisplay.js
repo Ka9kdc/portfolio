@@ -32,7 +32,7 @@ const ProjectDisplay = ({ project }) => {
         />
       )}
 
-      <h2 className="project_title">{project.title}</h2>
+      <h2 className="project_title">{project.name}</h2>
       <p>
         Developed {project.hackathon && 'as a part of a Hackaton'} with{' '}
         {project.org} in {project.date}
@@ -40,7 +40,7 @@ const ProjectDisplay = ({ project }) => {
       <p>Technologies Used for this project:</p>
       <ul>
         {project.techUsed.map((tech) => (
-          <li key={`${project.title}:${tech}`}>{tech}</li>
+          <li key={`${project.name}:${tech}`}>{tech}</li>
         ))}
       </ul>
       <Link to={`/Project/${project.id}`} className="find_out_more_container">

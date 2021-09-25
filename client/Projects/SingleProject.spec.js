@@ -19,7 +19,7 @@ describe('Single Project Component', () => {
   });
 
   it('has a header of project title', () => {
-    expect(container.find('h1').text()).to.be.equal(testProject.title);
+    expect(container.find('h1').text()).to.be.equal(testProject.name);
   });
   it('has links to the repo, deployment, submission, and medium', () => {
     const links = container.find(`[href="${testProject.links[0].url}"]`);

@@ -50,7 +50,7 @@ const Summary = () => {
           of 2019, I was given access to the club website. This allowed me to
           try to keep the Hamfest page updated myself. Over the course of the
           next week, I taught myself to code in html and basic php and
-          javascript. By the end of the week, I found my new passion in life and
+          Javascript. By the end of the week, I found my new passion in life and
           had PayPal integrated into the site for attendees to place ticket
           orders online. When I lost my job and the pandemic hit a few months
           later. I took it as a sign to dive deeper in to my new found love of

@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import projectData from './hackathonProjectData';
 import ProjectImage from './ProjectImage';
+import TechUsed from './TechUsed';
 
 const SingleProject = () => {
   const projectId = useParams().id;
@@ -40,11 +41,11 @@ const SingleProject = () => {
       </section>
       <section>
         <p>Technologies Used for this project:</p>
-        <div className="flex_wrap_row">
+        <section  className="image_flex_row">
           {project.techUsed.map((tech) => (
-            <p key={`${project.name}:${tech}`}>{tech}</p>
+            <TechUsed key={`${project.name}:${tech}`} tech={tech} />
           ))}
-        </div>
+        </section>
       </section>
       <ProjectImage project={project} />
       <section className="flex_wrap_row">

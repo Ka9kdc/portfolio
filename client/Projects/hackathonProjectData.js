@@ -21,7 +21,7 @@ const projectData = [
       'This was a 4 day hackathon style project, where I had to learn a new piece of technology.',
       ' Along with building the game, I wrote an article on how to build the game.',
     ],
-    techUsed: ['Three.js', 'HTML', 'CSS', 'JavaScript'],
+    techUsed: ['Three.js', 'HTML', 'CSS', 'Javascript'],
     hackathon: true,
     org: 'FullStack',
     date: 'October 2020',

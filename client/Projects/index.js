@@ -10,7 +10,7 @@ const Projects = () => {
       <h1 className="section_title">My Projects</h1>
       <section className="project_grid">
         {projectData.map((project) => {
-          return <ProjectDisplay project={project} key={project.title} />;
+          return <ProjectDisplay project={project} key={project.name} />;
         })}
       </section>
     </article>

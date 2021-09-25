@@ -8,7 +8,7 @@ describe('project display', () => {
   const container = shallow(<ProjectDisplay project={projectData[0]} />);
   it('should have a title for each project', () => {
     expect(container.find('h2')).to.have.lengthOf(1);
-    expect(container.find('h2').at(0).text()).to.equal(projectData[0].title);
+    expect(container.find('h2').at(0).text()).to.equal(projectData[0].name);
   });
   it('it should have a list of tech for each project', () => {
     const list = container.find('ul');

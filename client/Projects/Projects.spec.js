@@ -41,7 +41,7 @@ describe('the main project component', () => {
     });
     it('should have a title for each project', () => {
       expect(container.find('h2')).to.have.lengthOf(projectData.length);
-      expect(container.find('h2').at(0).text()).to.equal(projectData[0].title);
+      expect(container.find('h2').at(0).text()).to.equal(projectData[0].name);
     });
     it('it should have a list of tech for each project', () => {
       expect(container.find('ul')).to.have.lengthOf(projectData.length);
