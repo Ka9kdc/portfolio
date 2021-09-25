@@ -32,7 +32,7 @@ const projectData = [
     title: 'Bros-Apothecary',
     links: [
       {
-        name: 'Deployed',
+        name: 'Deployment',
         url: 'http://bros-apothecary.herokuapp.com/',
       },
       {
@@ -47,7 +47,7 @@ const projectData = [
     text: [
       'A mock e-Commerce website selling your everyday (hu)man apothecary essentials.',
       'Wrote the vertical code slices and test using Express, Sequelize, Redux, React, Mocha and Chai for all items, single item and admin components ',
-      'Deployed website using Heroku and Travis CI ',
+      'Deployment website using Heroku and Travis CI ',
       'Designed site with CSS3 ',
     ],
     techUsed: ['Sequelize', 'Express', 'Node.js', 'React', 'Redux'],
@@ -61,7 +61,7 @@ const projectData = [
     title: 'Createmates',
     links: [
       {
-        name: 'Deployed',
+        name: 'Deployment',
         url: 'https://createmate.herokuapp.com',
       },
       {
@@ -114,7 +114,7 @@ const projectData = [
         url: 'https://mintbean.io/meets/1210c780-f910-4511-aec8-a364420f8333/projects/6f615a06-d879-48c1-9775-2480cb8578e0',
       },
       {
-        name: 'Deployed',
+        name: 'Deployment',
         url: 'https://lunchtime-62b9b.web.app/',
       },
       {
@@ -156,7 +156,7 @@ const projectData = [
         url: 'https://mintbean.io/meets/7c1ff845-3410-4b5c-8965-b80de1374d77/projects/2bdb4831-aa6e-4c9a-a6d8-b64fec1d2484',
       },
       {
-        name: 'Deployed',
+        name: 'Deployment',
         url: 'https://ka9kdc.github.io/BlockCrusherPuzzleGame/',
       },
       {
@@ -196,7 +196,7 @@ const projectData = [
         url: '',
       },
       {
-        name: 'Deployed',
+        name: 'Deployment',
         url: 'https://ka9kdc.github.io/tetrix/',
       },
       {
@@ -234,7 +234,7 @@ const projectData = [
         url: 'https://devpost.com/software/notes-for-friends',
       },
       {
-        name: 'Deployed',
+        name: 'Deployment',
         url: 'https://notes-with-friends.herokuapp.com/',
       },
       {
@@ -275,7 +275,7 @@ const projectData = [
   //       url: '',
   //     },
   //     {
-  //       name: 'Deployed',
+  //       name: 'Deployment',
   //       url: '',
   //     },
   //     {

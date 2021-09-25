@@ -4,6 +4,7 @@ import { expect } from 'chai';
 import Projects from '.';
 import ProjectDisplay from './ProjectDisplay';
 import projectData from './hackathonProjectData';
+import { BrowserRouter } from 'react-router-dom';
 
 describe('the main project component', () => {
   let container;
@@ -27,7 +28,11 @@ describe('the main project component', () => {
   });
   describe('mount render', () => {
     before(() => {
-      container = mount(<Projects />);
+      container = mount(
+        <BrowserRouter>
+          <Projects />
+        </BrowserRouter>
+      );
     });
     it('renders the project desplay component for all proejcts', () => {
       expect(container.find(ProjectDisplay)).to.have.lengthOf(
