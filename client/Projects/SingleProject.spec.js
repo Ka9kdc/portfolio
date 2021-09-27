@@ -4,6 +4,9 @@ import { expect } from 'chai';
 import SingleProject from './SingleProject';
 import projectData from './hackathonProjectData';
 import { MemoryRouter, Route } from 'react-router-dom';
+import TechUsed from './TechUsed';
+import librariesUsed from '../LibrariesObject';
+import ProjectImage from './ProjectImage';
 
 describe('Single Project Component', () => {
   let container;
@@ -43,4 +46,20 @@ describe('Single Project Component', () => {
   it('has a discription of the project', () => {
     expect(container.find('p').first().text()).to.equal(testProject.text[0]);
   });
+  it("has an image or videp of the project", () => {
+    expect(container.containsMatchingElement(<ProjectImage />)).to.equal(true)
+  })
+  it("has a list of tech used", () => {
+    expect(container.containsMatchingElement(<TechUsed />)).to.equal(true)
+    expect(container.find(TechUsed)).to.have.lengthOf(testProject.techUsed.length)
+  })
+  it("has an image for each tech used", () => {
+    container.find(TechUsed).forEach((node, idx) => {
+      const kid = node.children().props().children
+      const tech = testProject.techUsed[idx].split(".")[0]
+      expect(kid.type).to.equal('img')
+      expect(kid.props.src).to.equal(`.././${librariesUsed[tech].logo}`)
+      expect(kid.props.alt).to.equal(`${testProject.techUsed[idx]} logo`)
+    })
+  })
 });
