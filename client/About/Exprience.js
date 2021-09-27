@@ -46,7 +46,7 @@ const Exprience = () => {
       .then(({ data }) => {
         setPastJobs(data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.error(err));
   }, []);
 
   return (

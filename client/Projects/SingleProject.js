@@ -8,7 +8,6 @@ import TechUsed from './TechUsed';
 const SingleProject = () => {
   const projectId = useParams().id;
   const project = projectData[projectId];
-  console.log(projectId);
   return (
     <article>
       <h1 className="section_title">{project.name}</h1>
