@@ -61,6 +61,27 @@
   background-color: aquamarine;
 }
 
+.logo_flex_row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.logo_flex_row div {
+  display: grid;
+  align-content: center;
+}
+
+.logo_flex_row img {
+  max-height: 120px;
+  max-width: 33vw;
+}
+.logo_flex_row p {
+  margin: 1em;
+}
+
 @media (min-width: 900px) {
   .project_grid {
     grid-template-columns: repeat(3, 1fr);

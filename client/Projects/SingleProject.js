@@ -39,9 +39,9 @@ const SingleProject = () => {
           return <p key={project.name + ':' + idx}>{fact}</p>;
         })}
       </section>
-      <section>
-        <p>Technologies Used for this project:</p>
-        <section  className="image_flex_row">
+      <section className="box">
+        <h3 className="title">Technologies Used for this project:</h3>
+        <section className="logo_flex_row">
           {project.techUsed.map((tech) => (
             <TechUsed key={`${project.name}:${tech}`} tech={tech} />
           ))}
