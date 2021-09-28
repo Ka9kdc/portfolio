@@ -12,11 +12,31 @@ const About = () => {
     <>
       <h1 className="section_title">Kelsey Schroeder</h1>
       <div className="flex_wrap_row">
-        <a href="#Experience">Experience</a>
-        <a href="#Education">Education</a>
-        <a href="#Contacts">Contact</a>
-        <a href="#Hobbies">Hobbies</a>
-        <a href="#Resume">Resume</a>
+        <a href="#Experience">
+          <button type="button" className="title find_out_more">
+            Experience
+          </button>
+        </a>
+        <a href="#Education">
+          <button type="button" className="title find_out_more">
+            Education
+          </button>
+        </a>
+        <a href="#Contacts">
+          <button type="button" className="title find_out_more">
+            Contact
+          </button>
+        </a>
+        <a href="#Hobbies">
+          <button type="button" className="title find_out_more">
+            Hobbies
+          </button>
+        </a>
+        <a href="#Resume">
+          <button type="button" className="title find_out_more">
+            Resume
+          </button>
+        </a>
       </div>
       <Summary />
       <ContactLinks />

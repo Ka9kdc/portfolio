@@ -35,7 +35,9 @@ const ContactLinks = () => {
 export const SingleLink = ({ link }) => {
   return (
     <a href={link.url}>
-      <img src={link.src} alt={link.alt} />
+      <button type="button" className="title find_out_more">
+        <img src={link.src} alt={link.alt} />
+      </button>
     </a>
   );
 };
