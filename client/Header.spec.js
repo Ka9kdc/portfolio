@@ -38,4 +38,11 @@ describe('Header component', () => {
     expect(pathId).to.not.equal(-1);
     expect(textid).to.equal(pathId);
   });
+  it('has a link to Skills at /Skills', () => {
+    const textid = text.indexOf('Skills');
+    const pathId = paths.indexOf('/Skills');
+    expect(textid).to.not.equal(-1);
+    expect(pathId).to.not.equal(-1);
+    expect(textid).to.equal(pathId);
+  });
 });
