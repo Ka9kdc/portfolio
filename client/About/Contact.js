@@ -24,7 +24,7 @@ export const contactLinksArr = [
 const ContactLinks = () => {
   return (
     <article className="flex_wrap_row multi_img" id="Contacts">
-      <h1 className="title">Contact Links</h1>
+      <h1 className="title">Contact Links:</h1>
       {contactLinksArr.map((link) => {
         return <SingleLink key={link.name} link={link} />;
       })}

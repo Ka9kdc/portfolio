@@ -7,10 +7,10 @@ import Routes from './Routes';
 
 const Main = () => {
   return (
-    <div>
+    <>
       <Header />
       <Routes />
-    </div>
+    </>
   );
 };
 
