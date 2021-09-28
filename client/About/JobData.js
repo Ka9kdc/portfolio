@@ -70,4 +70,4 @@ const workHistory = [
     ],
   },
 ];
-export default workHistory
+export default workHistory;

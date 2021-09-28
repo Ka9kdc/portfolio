@@ -1,8 +1,6 @@
 import React from 'react';
 import workHistory from './JobData';
 
-
-
 export const SingleJob = ({ job }) => {
   return (
     <section className="box white">
@@ -27,8 +25,6 @@ export const SingleJob = ({ job }) => {
 };
 
 const Exprience = () => {
- 
-
   return (
     <article id="Experience">
       <h1 className="section_title">Experience</h1>
