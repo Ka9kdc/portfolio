@@ -137,7 +137,7 @@ const librariesUsed = {
     logo: 'images/libraries/postgresql-logo.png',
     comfortLevel: comfortable,
     transparent: false,
-    key: 17,
+    key: 28,
   },
   heroku: {
     name: 'heroku',

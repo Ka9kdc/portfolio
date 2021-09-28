@@ -1,37 +1,36 @@
-
-
-.okay_with{
-    max-width: 100px;
-    max-height: 100px;
-    /* animation: LeftToRight 10s infinite; */
-    position: relative;
-
+#skills .box {
+  margin: 1em;
 }
 
-.played_with{
-    max-width: 50px;
-    max-height: 50px;
-    /* animation: LeftToRight 15s infinite; */
-    position: relative;
+.okay_with {
+  max-width: 125px;
+  max-height: 125px;
+  margin: 10px;
 }
 
-.comfortable{
-    max-width: 150px;
-    max-height: 150px;
-    /* animation: LeftToRight 20s infinite; */
-    position: relative;
+.played_with {
+  max-width: 75px;
+  max-height: 75px;
+  margin: 10px;
 }
 
-.comfortable img, .played_with img, .okay_with img {
-    max-width: 100%;
-    max-height: 100%;
+.comfortable {
+  max-width: 175px;
+  max-height: 175px;
+  align-content: center;
+  margin: 10px;
 }
 
-@keyframes LeftToRight {
-    0%{
-        left: var(--start);
-    }
-    100%{
-        left: calc(100vw + var(--end))
-    }
+.comfortable img,
+.played_with img,
+.okay_with img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.rows {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
 }

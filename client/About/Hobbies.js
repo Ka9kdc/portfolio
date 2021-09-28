@@ -45,7 +45,6 @@ export const SingleHobby = ({ hobby }) => {
       <img
         src={`images/hobbies/${hobby.image}`}
         alt={`Photo of ${hobby.activity}`}
-       
       />
       <p className="title">{hobby.activity}</p>
     </section>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Summary = () => {
   return (
-    <section id="Summary" >
+    <section id="Summary">
       <img
         src="images/kelsey.png"
         alt="head shot of Kelsey"

@@ -84,6 +84,9 @@
 
 @media (min-width: 900px) {
   .project_grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 31vw);
+  }
+  .project_title {
+    font-size: 4vw;
   }
 }

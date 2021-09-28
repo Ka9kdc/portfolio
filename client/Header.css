@@ -1,31 +1,29 @@
-
 body {
-    margin: 0;
-    background-color: #82b9eb;
-  }
-  
+  margin: 0;
+  background-color: #82b9eb;
+}
+
 nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav a {
-    text-decoration: none;color:black;
-    transition: transform 2s
+  text-decoration: none;
+  color: black;
+  transition: transform 2s;
 }
 
-nav a:hover{
-    transform: scale(1.5); 
+nav a:hover {
+  transform: scale(1.5);
 }
-
 
 nav a:active {
-   color: white;
+  color: white;
 }
 
-
-.white{
-      background-color: white;
-  }
+.white {
+  background-color: white;
+}
