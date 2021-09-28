@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 const Resume = () => {
   return (
     <>
-    <div className="video_wrapper">
-      <iframe
-        id="Resume"
-         className="responsive-iframe"
-        // style={{ width: '95%', height: '20vh' }}
-        src="Kelsey_Schroeder_Resume September_2021.pdf"
-      /></div>
+      <div className="video_wrapper">
+        <iframe
+          id="Resume"
+          className="responsive-iframe"
+          // style={{ width: '95%', height: '20vh' }}
+          src="Kelsey_Schroeder_Resume September_2021.pdf"
+        />
+      </div>
       <Link
         to="Kelsey_Schroeder_Resume September_2021.pdf"
         target="_blank"

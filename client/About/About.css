@@ -70,10 +70,9 @@
 }
 
 @media (max-width: 480px) {
-  .logo .title{
+  .logo .title {
     max-width: 60vw;
   }
-
 }
 
 @media (min-width: 900px) {
@@ -102,5 +101,8 @@
   .image_flex_row img {
     height: 210px;
     align-self: flex-end;
+  }
+  .logo .title {
+    min-width: 20vw;
   }
 }
