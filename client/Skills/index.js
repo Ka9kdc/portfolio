@@ -42,7 +42,7 @@ const Skills = () => {
           </section>
         </article>
         <article className="box white">
-          <h2 className="title">Played with:</h2>
+          <h2 className="title">Played With:</h2>
           <section className="rows">
             {playedWith.map((tech) => {
               const { key, comfortLevel } = librariesUsed[tech];
