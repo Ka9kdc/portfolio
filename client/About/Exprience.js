@@ -17,7 +17,7 @@ export const fakeJob = {
 
 export const SingleJob = ({ job }) => {
   return (
-    <section className="box">
+    <section className="box white">
       <div className="flex_wrap_row">
         <img src={job.companyLogo} alt={`${job.companyName} Logo`} />
         <div>

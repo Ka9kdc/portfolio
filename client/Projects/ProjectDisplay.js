@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectDisplay = ({ project }) => {
   return (
-    <section className="box">
+    <section className="box white">
       {project.video ? (
         <div className="video_wrapper">
           <iframe

@@ -4,7 +4,7 @@ const ProjectImage = ({ project }) => {
   return (
     <section className="grid">
       {project.video && project.video.src && (
-        <div className="box">
+        <div className="box white">
           <div className="video_wrapper">
             <iframe
               src={project.video.src}
@@ -18,7 +18,7 @@ const ProjectImage = ({ project }) => {
         </div>
       )}
       {project.gif && project.gif.src && (
-        <div className="box">
+        <div className="box white">
           <div className="video_wrapper">
             <iframe
               src={
@@ -34,7 +34,7 @@ const ProjectImage = ({ project }) => {
         </div>
       )}
       {project.image.src && (
-        <div className="box">
+        <div className="box white">
           <img
             className="image_wrapper"
             src={`.././${project.image.src}`}

@@ -38,7 +38,7 @@ const SingleProject = () => {
           return <p key={project.name + ':' + idx}>{fact}</p>;
         })}
       </section>
-      <section className="box">
+      <section className="box white">
         <h3 className="title">Technologies Used for this project:</h3>
         <section className="logo_flex_row">
           {project.techUsed.map((tech) => (

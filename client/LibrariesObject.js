@@ -148,7 +148,7 @@ const librariesUsed = {
   },
   SQL: {
     name: 'SQL',
-    logo: 'images/libraries/sqlLogo.jpg',
+    logo: 'images/libraries/sqlLogo.jpeg',
     comfortLevel: okay_with,
     transparent: false,
     key: 20,

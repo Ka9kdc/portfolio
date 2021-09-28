@@ -58,7 +58,7 @@ const Education = () => {
 
 export const Institute = ({ ed }) => {
   return (
-    <section className="box">
+    <section className="box white">
       <div className="grid multi_img">
         {ed.images.map((image) => (
           <img src={image.src} alt={image.alt} key={image.alt} />
