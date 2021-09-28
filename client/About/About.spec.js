@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { mount, shallow } from 'enzyme';
-import { mockAxios } from '../index.spec';
+import '../index.spec';
 import About from '.';
 import Exprience, { SingleJob } from './Exprience';
 import Education, { Institute } from './Education';
@@ -10,6 +10,7 @@ import ContactLinks, { SingleLink } from './Contact';
 import Hobbies, { myHobbies, SingleHobby } from './Hobbies';
 import Resume from './Resume';
 import { BrowserRouter } from 'react-router-dom';
+import workHistory from './JobData';
 
 describe('About Component', () => {
   let container;
@@ -93,7 +94,7 @@ describe('About Component', () => {
       expect(articles.indexOf('Experience')).to.not.equal(-1);
     });
     it('contains SingleJob', () => {
-      expect(container.find(SingleJob)).to.have.lengthOf(1);
+      expect(container.find(SingleJob)).to.have.lengthOf(workHistory.length);
     });
     it('contianers education and Institute', () => {
       expect(
@@ -146,11 +147,6 @@ describe('About Component', () => {
       expect(container.containsMatchingElement([<Resume key="10" />])).to.equal(
         true
       );
-    });
-    it('makes an axois call', () => {
-      const [getRequest] = mockAxios.history.get;
-      expect(getRequest).to.not.equal(undefined);
-      expect(getRequest.url).to.equal('/api/work');
     });
   });
 });
