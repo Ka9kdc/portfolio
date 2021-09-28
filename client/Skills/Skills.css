@@ -1,4 +1,4 @@
-#skills .box {
+.tech.box {
   margin: 1em;
 }
 
@@ -26,11 +26,4 @@
 .okay_with img {
   max-width: 100%;
   max-height: 100%;
-}
-
-.rows {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: center;
 }

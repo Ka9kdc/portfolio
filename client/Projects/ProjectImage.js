@@ -1,8 +1,11 @@
 import React from 'react';
 
 const ProjectImage = ({ project }) => {
+  const count = ['video', 'gif', 'image'].filter(
+    (str) => project[str] && project[str].src
+  ).length;
   return (
-    <section className="grid">
+    <section className={count !== 1 ? 'grid' : 'soloBox'}>
       {project.video && project.video.src && (
         <div className="box white">
           <div className="video_wrapper">

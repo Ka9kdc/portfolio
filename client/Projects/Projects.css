@@ -82,11 +82,21 @@
   margin: 1em;
 }
 
+.soloBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 95%;
+  margin: 2rem auto;
+}
+
 @media (min-width: 900px) {
   .project_grid {
-    grid-template-columns: repeat(3, 31vw);
+    grid-template-columns: repeat(3, 30vw);
   }
   .project_title {
     font-size: 4vw;
+  }
+  .soloBox {
+    width: 50%;
   }
 }

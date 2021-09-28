@@ -18,10 +18,10 @@ const Skills = () => {
   return (
     <div>
       <h1 className="section_title">Skills</h1>
-      <section id="skills">
-        <article className="box white">
+      <section>
+        <article className="tech box white">
           <h2 className="title">Comfortable Using:</h2>
-          <section className="rows">
+          <section className="logo_flex_row">
             {comfortable.map((tech) => {
               const { key, comfortLevel } = librariesUsed[tech];
               return (
@@ -30,9 +30,9 @@ const Skills = () => {
             })}
           </section>
         </article>
-        <article className="box white">
+        <article className="tech box white">
           <h2 className="title">Okay Using:</h2>
-          <section className="rows">
+          <section className="logo_flex_row">
             {okayWith.map((tech) => {
               const { key, comfortLevel } = librariesUsed[tech];
               return (
@@ -41,9 +41,9 @@ const Skills = () => {
             })}
           </section>
         </article>
-        <article className="box white">
+        <article className="tech box white">
           <h2 className="title">Played With:</h2>
-          <section className="rows">
+          <section className="logo_flex_row">
             {playedWith.map((tech) => {
               const { key, comfortLevel } = librariesUsed[tech];
               return (
