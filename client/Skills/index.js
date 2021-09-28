@@ -1,6 +1,6 @@
 import React from 'react';
 import librariesUsed from './LibrariesObject';
-import TechUsed from './Projects/TechUsed';
+import TechUsed from '../Projects/TechUsed';
 import './Skills.css';
 
 const Skills = () => {
@@ -8,10 +8,10 @@ const Skills = () => {
   const comfortable = libraries.filter(
     (tech) => librariesUsed[tech].comfortLevel === 'comfortable'
   );
-  const okay_with = libraries.filter(
+  const okayWith = libraries.filter(
     (tech) => librariesUsed[tech].comfortLevel === 'okay_with'
   );
-  const played_with = libraries.filter(
+  const playedWith = libraries.filter(
     (tech) => librariesUsed[tech].comfortLevel === 'played_with'
   );
 
@@ -33,7 +33,7 @@ const Skills = () => {
         <article className="box white">
           <h2 className="title">Okay Using:</h2>
           <section className="rows">
-            {okay_with.map((tech) => {
+            {okayWith.map((tech) => {
               const { key, comfortLevel } = librariesUsed[tech];
               return (
                 <TechUsed tech={tech} key={key} className={comfortLevel} />
@@ -44,7 +44,7 @@ const Skills = () => {
         <article className="box white">
           <h2 className="title">Played with:</h2>
           <section className="rows">
-            {played_with.map((tech) => {
+            {playedWith.map((tech) => {
               const { key, comfortLevel } = librariesUsed[tech];
               return (
                 <TechUsed tech={tech} key={key} className={comfortLevel} />

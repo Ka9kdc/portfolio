@@ -5,7 +5,7 @@ import SingleProject from './SingleProject';
 import projectData from './hackathonProjectData';
 import { MemoryRouter, Route } from 'react-router-dom';
 import TechUsed from './TechUsed';
-import librariesUsed from '../LibrariesObject';
+import librariesUsed from '../Skills/LibrariesObject';
 import ProjectImage from './ProjectImage';
 
 describe('Single Project Component', () => {

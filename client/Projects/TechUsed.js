@@ -1,5 +1,5 @@
 import React from 'react';
-import librariesUsed from '../LibrariesObject';
+import librariesUsed from '../Skills/LibrariesObject';
 
 const TechUsed = ({ tech, className }) => {
   let name = tech.split('.')[0];
