@@ -2,12 +2,13 @@ import { expect } from 'chai';
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 
+
 import Exprience, { SingleJob } from './Exprience';
 import workHistory from './JobData';
 
 describe('Experince Component', () => {
   let container;
-  const fakeJob = workHistory[0];
+  const fakeJob = workHistory[0]
 
   describe('shallow render', () => {
     before(() => {
@@ -41,6 +42,7 @@ describe('Experince Component', () => {
   });
   describe('mounted render', () => {
     before(() => {
+
       container = mount(<Exprience />);
     });
 
