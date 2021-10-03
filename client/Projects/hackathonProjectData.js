@@ -266,9 +266,82 @@ const projectData = [
     org: 'TechTogether Seattle 2021',
     date: 'January 2021',
   },
-
+  {
+    id: 7,
+    name: 'WCRA Website Redesigned',
+    links: [
+      {
+        name: 'W9CUU.ORG',
+        url: 'https://w9ccu.org',
+      },
+    ],
+    image: {
+      src: 'images/LittleLogoTransparent.png',
+      alt: '',
+    },
+    text: [
+      'In March 2021, the w9ccu website crashed due to the hosting service no longer supporting the php version used on the website. At the request of the WCRA board, I was asked to remake the website using wordpress.',
+      '',
+    ],
+    techUsed: ['wordpress', 'HTML', 'CSS'],
+    hackathon: false,
+    org: 'Wheaton Community Radio Amatuers (WCRA)',
+    date: 'April 2021',
+  },
   // {id:8,
-  //   title: '',
+  //    name: '',
+  //   links: [
+  //     {
+  //       name: 'Submission',
+  //       url: '',
+  //     },
+  //     {
+  //       name: 'Deployed',
+  //       url: '',
+  //     },
+  //     {
+  //       name: 'GitHub Repo',
+  //       url: '',
+  //     },
+  //   ],
+  //   image: {
+  //     src: '',
+  //     alt: '',
+  //   },
+  //   text: ['', ''],
+  //   techUsed: [],
+  //   hackathon: true,
+  //   org: 'Mintbean',
+  //   date: '2021',
+  // },
+  // {id:9,
+  //    name: '',
+  //   links: [
+  //     {
+  //       name: 'Submission',
+  //       url: '',
+  //     },
+  //     {
+  //       name: 'Deployed',
+  //       url: '',
+  //     },
+  //     {
+  //       name: 'GitHub Repo',
+  //       url: '',
+  //     },
+  //   ],
+  //   image: {
+  //     src: '',
+  //     alt: '',
+  //   },
+  //   text: ['', ''],
+  //   techUsed: [],
+  //   hackathon: true,
+  //   org: 'Mintbean',
+  //   date: '2021',
+  // },
+  // {id:10,
+  //    name: '',
   //   links: [
   //     {
   //       name: 'Submission',

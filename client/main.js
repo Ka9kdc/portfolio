@@ -3,7 +3,8 @@ import React from 'react';
 import Header from './Header';
 import Routes from './Routes';
 
-// import './main.css';
+import './mobile.css';
+import './main.css';
 
 const Main = () => {
   return (

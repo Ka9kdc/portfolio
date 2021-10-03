@@ -42,6 +42,7 @@ const SingleProject = () => {
           })}
         </section>
       </section>
+      <ProjectImage project={project} />
       <section className="tech box white">
         <h3 className="title">Technologies Used for this project:</h3>
         <section className="logo_flex_row">
@@ -50,7 +51,7 @@ const SingleProject = () => {
           ))}
         </section>
       </section>
-      <ProjectImage project={project} />
+
       <section className="flex_wrap_row">
         <h2>Other Projects:</h2>
         {projectData.map((otherProject) => {

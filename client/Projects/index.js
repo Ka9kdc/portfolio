@@ -2,7 +2,7 @@ import React from 'react';
 import projectData from './hackathonProjectData';
 import ProjectDisplay from './ProjectDisplay';
 
-import './Projects.css';
+// import './Projects.css';
 
 const Projects = () => {
   return (

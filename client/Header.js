@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Header.css';
+// import './Header.css';
 
 const Header = () => {
   const [active, setActive] = useState(false);
 
-  console.log(active);
   return (
-    <nav id="navbar" className="faded">
+    <nav id="navbar">
       <ul className={active ? 'menu active' : 'menu'}>
         <li className="logo">
           <h3 className="title">Kelsey Schroeder</h3>

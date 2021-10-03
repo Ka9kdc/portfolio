@@ -1,7 +1,7 @@
 import React from 'react';
 import librariesUsed from './LibrariesObject';
 import TechUsed from '../Projects/TechUsed';
-import './Skills.css';
+// import './Skills.css';
 
 const Skills = () => {
   const libraries = Object.keys(librariesUsed);
