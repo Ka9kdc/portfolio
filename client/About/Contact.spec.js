@@ -10,7 +10,7 @@ describe('Contact Component', () => {
       container = shallow(<ContactLinks />);
     });
     it('has a header', () => {
-      expect(container.find('h1').text()).to.be.equal('Contact Links');
+      expect(container.find('h1').text()).to.be.equal('Contact Links:');
     });
     it('renders link images', () => {
       expect(

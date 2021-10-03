@@ -10,7 +10,7 @@ const SingleProject = () => {
   const project = projectData[projectId];
   return (
     <article>
-      <h2 className="section_title">{project.name}</h2>
+      <h1 className="section_title">{project.name}</h1>
       <section className="grid">
         <section>
           <section className="flex_wrap_row ">
