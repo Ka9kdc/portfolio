@@ -70,7 +70,7 @@ export const Institute = ({ ed }) => {
       </div>
       {ed.description.map((point, idx) => (
         // eslint-disable-next-line react/no-array-index-key
-        <p key={`${ed.place}:${idx}`}>{point}</p>
+        <p key={`${ed.place}:${idx}`} className="center">{point}</p>
       ))}
     </section>
   );

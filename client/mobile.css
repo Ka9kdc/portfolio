@@ -97,6 +97,10 @@ body {
   margin: 1rem;
 }
 
+#Summary p {
+  text-indent: 50px;
+}
+
 #Summary img {
   float: left;
   max-width: 50%;

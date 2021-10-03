@@ -288,32 +288,34 @@ const projectData = [
     org: 'Wheaton Community Radio Amatuers (WCRA)',
     date: 'April 2021',
   },
-  // {id:8,
-  //    name: '',
-  //   links: [
-  //     {
-  //       name: 'Submission',
-  //       url: '',
-  //     },
-  //     {
-  //       name: 'Deployed',
-  //       url: '',
-  //     },
-  //     {
-  //       name: 'GitHub Repo',
-  //       url: '',
-  //     },
-  //   ],
-  //   image: {
-  //     src: '',
-  //     alt: '',
-  //   },
-  //   text: ['', ''],
-  //   techUsed: [],
-  //   hackathon: true,
-  //   org: 'Mintbean',
-  //   date: '2021',
-  // },
+  {
+    id: 8,
+    name: 'Learn-A-Bit',
+    links: [
+      {
+        name: 'Deployed',
+        url: 'https://ka9kdc.github.io/Learn-a-bit/',
+      },
+      {
+        name: 'GitHub Repo',
+        url: 'https://github.com/Ka9kdc/Learn-a-bit/tree/ChallengeSet02/Projects/ChallengeSet02',
+      },
+    ],
+    image: {
+      src: 'images/smartmockups_kuapdm3b.jpg',
+      alt: 'Mock up of my project',
+    },
+    text: [
+      'Their learn-a-bit challenges are small static webpage creations focusing on html and css responsive design. For the challenge you are given an image of what your site should look like in a mobile friendly view and on a desktop.',
+      "For the first week's challenge; we were tasked with making a header section and an image gallery. During this challenge I focused on learning and implementing css animations and transitions in a mobile first designs.",
+      'Week 2: we were tasked with making a pricing page and a review page. During this challenge, I focused on learning and implementing css variables and creating icons with just css.',
+      'Week three: we were tasked with making a contact form and footer along with combining the previous weeks challenges into a single page. During  this challenge, I learned that you can import an html file into another html file using the object or iframe tags. However doing so and keeping a neat responsive design, can be challenging because you have to specify the height and width you need the iframe to be to prevent having multiple scroll bars and hidden text on your page.',
+    ],
+    techUsed: ['HTML', 'CSS'],
+    hackathon: true,
+    org: 'Mintbean',
+    date: 'September 2021',
+  },
   // {id:9,
   //    name: '',
   //   links: [
