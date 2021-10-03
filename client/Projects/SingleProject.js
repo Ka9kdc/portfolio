@@ -11,7 +11,7 @@ const SingleProject = () => {
   return (
     <article>
       <h1 className="section_title">{project.name}</h1>
-      <section className="grid">
+      <section className="grid faded">
         <section>
           <section className="flex_wrap_row ">
             {project.links.map((link) => {
@@ -52,7 +52,7 @@ const SingleProject = () => {
         </section>
       </section>
 
-      <section className="flex_wrap_row">
+      <section className="flex_wrap_row wrap">
         <h2>Other Projects:</h2>
         {projectData.map((otherProject) => {
           if (otherProject.id === project.id) {

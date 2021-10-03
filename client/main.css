@@ -89,4 +89,8 @@
   .soloBox {
     width: 50%;
   }
+
+  .wrap{
+      flex-wrap: wrap;
+  }
 }
