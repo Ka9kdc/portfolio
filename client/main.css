@@ -34,8 +34,9 @@
   }
 
   .item a:hover {
-    padding: 10px;
-    background-color: #e77a80;
+    padding: 5px;
+    box-shadow: 2px 2px 2px aquamarine;
+  background-color: blue;
     border-radius: 10px;
     font-size: 1.5em;
   }

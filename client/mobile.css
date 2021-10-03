@@ -9,7 +9,16 @@
 
 body {
   margin: 15px;
-  background-color: #82b9eb;
+  color: white;
+  /* background-color: #82b9eb; */
+  background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 .section_title {
@@ -51,7 +60,7 @@ body {
 
 .menu a {
   text-decoration: none;
-  color: black;
+  color:white;
 }
 
 .logo {
@@ -70,7 +79,8 @@ body {
 }
 
 .item a:hover {
-  background-color: #e77a80;
+  box-shadow: 2px 2px 2px blue;
+  background-color: aquamarine;
   border-radius: 10px;
 }
 
@@ -120,6 +130,7 @@ body {
   box-shadow: inset 0px 0px 18px rgb(59, 20, 20);
   padding: 1em;
   margin: 1em;
+  color: black
 }
 
 .flex_wrap_row {
