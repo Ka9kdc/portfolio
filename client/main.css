@@ -36,7 +36,7 @@
   .item a:hover {
     padding: 5px;
     box-shadow: 2px 2px 2px aquamarine;
-  background-color: blue;
+    background-color: blue;
     border-radius: 10px;
     font-size: 1.5em;
   }
@@ -90,7 +90,7 @@
     width: 50%;
   }
 
-  .wrap{
-      flex-wrap: wrap;
+  .wrap {
+    flex-wrap: wrap;
   }
 }
