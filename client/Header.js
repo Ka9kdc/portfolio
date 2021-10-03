@@ -12,16 +12,24 @@ const Header = () => {
           <h3 className="title">Kelsey Schroeder</h3>
         </li>
         <li className="item">
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" onClick={() => {
+            setActive(!active);
+          }} >Home</NavLink>
         </li>
         <li className="item">
-          <NavLink to="/About">About</NavLink>
+          <NavLink to="/About" onClick={() => {
+            setActive(!active);
+          }}>About</NavLink>
         </li>
         <li className="item">
-          <NavLink to="/Projects">Projects</NavLink>
+          <NavLink to="/Projects" onClick={() => {
+            setActive(!active);
+          }}>Projects</NavLink>
         </li>
         <li className="item">
-          <NavLink to="/Skills">Skills</NavLink>
+          <NavLink to="/Skills" onClick={() => {
+            setActive(!active);
+          }}>Skills</NavLink>
         </li>
         <li
           className="toggle"

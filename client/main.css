@@ -39,6 +39,10 @@
     border-radius: 10px;
     font-size: 1.5em;
   }
+
+  .active .item {
+    animation: unset;
+  }
   /* about */
 
   .section_title {
