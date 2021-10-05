@@ -11,7 +11,7 @@ const Header = () => {
         <li className="logo">
           <h3 className="title">Kelsey Schroeder</h3>
         </li>
-        <li className="item">
+        {/* <li className="item">
           <NavLink
             to="/"
             onClick={() => {
@@ -20,10 +20,10 @@ const Header = () => {
           >
             Home
           </NavLink>
-        </li>
+        </li> */}
         <li className="item">
           <NavLink
-            to="/About"
+            to="/"
             onClick={() => {
               setActive(!active);
             }}

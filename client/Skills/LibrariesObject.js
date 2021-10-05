@@ -203,7 +203,7 @@ const librariesUsed = {
     transparent: false,
     key: 27,
   },
-  wordpress: {
+  Wordpress: {
     name: 'Wordpress',
     logo: 'images/libraries/wordpress.png',
     comfortLevel: played_with,

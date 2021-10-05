@@ -20,5 +20,9 @@ export const articles = [
       'Three.js is a 3D object rendering library that allows you to create and manipulate objects in a three dimensional field on the browser. While it is not specifically designed for building games, it is...',
     date: 'Oct, 30, 2020',
     where: 'Medium',
+    image: {
+      src: "images/ThreeJs_Medium_Cover_Photo.png",
+      alt: "Cover photo for Three Js Medium Article"
+    }
   },
 ];

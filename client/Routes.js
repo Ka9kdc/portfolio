@@ -9,12 +9,13 @@ import Skills from './Skills';
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/About" component={About} />
+      
       <Route path="/Project/:id" component={SingleProject} />
       <Route path="/Projects" component={Projects} />
       <Route path="/Skills" component={Skills} />
       <Route path="/Publications" component={Publications} />
-      <Route path="/" />
+      <Route path="/" component={About} />
+      {/* <Route path="/" /> */}
     </Switch>
   );
 };

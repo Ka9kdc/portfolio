@@ -276,14 +276,14 @@ const projectData = [
       },
     ],
     image: {
-      src: 'images/LittleLogoTransparent.png',
+      src: 'images/smartmockups_kuehezis.jpg',
       alt: '',
     },
     text: [
       'In March 2021, the w9ccu website crashed due to the hosting service no longer supporting the php version used on the website. At the request of the WCRA board, I was asked to remake the website using wordpress.',
       '',
     ],
-    techUsed: ['wordpress', 'HTML', 'CSS'],
+    techUsed: ['Wordpress', 'HTML', 'CSS'],
     hackathon: false,
     org: 'Wheaton Community Radio Amatuers (WCRA)',
     date: 'April 2021',
