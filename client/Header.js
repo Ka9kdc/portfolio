@@ -51,6 +51,16 @@ const Header = () => {
             Skills
           </NavLink>
         </li>
+        <li className="item">
+          <NavLink
+            to="/Publications"
+            onClick={() => {
+              setActive(!active);
+            }}
+          >
+            Publications
+          </NavLink>
+        </li>
         <li
           className="toggle"
           onClick={() => {
