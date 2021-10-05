@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import './Header.css';
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -11,16 +10,6 @@ const Header = () => {
         <li className="logo">
           <h3 className="title">Kelsey Schroeder</h3>
         </li>
-        {/* <li className="item">
-          <NavLink
-            to="/"
-            onClick={() => {
-              setActive(!active);
-            }}
-          >
-            Home
-          </NavLink>
-        </li> */}
         <li className="item">
           <NavLink
             to="/"

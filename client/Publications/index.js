@@ -17,8 +17,7 @@ const Publications = () => {
           </button>
         </a>
       </section>
-      <article id="#Videos">
-        {/* <h2>Videos</h2> */}
+      <article>
         <section className="project_grid">
           {videos.map((video) => {
             return (
@@ -61,28 +60,6 @@ const Publications = () => {
           })}
         </section>
       </article>
-      {/* <article id="#Articles">
-        <h2>Articles</h2>
-        <section className="project_grid">
-          {articles.map((article) => {
-            return (
-              <section className="box white" key={article.title}>
-                <img
-          className="image_wrapper"
-          src={article.image.src}
-          alt={article.image.alt}
-        />
-                <h3 className="title">{article.title}</h3>
-                <p>
-                  Published: {article.date} on {article.where}
-                </p>
-                <p>{article.descripition}</p>
-                <a href={article.src}>Read More</a>
-              </section>
-            );
-          })}
-        </section>
-      </article> */}
     </article>
   );
 };

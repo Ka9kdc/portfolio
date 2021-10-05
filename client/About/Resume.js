@@ -8,7 +8,6 @@ const Resume = () => {
         <iframe
           id="Resume"
           className="responsive-iframe"
-          // style={{ width: '95%', height: '20vh' }}
           src="Kelsey_Schroeder_Resume September_2021.pdf"
         />
       </div>

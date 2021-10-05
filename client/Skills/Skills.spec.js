@@ -19,7 +19,6 @@ describe('skills component', () => {
       expect(container.find('h2')).to.have.lengthOf(3);
     });
     it('has a knowledgable section listed first', () => {
-      // expect(container.find("h2").first().text()).to.be.equal("Knowledgable")
       expect(container.find('h2').first().text()).to.be.equal(
         'Comfortable Using:'
       );

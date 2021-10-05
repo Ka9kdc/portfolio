@@ -1,6 +1,5 @@
 import React from 'react';
 import Exprience from './Exprience';
-// import './About.css';
 import Education from './Education';
 import Summary from './Summary';
 import ContactLinks from './Contact';

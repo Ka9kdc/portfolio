@@ -1,6 +1,5 @@
 import React from 'react';
 
-//Add certificates to SIU
 export const EducationData = [
   {
     images: [
