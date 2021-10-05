@@ -9,7 +9,6 @@ import Skills from './Skills';
 const Routes = () => {
   return (
     <Switch>
-      
       <Route path="/Project/:id" component={SingleProject} />
       <Route path="/Projects" component={Projects} />
       <Route path="/Skills" component={Skills} />

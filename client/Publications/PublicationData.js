@@ -21,8 +21,8 @@ export const articles = [
     date: 'Oct, 30, 2020',
     where: 'Medium',
     image: {
-      src: "images/ThreeJs_Medium_Cover_Photo.png",
-      alt: "Cover photo for Three Js Medium Article"
-    }
+      src: 'images/ThreeJs_Medium_Cover_Photo.png',
+      alt: 'Cover photo for Three Js Medium Article',
+    },
   },
 ];

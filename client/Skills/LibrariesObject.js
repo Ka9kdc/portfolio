@@ -1,5 +1,7 @@
-/* eslint-disable camelcase */
+
+// eslint-disable-next-line camelcase
 const okay_with = 'okay_with';
+// eslint-disable-next-line camelcase
 const played_with = 'played_with';
 const comfortable = 'comfortable';
 

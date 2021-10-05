@@ -38,20 +38,24 @@ const Publications = () => {
               </section>
             );
           })}
-            {articles.map((article) => {
+          {articles.map((article) => {
             return (
               <section className="box white" key={article.title}>
-                 <img
-          className="image_wrapper"
-          src={article.image.src}
-          alt={article.image.alt}
-        />
+                <img
+                  className="image_wrapper"
+                  src={article.image.src}
+                  alt={article.image.alt}
+                />
                 <h3 className="title">{article.title}</h3>
                 <p>
                   Published: {article.date} on {article.where}
                 </p>
                 <p>{article.descripition}</p>
-                <a href={article.src}><button type="button" className="find_out_more">Read More</button></a>
+                <a href={article.src}>
+                  <button type="button" className="find_out_more">
+                    Read More
+                  </button>
+                </a>
               </section>
             );
           })}
