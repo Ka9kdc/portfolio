@@ -31,7 +31,7 @@ describe('Hobbies component', () => {
       const image = container.find('img');
       expect(image).to.have.lengthOf(1);
       expect(image.props().src).to.be.equal(
-        `images/hobbies/${myHobbies[0].image}`
+        `images/Hobbies/${myHobbies[0].image}`
       );
       expect(image.props().alt).to.be.equal(
         `Photo of ${myHobbies[0].activity}`
@@ -59,7 +59,7 @@ describe('Hobbies component', () => {
       const image = container.find('img');
       expect(image).to.have.lengthOf(myHobbies.length);
       expect(image.at(0).props().src).to.be.equal(
-        `images/hobbies/${myHobbies[0].image}`
+        `images/Hobbies/${myHobbies[0].image}`
       );
       expect(image.at(0).props().alt).to.be.equal(
         `Photo of ${myHobbies[0].activity}`

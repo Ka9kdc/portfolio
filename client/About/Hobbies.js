@@ -43,7 +43,7 @@ export const SingleHobby = ({ hobby }) => {
   return (
     <section>
       <img
-        src={`images/hobbies/${hobby.image}`}
+        src={`images/Hobbies/${hobby.image}`}
         alt={`Photo of ${hobby.activity}`}
       />
       <p className="title">{hobby.activity}</p>

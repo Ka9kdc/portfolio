@@ -27,7 +27,7 @@ export const EducationData = [
         alt: 'Southern Illinios University Carbondale Logo',
       },
       {
-        src: 'images/siuAviationPLane.png',
+        src: 'images/siuAviationPlane.png',
         alt: 'Southern Illinios University Aviation Logo',
       },
     ],
