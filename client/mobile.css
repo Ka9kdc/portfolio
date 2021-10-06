@@ -278,3 +278,7 @@ body {
   bottom: 0;
   right: 0;
 }
+
+.logo_flex_row.box.white{
+  align-items: center;
+}

@@ -8,7 +8,7 @@ const MainTechStack = () => {
 
   return (
     <section className="logo_flex_row box  white">
-      <h2 className="title">Main Tech Stack</h2>
+      <h2 className="title">Main Tech Stack:</h2>
       {mainStack.map((tech) => {
         const { key, comfortLevel } = librariesUsed[tech];
         return <TechUsed tech={tech} key={key} className={comfortLevel} />;
