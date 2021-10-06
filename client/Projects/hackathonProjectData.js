@@ -191,10 +191,10 @@ const projectData = [
     id: 5,
     name: 'Tetrix',
     links: [
-      {
-        name: 'Submission',
-        url: '',
-      },
+      // {
+      //   name: 'Submission',
+      //   url: '',
+      // },
       {
         name: 'Deployed',
         url: 'https://ka9kdc.github.io/tetrix/',
