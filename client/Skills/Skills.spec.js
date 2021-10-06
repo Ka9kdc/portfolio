@@ -41,4 +41,33 @@ describe('skills component', () => {
       );
     });
   });
+  describe('libraries object', () => {
+    const keys = Object.keys(librariesUsed);
+    it('all have a logo url', () => {
+      keys.forEach((tech) => {
+        expect(librariesUsed[tech].logo).to.exist;
+        expect(librariesUsed[tech].logo).to.have.length.greaterThan(0);
+        expect(typeof librariesUsed[tech].logo).to.equal('string');
+      });
+    });
+    it('all have a name', () => {
+      keys.forEach((tech) => {
+        expect(librariesUsed[tech].name).to.exist;
+        expect(librariesUsed[tech].name).to.have.length.greaterThan(0);
+        expect(typeof librariesUsed[tech].name).to.equal('string');
+      });
+    });
+    it('all have a key', () => {
+      keys.forEach((tech) => {
+        expect(librariesUsed[tech].key).to.exist;
+        expect(typeof librariesUsed[tech].key).to.equal('number');
+      });
+    });
+    it('all have a transparent', () => {
+      keys.forEach((tech) => {
+        expect(librariesUsed[tech].transparent).to.exist;
+        expect(typeof librariesUsed[tech].transparent).to.equal('boolean');
+      });
+    });
+  });
 });
