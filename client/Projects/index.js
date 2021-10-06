@@ -20,7 +20,6 @@ const Projects = () => {
     <article>
       <h1 className="section_title">My Projects</h1>
       <div className="find_out_more_container">
-        {' '}
         <button
           type="button"
           className="find_out_more"

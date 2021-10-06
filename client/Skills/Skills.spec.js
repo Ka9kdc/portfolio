@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import Skills from '.';
 import TechUsed from '../Projects/TechUsed';
 import librariesUsed from './LibrariesObject';
+import MainTechStack from '../About/MainTechStack';
 
 describe('skills component', () => {
   let container;
@@ -34,5 +35,8 @@ describe('skills component', () => {
         Object.keys(librariesUsed).length
       );
     });
+    it("has main tech stack", () => {
+      expect(container.containsMatchingElement(<MainTechStack />)).to.equal(true);
+    })
   });
 });
