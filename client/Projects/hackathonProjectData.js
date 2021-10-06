@@ -371,7 +371,7 @@ const projectData = [
   //   hackathon: true,
   //   org: 'Mintbean',
   //   date: '2021',
-    // solo: true
+  // solo: true
   // },
 ];
 
