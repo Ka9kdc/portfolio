@@ -17,7 +17,7 @@ export const EducationData = [
     description: [
       'Certification in Javascript Web Development',
       'Fullstack Academy is a top-ranked software development school based in New York City. A full-time immersive program covers a broad curriculum centered on full-stack Javascript. Topics taught include Node.js, React, Express, SQL databases, advanced HTML & CSS, and CS fundamentals.',
-      "Fullstack Academy's Educational structure is project based and outcome-driven, with a strong focus on teaching best practices and building functional projects.",
+      "Fullstack Academy's Educational structure is project-based and outcome-driven, with a strong focus on teaching best practices and building functional projects.",
     ],
   },
   {
