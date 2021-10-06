@@ -35,8 +35,10 @@ describe('skills component', () => {
         Object.keys(librariesUsed).length
       );
     });
-    it("has main tech stack", () => {
-      expect(container.containsMatchingElement(<MainTechStack />)).to.equal(true);
-    })
+    it('has main tech stack', () => {
+      expect(container.containsMatchingElement(<MainTechStack />)).to.equal(
+        true
+      );
+    });
   });
 });

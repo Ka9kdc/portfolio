@@ -72,9 +72,9 @@ describe('About Component', () => {
       );
     });
     it('renders the main tech stack component', () => {
-      expect(
-        container.containsMatchingElement(<MainTechStack />)
-      ).to.equal(true);
+      expect(container.containsMatchingElement(<MainTechStack />)).to.equal(
+        true
+      );
     });
   });
 
@@ -155,15 +155,13 @@ describe('About Component', () => {
       );
     });
     it('renders the main tech stack component', () => {
-      expect(
-        container.containsMatchingElement(<MainTechStack />)
-      ).to.equal(true);
+      expect(container.containsMatchingElement(<MainTechStack />)).to.equal(
+        true
+      );
     });
     it('renders the tech used component', () => {
-      expect(
-        container.containsMatchingElement(<TechUsed />)
-      ).to.equal(true);
-      expect(container.find(TechUsed)).to.have.lengthOf(5)
+      expect(container.containsMatchingElement(<TechUsed />)).to.equal(true);
+      expect(container.find(TechUsed)).to.have.lengthOf(5);
     });
     it('makes an axois call', () => {
       const [getRequest] = mockAxios.history.get;

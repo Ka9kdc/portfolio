@@ -28,9 +28,9 @@ describe('the main project component', () => {
       );
     });
     it('renders the main tech stack component', () => {
-      expect(
-        container.containsMatchingElement(<MainTechStack />)
-      ).to.equal(true);
+      expect(container.containsMatchingElement(<MainTechStack />)).to.equal(
+        true
+      );
     });
   });
   describe('mount render', () => {
@@ -47,7 +47,7 @@ describe('the main project component', () => {
       );
     });
     it('should have a title for each project', () => {
-      expect(container.find('h2')).to.have.lengthOf(projectData.length+1);
+      expect(container.find('h2')).to.have.lengthOf(projectData.length + 1);
       expect(container.find('h2').at(0).text()).to.equal(projectData[0].name);
     });
     it('it should have a list of tech for each project', () => {
@@ -60,15 +60,13 @@ describe('the main project component', () => {
       ).to.equal(projectData[0].techUsed[0]);
     });
     it('renders the main tech stack component', () => {
-      expect(
-        container.containsMatchingElement(<MainTechStack />)
-      ).to.equal(true);
+      expect(container.containsMatchingElement(<MainTechStack />)).to.equal(
+        true
+      );
     });
     it('renders the tech used component', () => {
-      expect(
-        container.containsMatchingElement(<TechUsed />)
-      ).to.equal(true);
-      expect(container.find(TechUsed)).to.have.lengthOf(5)
+      expect(container.containsMatchingElement(<TechUsed />)).to.equal(true);
+      expect(container.find(TechUsed)).to.have.lengthOf(5);
     });
   });
 });
