@@ -54,7 +54,7 @@ const projectData = [
     hackathon: false,
     org: 'FullStack',
     date: 'September/October 2020',
-    solo: true,
+    solo: false,
   },
   {
     id: 2,
@@ -103,8 +103,8 @@ const projectData = [
     hackathon: false,
     org: 'FullStack',
     date: 'October 2020',
+    solo: false,
   },
-
   {
     id: 3,
     name: 'Lunch Time',
@@ -145,7 +145,7 @@ const projectData = [
     hackathon: true,
     org: 'Mintbean',
     date: 'May 2021',
-    solo: true,
+    solo: false,
   },
   {
     id: 4,
@@ -265,6 +265,7 @@ const projectData = [
     hackathon: true,
     org: 'TechTogether Seattle 2021',
     date: 'January 2021',
+    solo: false,
   },
   {
     id: 7,
@@ -287,6 +288,7 @@ const projectData = [
     hackathon: false,
     org: 'Wheaton Community Radio Amatuers (WCRA)',
     date: 'April 2021',
+    solo: true,
   },
   {
     id: 8,
@@ -315,6 +317,7 @@ const projectData = [
     hackathon: true,
     org: 'Mintbean',
     date: 'September 2021',
+    solo: true,
   },
   // {id:9,
   //    name: '',
@@ -341,6 +344,7 @@ const projectData = [
   //   hackathon: true,
   //   org: 'Mintbean',
   //   date: '2021',
+  // solo: true
   // },
   // {id:10,
   //    name: '',
@@ -367,6 +371,7 @@ const projectData = [
   //   hackathon: true,
   //   org: 'Mintbean',
   //   date: '2021',
+    // solo: true
   // },
 ];
 
