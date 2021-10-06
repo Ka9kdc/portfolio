@@ -5,6 +5,8 @@ import Summary from './Summary';
 import ContactLinks from './Contact';
 import Hobbies from './Hobbies';
 import Resume from './Resume';
+import { Link } from 'react-router-dom';
+import MainTechStack from './MainTechStack';
 
 const About = () => {
   return (
@@ -36,9 +38,15 @@ const About = () => {
             Resume
           </button>
         </a>
+        <Link to="/Projects">
+          <button type="button" className="title find_out_more">
+            Projects
+          </button>
+        </Link>
       </div>
       <Summary />
       <ContactLinks />
+      <MainTechStack />
       <Resume />
       <Exprience />
       <Education />

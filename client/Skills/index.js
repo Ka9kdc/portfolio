@@ -1,6 +1,7 @@
 import React from 'react';
 import librariesUsed from './LibrariesObject';
 import TechUsed from '../Projects/TechUsed';
+import MainTechStack from '../About/MainTechStack';
 
 const Skills = () => {
   const libraries = Object.keys(librariesUsed);
@@ -18,6 +19,7 @@ const Skills = () => {
     <div>
       <h1 className="section_title">Skills</h1>
       <section>
+        <MainTechStack />
         <article className="tech box white">
           <h2 className="title">Comfortable Using:</h2>
           <section className="logo_flex_row">
