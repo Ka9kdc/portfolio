@@ -282,3 +282,29 @@ body {
 .logo_flex_row.box.white {
   align-items: center;
 }
+
+input,
+textarea {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+form textarea {
+  height: 30vh;
+}
+
+form button {
+  width: 50%;
+}
+
+form span {
+  color: red;
+}
