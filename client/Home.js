@@ -7,18 +7,15 @@ const Home = () => {
   return (
     <div >
       <h1 className="section_title">Kelsey Schroeder</h1>
-      <button type="button" className="find_out_more" onClick={() => setAnimationPaused(!animationPaused)} >{animationPaused ? "Move Clouds" : "Stop Clouds"}</button>
-      <section className="plane_container">
-          <Link to="/about" >
-          {/* <img src="images/paper_plane_PNG56.png" alt="link to about kelsey page" /> */}
+      <button type="button" className="find_out_more" onClick={() => setAnimationPaused(!animationPaused)} >{animationPaused ? "Start Animation" : "Stop Animation"}</button>
+      <section className={animationPaused ? "plane_container paused" :"plane_container "}>
+          <Link to="/about" className="plane" >
               <div>About</div>
           </Link>
-          <Link to="/skills">
-          {/* <img src="images/paper_plane_PNG56.png" alt="link to about kelsey page" /> */}
+          <Link to="/skills" className="down_screen plane">
               <div>skills</div>
           </Link>
-          <Link to="/projects">
-          {/* <img src="images/paper_plane_PNG56.png" alt="link to about kelsey page" /> */}
+          <Link to="/projects" className="plane">
               <div>Projects</div>
           </Link>
           </section>
