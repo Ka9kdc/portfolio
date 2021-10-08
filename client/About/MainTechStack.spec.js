@@ -1,6 +1,7 @@
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
+import {  mount } from 'enzyme';
 import React from 'react';
+import { MemoryRouter } from 'react-router';
 import TechUsed from '../Projects/TechUsed';
 import MainTechStack from './MainTechStack';
 
@@ -8,7 +9,7 @@ describe('main tech component', () => {
   let container;
   describe('shallow render', () => {
     before(() => {
-      container = shallow(<MainTechStack />);
+      container = mount(<MemoryRouter initialEntries={["/About"]}><MainTechStack /></MemoryRouter>);
     });
     it('renders the tech used component', () => {
       expect(container.containsMatchingElement(<TechUsed />)).to.equal(true);
@@ -32,8 +33,9 @@ describe('main tech component', () => {
     });
     it('button is the chlid of link', () => {
       expect(container.find('Link').children()).to.have.lengthOf(1);
-      expect(container.find('Link').childAt(0).type()).to.equal('button');
-      expect(container.find('Link').childAt(0).text()).to.equal(
+      expect(container.find('Link').childAt(0).props().children.type).to.equal('button');
+      expect(container.find('Link').childAt(0).props().children.props.type).to.equal('button');
+      expect(container.find('Link').childAt(0).props().children.props.children).to.equal(
         'See More Libraries Known'
       );
     });

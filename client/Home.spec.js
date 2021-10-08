@@ -3,7 +3,6 @@ import React from 'react';
 import { expect } from 'chai';
 import Home from './Home';
 
-
 describe('Home component', () => {
   let container;
   let paths;
