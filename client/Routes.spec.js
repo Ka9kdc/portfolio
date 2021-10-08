@@ -20,7 +20,7 @@ describe('Routes', () => {
     }, {});
   });
 
-  xit('renders <About /> at path /About', () => {
+  it('renders <About /> at path /About', () => {
     expect(pathMap['/About']).to.be.equal(About);
   });
   it('renders <Projects /> at path /Projects', () => {

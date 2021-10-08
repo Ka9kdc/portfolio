@@ -17,6 +17,16 @@ const Header = () => {
               setActive(!active);
             }}
           >
+            Home
+          </NavLink>
+        </li>
+        <li className="item">
+          <NavLink
+            to="/About"
+            onClick={() => {
+              setActive(!active);
+            }}
+          >
             About
           </NavLink>
         </li>
