@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ContactLinks from './About/Contact';
+import ContactLinks from '../About/Contact';
 
 const ContactForm = () => {
   const [sender, setSender] = useState('');

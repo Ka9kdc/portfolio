@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
 import About from './About';
-import ContactForm from './ContactForm';
+import ContactForm from './Other/ContactForm';
 import Home from './Home';
 import Projects from './Projects';
 import SingleProject from './Projects/SingleProject';

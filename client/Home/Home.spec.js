@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import React from 'react';
 import { expect } from 'chai';
-import Home from './Home';
+import Home from '.';
 
 describe('Home component', () => {
   let container;

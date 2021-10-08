@@ -5,7 +5,7 @@ import Routes from './Routes';
 
 import './mobile.css';
 import './main.css';
-import Top from './Top';
+import Top from './Other/Top';
 
 const Main = () => {
   return (
