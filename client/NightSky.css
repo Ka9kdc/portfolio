@@ -151,6 +151,10 @@
   animation-duration: 5s;
 }
 
+.paused .cloud{
+    animation-play-state: paused;
+}
+
 @keyframes cloud-movement {
   0% {
     opacity: 0.1;
@@ -171,6 +175,44 @@
     transform: translateX(-100vw);
   }
 }
+
+/* .plane_container img{
+    max-height: 100%;
+   max-width: 100%;
+   transform: rotateX(45deg) rotateZ(45deg);
+  
+} */
+.plane_container{
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.plane_container a{
+width: 50vw;
+height: 30vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+padding: 1.5em;
+font-size: 1.5em;
+text-decoration: none;
+text-transform: uppercase;
+background-image: url("/client/paper_plane_PNG56.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.plane_container a:hover{
+    transform: scale(1.2);
+   
+    }
+
+
 
 @media (min-width: 770px) {
   .crawl {
