@@ -1,0 +1,205 @@
+.moon {
+  height: 120px;
+  width: 120px;
+  background-color: #666;
+  border-radius: 60px;
+  box-shadow: 0 0 60px 1px #444;
+}
+
+.moon:before {
+  border-radius: 60px;
+  box-shadow: 10px -50px 0 0 #444, 50px 0 0 0 #444, 50px -37px 0 10px #444;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+  bottom: 10px;
+  background: #444;
+}
+
+.wrapper div {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 25px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.cloud-container {
+  overflow: hidden;
+}
+
+.cloud {
+  background: #bda1b8;
+  width: 90px;
+  height: 42px;
+  margin-left: 0;
+  animation-name: cloud-movement;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+}
+
+.cloud:before {
+  border-radius: 50%;
+  box-shadow: 20px -20px 0 0 #bda1b8, 90px 0 0 0 #bda1b8,
+    60px -27px 0 8px #bda1b8;
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: -22px;
+  bottom: 0;
+  background: #bda1b8;
+}
+
+.cloud:nth-child(1) {
+  top: auto;
+  bottom: 10vh;
+  opacity: 0.5;
+}
+
+.big {
+  width: 190px;
+  height: 95px;
+}
+
+.big:before {
+  box-shadow: 50px -50px 0 0 #bda1b8, 190px 0 0 0 #bda1b8,
+    140px -60px 0 8px #bda1b8;
+  width: 100px;
+  height: 100px;
+  left: -50px;
+}
+
+.cloud:nth-child(2) {
+  right: auto;
+  left: 80vw;
+  opacity: 0.3;
+}
+.cloud:nth-child(3) {
+  bottom: auto;
+  top: 30vh;
+  right: auto;
+  left: 80px;
+  opacity: 0.45;
+}
+
+.medium {
+  width: 140px;
+  height: 70px;
+}
+.medium:before {
+  box-shadow: 35px -35px 0 0 #bda1b8, 140px 0 0 0 #bda1b8,
+    100px -45px 0 8px #bda1b8;
+  width: 75px;
+  height: 75px;
+  left: -35px;
+}
+
+.cloud:nth-child(4) {
+  bottom: auto;
+  top: 60vh;
+  right: auto;
+  left: 20vw;
+  opacity: 0.65;
+}
+
+.cloud:nth-child(5) {
+  bottom: auto;
+  top: 15vh;
+  right: 10vw;
+  left: auto;
+  opacity: 0.65;
+}
+
+.cloud:nth-child(6) {
+  opacity: 0.25;
+}
+
+.cloud:nth-child(7) {
+  bottom: 20vh;
+  top: auto;
+  right: 20vw;
+  left: auto;
+  opacity: 0.25;
+}
+
+.cloud:nth-child(5),
+.cloud:nth-child(6),
+.cloud:nth-child(7) {
+  visibility: hidden;
+}
+
+.crawl {
+  animation-duration: 25s;
+}
+
+.walk {
+  animation-duration: 20s;
+}
+
+.running {
+  animation-duration: 10s;
+}
+.sprint {
+  animation-duration: 5s;
+}
+
+@keyframes cloud-movement {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(100vw);
+    -moz-transform: translateX(100vw);
+    transform: translateX(100vw);
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+    -moz-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+  }
+}
+
+@media (min-width: 770px) {
+  .crawl {
+    animation-duration: 35s;
+  }
+
+  .walk {
+    animation-duration: 10s;
+  }
+  .cloud {
+    animation-duration: 25s;
+  }
+
+  .running {
+    animation-duration: 20s;
+  }
+  .sprint {
+    animation-duration: 15s;
+  }
+  .cloud:nth-child(5),
+  .cloud:nth-child(6),
+  .cloud:nth-child(7) {
+    visibility: unset;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .cloud {
+    animation: none;
+    display: none;
+  }
+}
