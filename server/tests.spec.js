@@ -28,9 +28,9 @@ describe('express routes', () => {
     });
   });
   describe('api/email', () => {
-    it("has an api/email post route", async() => {
-      const res = await request(app).post('/api/email').expect(200)
-      expect(res.status).to.equal(200)
-    })
-  })
+    it('has an api/email post route', async () => {
+      const res = await request(app).post('/api/email').expect(200);
+      expect(res.status).to.equal(200);
+    });
+  });
 });

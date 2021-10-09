@@ -36,3 +36,7 @@ export const mockAxios = new MockAdaptor(axios);
 export async function getExperience() {
   await mockAxios.onGet('/api/work').replyOnce(200, [fakeJob]);
 }
+
+export async function mockSendEmail() {
+  await mockAxios.onPost('/api/email').replyOnce(200);
+}

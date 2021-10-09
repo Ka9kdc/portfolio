@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import ContactLinks from '../About/Contact';
 
@@ -31,6 +32,7 @@ const ContactForm = () => {
     if (sender && message && email) {
       console.log(message);
       setSent(true);
+      axios.post('/api/email', { sender, email, subject, message });
     }
   };
 
@@ -38,8 +40,8 @@ const ContactForm = () => {
     return (
       <article>
         <h2 className="title">
-          Thank you {sender} for your message. I look forward to connecting with
-          you.
+          Thank you, {sender} for your message. I look forward to connecting
+          with you.
         </h2>
         <section className="box white">
           <ContactLinks />
@@ -50,6 +52,7 @@ const ContactForm = () => {
 
   return (
     <article>
+      <h1>Send Kelsey A Message</h1>
       <form onSubmit={handleSubmit} className="box white">
         <input
           className="form_input"
@@ -90,7 +93,7 @@ const ContactForm = () => {
           onChange={(event) => setMessage(event.target.value)}
         />
         <button type="submit" className="find_out_more">
-          Submit
+          Send Message
         </button>
       </form>{' '}
       <section className="box white">

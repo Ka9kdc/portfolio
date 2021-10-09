@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { workHistory } = require('./data');
 const nodemailer = require('nodemailer');
 
-if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === "test") require('../secrets');
+if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test')
+  require('../secrets');
 
 module.exports = router;
 
@@ -12,7 +13,6 @@ router.get('/work', (req, res, next) => {
 
 router.post('/email', (req, res, next) => {
   try {
-
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -29,7 +29,7 @@ router.post('/email', (req, res, next) => {
       subject: req.body.subject,
       text: text,
     };
-    res.sendStatus(200)
+    res.sendStatus(200);
     // transporter.sendMail(mailOptions, function (err, info) {
     //   if (err) {
     //     console.log(err);
