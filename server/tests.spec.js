@@ -27,4 +27,10 @@ describe('express routes', () => {
       expect(res.body[0].JobTitle).to.be.equal(workHistory[0].JobTitle);
     });
   });
+  describe('api/email', () => {
+    it("has an api/email post route", async() => {
+      const res = await request(app).post('/api/email').expect(200)
+      expect(res.status).to.equal(200)
+    })
+  })
 });
