@@ -29,6 +29,7 @@ router.post('/email', (req, res, next) => {
       subject: req.body.subject,
       text: text,
     };
+    console.log(transporter, mailOptions);
     res.sendStatus(200);
     // transporter.sendMail(mailOptions, function (err, info) {
     //   if (err) {

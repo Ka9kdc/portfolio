@@ -1,13 +1,16 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { expect } from 'chai';
 import ContactForm from './ContactForm';
 import ContactLinks from '../About/Contact';
+import sinon from 'sinon';
 
 describe.only('contact form', () => {
   describe('shallowRender', () => {
     const container = shallow(<ContactForm />);
+
     it('has a  h1 header', () => {
+      console.log(ContactForm.prototype);
       expect(container.find('h1').text()).to.equal('Send Kelsey A Message');
     });
     it('has a form', () => {
@@ -70,5 +73,112 @@ describe.only('contact form', () => {
         true
       );
     });
+  });
+  describe('state changes', () => {
+    const container = shallow(<ContactForm />);
+    it('should call handle change for name', () => {
+      const input = container.find('#name');
+      expect(input.props().value).to.equal('');
+      input.simulate('change', { target: { value: 'Kelsey' } });
+      const nameField = container.find('#name');
+      expect(nameField.props().value).to.equal('Kelsey');
+    });
+    it('should call handle change for email', () => {
+      const input = container.find('#email');
+      expect(input.props().value).to.equal('');
+      input.simulate('change', { target: { value: 'Kelsey@123.com' } });
+      const nameField = container.find('#email');
+      expect(nameField.props().value).to.equal('Kelsey@123.com');
+    });
+    it('should call handle change for subject', () => {
+      const input = container.find('#subject');
+      expect(input.props().value).to.equal('');
+      input.simulate('change', { target: { value: 'Kelsey' } });
+      const nameField = container.find('#subject');
+      expect(nameField.props().value).to.equal('Kelsey');
+    });
+    it('should call handle change for message', () => {
+      const input = container.find('textarea');
+      expect(input.props().value).to.equal('');
+      input.simulate('change', { target: { value: 'Kelsey is great.' } });
+      const nameField = container.find('textarea');
+      expect(nameField.props().value).to.equal('Kelsey is great.');
+    });
+  });
+  describe('submition', () => {
+    let container;
+    let message;
+    let subject;
+    let name;
+    let email;
+    let form;
+    beforeEach(() => {
+      container = shallow(<ContactForm />);
+      message = container.find('textarea');
+      subject = container.find('#subject');
+      name = container.find('#name');
+      email = container.find('#email');
+      form = container.find('form');
+    });
+    it('before entering every thing should be empty', () => {
+      expect(message.props().value).to.equal('');
+      expect(subject.props().value).to.equal('');
+      expect(name.props().value).to.equal('');
+      expect(email.props().value).to.equal('');
+      expect(container.find('span')).to.have.lengthOf(0);
+    });
+    it('submitsion should fail if everything is empty', () => {
+      expect(message.props().value).to.equal('');
+      expect(name.props().value).to.equal('');
+      expect(email.props().value).to.equal('');
+      form.simulate('submit', { preventDefault() {} });
+      const formRemains = container.find('form');
+      expect(formRemains).to.have.lengthOf(1);
+    });
+    it('empty fields should cause error messages to appear on submit', () => {
+      expect(email.props().value).to.equal('');
+      expect(container.find('span')).to.have.lengthOf(0);
+      form.simulate('submit', { preventDefault() {} });
+      const spans = container.find('span');
+      expect(spans).to.have.length.greaterThan(0);
+    });
+    it('empty name should error span', () => {
+      expect(name.props().value).to.equal('');
+      email.simulate('change', { target: { value: 'Kelsey@123.com' } });
+      message.simulate('change', { target: { value: 'Kelsey is great.' } });
+      form.simulate('submit', { preventDefault() {} });
+      const spans = container.find('span');
+      // expect(spans).to.have.lengthOf(1)
+      expect(spans.at(0).text()).to.equal('Please tell me your name.');
+    });
+    it('empty email should error span', () => {
+      expect(email.props().value).to.equal('');
+      name.simulate('change', { target: { value: 'Kelsey' } });
+      message.simulate('change', { target: { value: 'Kelsey is great.' } });
+      form.simulate('submit', { preventDefault() {} });
+      const spans = container.find('span');
+      // expect(spans).to.have.lengthOf(1)
+      expect(spans.at(1).text()).to.equal(
+        'Please tell me how to reach you by email.'
+      );
+    });
+    it('empty message should error span', () => {
+      expect(message.props().value).to.equal('');
+      email.simulate('change', { target: { value: 'Kelsey@123.com' } });
+      name.simulate('change', { target: { value: 'Kelsey' } });
+       form.simulate('submit', { preventDefault() {} });
+     
+      const spans = container.find('span');
+      // expect(spans).to.have.lengthOf(1)
+      expect(spans.at(2).text()).to.equal(
+        'Please tell me why you are interested in speaking with me.'
+      );
+    });
+    // it("calls handle submit on click", () => {
+    //     container.instance().handleSubmit = sinon.spy()
+    //     const button = container.find("button")
+    //     button.simulate("click")
+    //     expect(container.handleSubmit.calledOnce).to.equal(true)
+    // })
   });
 });
