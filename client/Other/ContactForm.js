@@ -1,8 +1,8 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ContactLinks from '../About/Contact';
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   const [sender, setSender] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -11,6 +11,20 @@ const ContactForm = () => {
   const [errSender, setErrSender] = useState(false);
   const [errEmail, setErrEmail] = useState(false);
   const [errMessage, setErrMessage] = useState(false);
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'test') {
+      if (props.sender) {
+        setSender(props.sender);
+      }
+      if (props.email) {
+        setEmail(props.email);
+      }
+      if (props.message) {
+        setMessage(props.message);
+      }
+    }
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
