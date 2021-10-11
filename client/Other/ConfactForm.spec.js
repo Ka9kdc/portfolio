@@ -12,6 +12,7 @@ describe('contact form', () => {
     it('has a  h1 header', () => {
       expect(container.find('h1').text()).to.equal('Send Kelsey A Message');
     });
+
     it('has a form', () => {
       expect(container.find('form')).to.have.lengthOf(1);
       expect(container.find('input')).to.have.lengthOf.greaterThan(0);
@@ -20,6 +21,7 @@ describe('contact form', () => {
       );
       expect(container.find('form').props().onSubmit).to.exist;
     });
+
     it('has a name imput field', () => {
       const name = container.find('#name');
       expect(name).to.have.lengthOf(1);
@@ -29,6 +31,7 @@ describe('contact form', () => {
       expect(name.type()).to.equal('input');
       expect(name.props().type).to.equal('text');
     });
+
     it('has a email input field', () => {
       const email = container.find('#email');
       expect(email).to.have.lengthOf(1);
@@ -38,6 +41,7 @@ describe('contact form', () => {
       expect(email.type()).to.equal('input');
       expect(email.props().type).to.equal('email');
     });
+
     it('has a subject imput field', () => {
       const subject = container.find('#subject');
       expect(subject).to.have.lengthOf(1);
@@ -47,6 +51,7 @@ describe('contact form', () => {
       expect(subject.props().type).to.equal('text');
       expect(subject.type()).to.equal('input');
     });
+
     it('has a textarea for message', () => {
       expect(container.find('textarea')).to.have.lengthOf(1);
       const message = container.find('textarea').props();
@@ -54,20 +59,24 @@ describe('contact form', () => {
       expect(message.placeholder).to.equal('Message');
       expect(message.value).to.equal('');
     });
+
     it('has a submit button', () => {
       const button = container.find('button');
       expect(button).to.have.lengthOf(1);
       expect(button.props().type).to.equal('submit');
       expect(button.text()).to.equal('Send Message');
     });
+
     it('renders contact links', () => {
       expect(container.containsMatchingElement(<ContactLinks />)).to.equal(
         true
       );
     });
   });
+
   describe('state changes', () => {
     const container = shallow(<ContactForm />);
+
     it('should call handle change for name', () => {
       const input = container.find('#name');
       expect(input.props().value).to.equal('');
@@ -75,6 +84,7 @@ describe('contact form', () => {
       const nameField = container.find('#name');
       expect(nameField.props().value).to.equal('Kelsey');
     });
+
     it('should call handle change for email', () => {
       const input = container.find('#email');
       expect(input.props().value).to.equal('');
@@ -82,6 +92,7 @@ describe('contact form', () => {
       const nameField = container.find('#email');
       expect(nameField.props().value).to.equal('Kelsey@123.com');
     });
+
     it('should call handle change for subject', () => {
       const input = container.find('#subject');
       expect(input.props().value).to.equal('');
@@ -89,6 +100,7 @@ describe('contact form', () => {
       const nameField = container.find('#subject');
       expect(nameField.props().value).to.equal('Kelsey');
     });
+
     it('should call handle change for message', () => {
       const input = container.find('textarea');
       expect(input.props().value).to.equal('');
@@ -97,6 +109,7 @@ describe('contact form', () => {
       expect(nameField.props().value).to.equal('Kelsey is great.');
     });
   });
+
   describe('submition empty form', () => {
     let container;
     let message;
@@ -104,6 +117,7 @@ describe('contact form', () => {
     let name;
     let email;
     let form;
+
     beforeEach(() => {
       container = shallow(<ContactForm />);
       message = container.find('textarea');
@@ -112,6 +126,7 @@ describe('contact form', () => {
       email = container.find('#email');
       form = container.find('form');
     });
+
     it('before entering every thing should be empty', () => {
       expect(message.props().value).to.equal('');
       expect(subject.props().value).to.equal('');
@@ -119,6 +134,7 @@ describe('contact form', () => {
       expect(email.props().value).to.equal('');
       expect(container.find('span')).to.have.lengthOf(0);
     });
+
     it('submitsion should fail if everything is empty', () => {
       expect(message.props().value).to.equal('');
       expect(name.props().value).to.equal('');
@@ -127,6 +143,7 @@ describe('contact form', () => {
       const formRemains = container.find('form');
       expect(formRemains).to.have.lengthOf(1);
     });
+
     it('empty fields should cause error messages to appear on submit', () => {
       expect(email.props().value).to.equal('');
       expect(container.find('span')).to.have.lengthOf(0);
@@ -137,6 +154,7 @@ describe('contact form', () => {
 
     describe('span messages', () => {
       let testProps;
+
       it('can pass in test props', () => {
         testProps = {
           sender: 'kelsey',
@@ -153,6 +171,7 @@ describe('contact form', () => {
         expect(message.prop('value')).to.equal('message');
         expect(form.find('span')).to.have.lengthOf(0);
       });
+
       it('empty name', () => {
         testProps = { email: '123@123.com', message: 'message' };
         container = mount(<ContactForm {...testProps} />);
@@ -169,6 +188,7 @@ describe('contact form', () => {
         expect(span).to.have.lengthOf(1);
         expect(span.text()).to.equal('Please tell me your name.');
       });
+
       it('empty email', () => {
         testProps = { sender: 'kelsey', message: 'message' };
         container = mount(<ContactForm {...testProps} />);
@@ -187,6 +207,7 @@ describe('contact form', () => {
           'Please tell me how to reach you by email.'
         );
       });
+
       it('empty message', () => {
         testProps = { sender: 'kelsey', email: '123@123.com' };
         container = mount(<ContactForm {...testProps} />);
@@ -207,6 +228,7 @@ describe('contact form', () => {
       });
     });
   });
+
   describe('submittion filled out', () => {
     let container;
     let message;
@@ -219,6 +241,7 @@ describe('contact form', () => {
       email: '123@123.com',
       message: 'message',
     };
+
     before(() => {
       container = mount(<ContactForm {...testProps} />);
       message = container.find('textarea');
@@ -227,6 +250,7 @@ describe('contact form', () => {
       email = container.find('#email');
       form = container.find('form');
     });
+
     it('can pass in test props', () => {
       expect(name.prop('value')).to.equal('kelsey');
       expect(email.prop('value')).to.equal('123@123.com');
@@ -235,6 +259,7 @@ describe('contact form', () => {
       expect(form).to.have.lengthOf(1);
       expect(form.find('span')).to.have.lengthOf(0);
     });
+
     it('no spans appear on submit', () => {
       expect(form).to.have.lengthOf(1);
       expect(form.find('span')).to.have.lengthOf(0);
@@ -242,11 +267,13 @@ describe('contact form', () => {
       expect(container.find('form')).to.have.lengthOf(0);
       expect(container.find('form').find('span')).to.have.lengthOf(0);
     });
+
     it('makes an axois call', () => {
       const [postRequest] = mockAxios.history.post;
       expect(postRequest).to.not.equal(undefined);
       expect(postRequest.url).to.equal('/api/email');
     });
+
     it('a confermation message appears', () => {
       let confirmation = container.find('h2');
       expect(confirmation).to.have.lengthOf(1);

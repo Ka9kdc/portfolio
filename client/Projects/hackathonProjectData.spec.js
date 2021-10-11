@@ -8,6 +8,7 @@ describe('hackathon Project Data', () => {
       expect(typeof project.id).to.equal('number');
     });
   });
+
   it('every project has an name', () => {
     projectData.forEach((project) => {
       expect(project.name).to.exist;
@@ -15,6 +16,7 @@ describe('hackathon Project Data', () => {
       expect(project.name).to.have.length.greaterThan(0);
     });
   });
+
   it('every project has links', () => {
     projectData.forEach((project) => {
       expect(project.links).to.exist;
@@ -23,6 +25,7 @@ describe('hackathon Project Data', () => {
       expect(project.links[0].url).to.have.length.greaterThan(0);
     });
   });
+
   it('every project has an image, video or gif', () => {
     const filteredlist = projectData.map(
       (project) =>
@@ -32,6 +35,7 @@ describe('hackathon Project Data', () => {
     );
     expect(filteredlist).to.have.lengthOf(projectData.length);
   });
+
   it('every project has text', () => {
     projectData.forEach((project) => {
       expect(project.text).to.exist;
@@ -39,6 +43,7 @@ describe('hackathon Project Data', () => {
       expect(project.text[0]).to.have.length.greaterThan(0);
     });
   });
+
   it('every project has techused', () => {
     projectData.forEach((project) => {
       expect(project.techUsed).to.exist;
@@ -54,12 +59,14 @@ describe('hackathon Project Data', () => {
       expect(project.org).to.have.length.greaterThan(0);
     });
   });
+
   it('every project has hackathon', () => {
     projectData.forEach((project) => {
       expect(project.solo).to.exist;
       expect(typeof project.solo).to.equal('boolean');
     });
   });
+
   it('every project has an date', () => {
     projectData.forEach((project) => {
       expect(project.date).to.exist;
@@ -67,6 +74,7 @@ describe('hackathon Project Data', () => {
       expect(project.date).to.have.length.greaterThan(0);
     });
   });
+
   it('every project has solo', () => {
     projectData.forEach((project) => {
       expect(project.solo).to.exist;

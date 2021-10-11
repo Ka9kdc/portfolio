@@ -8,6 +8,7 @@ describe('express routes', () => {
     it('has an api/work route', async () => {
       await request(app).get('/api/work').expect(200);
     });
+
     it('get api/work returns an array of objects with the correct key types', async () => {
       const res = await request(app).get('/api/work').expect(200);
 
@@ -16,6 +17,7 @@ describe('express routes', () => {
       expect(res.body[0].key).to.be.an('number');
       expect(res.body[0].JobTitle).to.be.an('string');
     });
+
     it('get api/work returns an array of correct objects', async () => {
       const res = await request(app).get('/api/work').expect(200);
 
@@ -27,6 +29,7 @@ describe('express routes', () => {
       expect(res.body[0].JobTitle).to.be.equal(workHistory[0].JobTitle);
     });
   });
+
   describe('api/email', () => {
     it('has an api/email post route', async () => {
       const res = await request(app).post('/api/email').expect(200);
