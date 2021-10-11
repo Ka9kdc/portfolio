@@ -281,5 +281,10 @@ describe('contact form', () => {
         `Thank you, ${testProps.sender} for your message. I look forward to connecting with you.`
       );
     });
+    it('the contact links remain', () => {
+      expect(container.containsMatchingElement(<ContactLinks />)).to.equal(
+        true
+      );
+    });
   });
 });

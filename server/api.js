@@ -2,8 +2,9 @@ const router = require('express').Router();
 const { workHistory } = require('./data');
 const nodemailer = require('nodemailer');
 
-if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test')
+if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
   require('../secrets');
+}
 
 module.exports = router;
 
