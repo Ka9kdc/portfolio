@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router';
 
 export const contactLinksArr = [
   {
@@ -22,9 +24,17 @@ export const contactLinksArr = [
 ];
 
 const ContactLinks = () => {
+  const location = useLocation().pathname;
   return (
     <article className="flex_wrap_row multi_img" id="Contacts">
       <h1 className="title">Contact Links:</h1>
+      {location !== '/ContactMe' ? (
+        <Link to="/ContactMe">
+          <button type="button" className="title find_out_more">
+            Contact Me Form
+          </button>
+        </Link>
+      ) : null}
       {contactLinksArr.map((link) => {
         return <SingleLink key={link.name} link={link} />;
       })}
