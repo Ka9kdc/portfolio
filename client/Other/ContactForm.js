@@ -66,7 +66,7 @@ const ContactForm = (props) => {
 
   return (
     <article>
-      <h1 className="section_title">Send Kelsey Schroeder a Message</h1>
+      <h1 className="title">Send Kelsey Schroeder a Message</h1>
       <form onSubmit={handleSubmit} className="box white">
         <input
           className="form_input"
