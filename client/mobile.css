@@ -27,6 +27,11 @@ body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
+body.lightMode {
+  color: black;
+  background-color: lightcyan;
+}
+
 .section_title {
   font-family: 'Architects Daughter', Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 12vw;
@@ -69,6 +74,10 @@ body {
   color: white;
 }
 
+body.lightMode .menu a {
+  color: black;
+}
+
 .logo {
   max-width: 50%;
 }
@@ -91,6 +100,10 @@ body {
   border-radius: 10px;
 }
 
+body.lightMode .item a:hover {
+  box-shadow: 2px 2px 2px blue;
+  background-color: aquamarine;
+}
 .active .item {
   display: block;
   transform-origin: top center;

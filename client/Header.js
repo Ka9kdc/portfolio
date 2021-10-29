@@ -3,6 +3,19 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [active, setActive] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+
+  function handleDarkMode(evt) {
+    evt.preventDefault();
+    const body = document.getElementsByTagName('body')[0];
+    if (darkMode) {
+      body.className = 'lightMode';
+      setDarkMode(false);
+    } else {
+      body.className = '';
+      setDarkMode(true);
+    }
+  }
 
   return (
     <nav id="navbar">
@@ -71,6 +84,19 @@ const Header = () => {
           ) : (
             <i className="fas fa-bars" />
           )}
+        </li>
+        <li className="item">
+          <button
+            type="button"
+            onClick={handleDarkMode}
+            className="find_out_more"
+          >
+            {!darkMode ? (
+              <i className="fas fa-moon" />
+            ) : (
+              <i className="fas fa-sun" />
+            )}
+          </button>
         </li>
       </ul>
     </nav>

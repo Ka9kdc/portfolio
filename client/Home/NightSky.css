@@ -18,6 +18,10 @@
   background: #444;
 }
 
+body.lightMode .moon {
+  display: none;
+}
+
 .wrapper div {
   display: block;
   position: absolute;
@@ -94,6 +98,7 @@
   width: 140px;
   height: 70px;
 }
+
 .medium:before {
   box-shadow: 35px -35px 0 0 #bda1b8, 140px 0 0 0 #bda1b8,
     100px -45px 0 8px #bda1b8;
@@ -201,6 +206,10 @@
   background-position: center;
   transform: rotate(45deg);
   animation: planeMotion 8s forwards infinite;
+}
+
+body.lightMode .plane {
+  color: black;
 }
 
 .plane:hover {
