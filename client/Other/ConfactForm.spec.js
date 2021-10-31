@@ -4,13 +4,14 @@ import { expect } from 'chai';
 import ContactForm from './ContactForm';
 import ContactLinks from '../About/Contact';
 import { mockAxios } from '../index.spec';
+import { BrowserRouter } from 'react-router-dom';
 
 describe('contact form', () => {
   describe('shallowRender', () => {
     const container = shallow(<ContactForm />);
 
     it('has a  h1 header', () => {
-      expect(container.find('h1').text()).to.equal('Send Kelsey A Message');
+      expect(container.find('h1').text()).to.equal('Send Kelsey Schroeder a Message');
     });
 
     it('has a form', () => {
@@ -161,7 +162,7 @@ describe('contact form', () => {
           email: '123@123.com',
           message: 'message',
         };
-        container = mount(<ContactForm {...testProps} />);
+        container = mount(<BrowserRouter initialEntries={["/ContactMe"]}><ContactForm {...testProps} /></BrowserRouter>);
         message = container.find('textarea');
         name = container.find('#name');
         email = container.find('#email');
@@ -174,7 +175,7 @@ describe('contact form', () => {
 
       it('empty name', () => {
         testProps = { email: '123@123.com', message: 'message' };
-        container = mount(<ContactForm {...testProps} />);
+        container = mount(<BrowserRouter initialEntries={["/ContactMe"]}><ContactForm {...testProps} /></BrowserRouter>);
         message = container.find('textarea');
         name = container.find('#name');
         email = container.find('#email');
@@ -191,7 +192,7 @@ describe('contact form', () => {
 
       it('empty email', () => {
         testProps = { sender: 'kelsey', message: 'message' };
-        container = mount(<ContactForm {...testProps} />);
+        container = mount(<BrowserRouter initialEntries={["/ContactMe"]}><ContactForm {...testProps} /></BrowserRouter>);
         message = container.find('textarea');
         name = container.find('#name');
         email = container.find('#email');
@@ -210,7 +211,7 @@ describe('contact form', () => {
 
       it('empty message', () => {
         testProps = { sender: 'kelsey', email: '123@123.com' };
-        container = mount(<ContactForm {...testProps} />);
+        container = mount(<BrowserRouter initialEntries={["/ContactMe"]}><ContactForm {...testProps} /></BrowserRouter>);
         message = container.find('textarea');
         name = container.find('#name');
         email = container.find('#email');
@@ -243,7 +244,7 @@ describe('contact form', () => {
     };
 
     before(() => {
-      container = mount(<ContactForm {...testProps} />);
+      container = mount(<BrowserRouter initialEntries={["/ContactMe"]}><ContactForm {...testProps} /></BrowserRouter>);
       message = container.find('textarea');
       subject = container.find('#subject');
       name = container.find('#name');

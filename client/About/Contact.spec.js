@@ -2,27 +2,28 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { expect } from 'chai';
 import ContactLinks, { contactLinksArr, SingleLink } from './Contact';
+import { BrowserRouter } from 'react-router-dom';
 
 describe('Contact Component', () => {
   let container;
 
-  describe('contactlinks container shallow render', () => {
-    before(() => {
-      container = shallow(<ContactLinks />);
-    });
+  // xdescribe('contactlinks container shallow render', () => {
+  //   before(() => {
+  //     container = shallow(<ContactLinks />);
+  //   });
 
-    it('has a header', () => {
-      expect(container.find('h1').text()).to.be.equal('Contact Links:');
-    });
+  //   it('has a header', () => {
+  //     expect(container.find('h1').text()).to.be.equal('Contact Links:');
+  //   });
 
-    it('renders link images', () => {
-      expect(
-        container.containsMatchingElement(
-          <SingleLink key={contactLinksArr[0].name} />
-        )
-      ).to.equal(true);
-    });
-  });
+  //   it('renders link images', () => {
+  //     expect(
+  //       container.containsMatchingElement(
+  //         <SingleLink key={contactLinksArr[0].name} />
+  //       )
+  //     ).to.equal(true);
+  //   });
+  // });
 
   describe('SingleLink render', () => {
     before(() => {
@@ -45,7 +46,11 @@ describe('Contact Component', () => {
 
   describe('mount contact links', () => {
     before(() => {
-      container = mount(<ContactLinks />);
+      container = mount(<BrowserRouter initialEntries={["/About"]}><ContactLinks /></BrowserRouter>);
+
+    });
+    it('has a header', () => {
+      expect(container.find('h1').text()).to.be.equal('Contact Links:');
     });
 
     it('renders link images', () => {
@@ -58,7 +63,7 @@ describe('Contact Component', () => {
 
     it('renders all links', () => {
       let link = container.find('a');
-      expect(link).to.have.lengthOf(contactLinksArr.length);
+      expect(link).to.have.lengthOf(contactLinksArr.length+1);
     });
 
     it('renders all images', () => {
