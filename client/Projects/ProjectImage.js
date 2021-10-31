@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProjectImage = ({ project }) => {
-  const count = ['video', 'gif', 'image'].filter(
+  const count = ['video', 'gif', 'image', 'image2'].filter(
     (str) => project[str] && project[str].src
   ).length;
   return (
@@ -36,16 +36,26 @@ const ProjectImage = ({ project }) => {
           </div>
         </div>
       )}
-      {project.image.src && (
-        <div className="box white">
-          <img
-            className="image_wrapper"
-            src={`.././${project.image.src}`}
-            alt={project.image.alt}
-          />
-        </div>
-      )}
+      {['image', 'image2'].map((image) => {
+        if (project[image] && project[image].src) {
+          return <ImageDiv image={project[image]} key={image} />;
+        } else {
+          return null;
+        }
+      })}
     </section>
+  );
+};
+
+const ImageDiv = ({ image }) => {
+  return (
+    <div className="box white">
+      <img
+        className="image_wrapper"
+        src={`.././${image.src}`}
+        alt={image.alt}
+      />
+    </div>
   );
 };
 

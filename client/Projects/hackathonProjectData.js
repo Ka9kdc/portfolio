@@ -16,6 +16,10 @@ const projectData = [
       src: 'images/smartmockups_kjkmxumj.png',
       alt: "Mock up of the A Dog's Journey Game",
     },
+    image2: {
+      src: 'images/ThreeJs_Medium_Cover_Photo.png',
+      alt: "Mock up of the A Dog's Journey Game",
+    },
     text: [
       'A simple 3D browser game built with Three.js where the player moves a dog around the field collecting dog bones and avoid obstacles.',
       'This was a 4 day hackathon style project, where I had to learn a new piece of technology.',
@@ -191,10 +195,6 @@ const projectData = [
     id: 5,
     name: 'Tetrix',
     links: [
-      // {
-      //   name: 'Submission',
-      //   url: '',
-      // },
       {
         name: 'Deployed',
         url: 'https://ka9kdc.github.io/tetrix/',

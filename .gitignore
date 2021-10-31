@@ -3,9 +3,6 @@ package-lock.json
 public/bundle.js
 public/bundle.js.map
 public/bundle.js.LICENSE.txt
-public/imagesNotCurrentlyInUse
-client/Clouds/not_currently_using
-client/oldFiles
 public/oldStyling.css
-client/About/images
+public/0oldfiles
 secrets.js
