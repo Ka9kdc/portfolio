@@ -46,8 +46,11 @@ describe('Contact Component', () => {
 
   describe('mount contact links', () => {
     before(() => {
-      container = mount(<BrowserRouter initialEntries={["/About"]}><ContactLinks /></BrowserRouter>);
-
+      container = mount(
+        <BrowserRouter initialEntries={['/About']}>
+          <ContactLinks />
+        </BrowserRouter>
+      );
     });
     it('has a header', () => {
       expect(container.find('h1').text()).to.be.equal('Contact Links:');
@@ -63,7 +66,7 @@ describe('Contact Component', () => {
 
     it('renders all links', () => {
       let link = container.find('a');
-      expect(link).to.have.lengthOf(contactLinksArr.length+1);
+      expect(link).to.have.lengthOf(contactLinksArr.length + 1);
     });
 
     it('renders all images', () => {
