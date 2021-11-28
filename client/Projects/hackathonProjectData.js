@@ -12,7 +12,7 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/aDogsJourney',
       },
     ],
-    image: [{
+    images:[{
       src: 'images/projects/smartmockups_kjkmxumj.png',
       alt: "Mock up of the A Dog's Journey Game",
     }, {
@@ -43,7 +43,7 @@ const projectData = [
         url: 'https://github.com/grace-shopper-team-c/grace-shopper',
       },
     ],
-    image: [{
+    images:[{
       src: 'images/projects/smartmockups_kjkotk4z.png',
       alt: 'Mock up of the Bros Apothacary e-commerce store.',
     }],
@@ -82,7 +82,7 @@ const projectData = [
       allowFullScreen: true,
       title: 'demo video of createmates',
     },
-    image: [{
+    images:[{
       src: 'images/projects/smartmockups_kjkhgdqm.png',
       alt: "Mock up of the createmate's wep application",
     }],
@@ -135,7 +135,7 @@ const projectData = [
       allowFullScreen: true,
       title: 'demo video of lunch time',
     },
-    image: [{
+    images:[{
       src: '',
       alt: '',
     }],
@@ -167,15 +167,9 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/BlockCrusherPuzzleGame',
       },
     ],
-    // gif: {
-    //   width: '360',
-    //   height: '360',
-    //   frameBorder: '0',
-    //   src: 'https://imgflip.com/embed/5305ji',
-    //   title: 'gif of block crusher game play',
-    // },
-    image: [{
-      src: 'https://imgflip.com/embed/5305ji',
+
+    images:[{
+      src: 'images/projects/ezgif.com-gif-maker_7.gif',
       alt: 'gif of block crusher game play',
     }],
     text: [
@@ -203,10 +197,7 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/tetrix',
       },
     ],
-    image: [{
-      src: '',
-      alt: '',
-    }, {
+    images:[{
       style: { width: '80%', height: 'auto' },
       src: 'images/projects/ezgif.com-gif-maker.gif',
       title: 'gif of tetris blocks rotating',
@@ -250,7 +241,7 @@ const projectData = [
       allowFullScreen: true,
       title: 'submission video for notes for friends',
     },
-    image: [{
+    images:[{
       src: '',
       alt: '',
     }],
@@ -274,7 +265,7 @@ const projectData = [
         url: 'https://w9ccu.org',
       },
     ],
-    image: [{
+    images: [{
       src: 'images/projects/smartmockups_kuehezis.jpg',
       alt: 'Mock ups of the WCRA website',
     }],
@@ -301,7 +292,7 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/Learn-a-bit/tree/ChallengeSet02/Projects/ChallengeSet02',
       },
     ],
-    image: [{
+    images:[{
       src: 'images/projects/smartmockups_kuapdm3b.jpg',
       alt: 'Mock up of my learn a bit project',
     }],
@@ -334,18 +325,18 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/PixelArt',
       },
     ],
-    image: [{
+    images:[{
       src: 'images/projects/ezgif.com-gif-maker_4.gif',
       alt: 'Full screen gif of drawing pokeball',
+    },{
+      src: 'images/projects/PixalArtGalleryScreenShot.png',
+      alt: 'Screan Shot of the public art gallery',
     },{
       src: 'images/projects/ezgif.com-gif-maker_5.gif',
       alt: 'Painting pokemon ball gif',
     },{
       src: 'images/projects/ezgif.com-gif-maker_2.gif',
       alt: 'Painting Trees gif',
-    },{
-      src: 'images/projects/PixalArtGalleryScreenShot.png',
-      alt: 'Screan Shot of the public art gallery',
     }],
     text: [
       'This is a pixel art drawing app. Choose from 5 different canvas sizes to draw wonderful pixel art. Each canvas is a square and the larger the canvas size the smaller the pixels will appear to be. You can choose from one of ten basic colors to start drawing or add a new color to your paint pallette. You can click a single pixel to color it or click and drag to color several in a row.',
@@ -384,7 +375,7 @@ const projectData = [
   //       url: '',
   //     },
   //   ],
-  //   image: [{
+  //   images:[{
   //     src: '',
   //     alt: '',
   //   }],
@@ -397,4 +388,12 @@ const projectData = [
   // },
 ];
 
-export default projectData;
+const sortProjects = (projA, projB) => {
+    const dateA = new Date(projA.date)
+    const dateB = new Date(projB.date)
+    console.log(projA.date, dateA, projB.date, dateB)
+    return dateB - dateA
+}
+
+
+export default projectData.sort(sortProjects);

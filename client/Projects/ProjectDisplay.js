@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ProjectDisplay = ({ project }) => {
+  console.log(project.images)
   return (
     <section className="box white">
       {project.video ? (
@@ -15,20 +16,11 @@ const ProjectDisplay = ({ project }) => {
             allowFullScreen
           />
         </div>
-      ) : project.gif ? (
-        <div className="video_wrapper">
-          <iframe
-            src={project.gif.src}
-            title={project.gif.title}
-            className="responsive-iframe"
-            frameBorder="0"
-          />
-        </div>
       ) : (
         <img
           className="image_wrapper"
-          src={project.image.src}
-          alt={project.image.alt}
+          src={project.images[0].src}
+          alt={project.images[0].alt}
         />
       )}
 

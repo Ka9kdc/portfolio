@@ -1,9 +1,10 @@
 import React from 'react';
 
 const ProjectImage = ({ project }) => {
-  const count = ['video', 'gif', 'image', 'image2'].filter(
-    (str) => project[str] && project[str].src
-  ).length;
+  const count =
+    ['video', 'gif'].filter((str) => project[str] && project[str].src).length +
+    project.images.length;
+    console.log(count)
   return (
     <section className={count !== 1 ? 'grid' : 'soloBox'}>
       {project.video && project.video.src && (
@@ -20,25 +21,9 @@ const ProjectImage = ({ project }) => {
           </div>
         </div>
       )}
-      {project.gif && project.gif.src && (
-        <div className="box white">
-          <div className="video_wrapper">
-            <iframe
-              src={
-                project.name === 'Tetrix'
-                  ? `.././${project.gif.src}`
-                  : project.gif.src
-              }
-              title={project.gif.title}
-              className="responsive-iframe"
-              frameBorder="0"
-            />
-          </div>
-        </div>
-      )}
-      {['image', 'image2'].map((image) => {
-        if (project[image] && project[image].src) {
-          return <ImageDiv image={project[image]} key={image} />;
+      {project.images.map((image) => {
+        if (image.src) {
+          return <ImageDiv image={image} key={image.alt} />;
         } else {
           return null;
         }
@@ -49,7 +34,7 @@ const ProjectImage = ({ project }) => {
 
 const ImageDiv = ({ image }) => {
   return (
-    <div className="box white">
+    <div className="box white gif_frame">
       <img
         className="image_wrapper"
         src={`.././${image.src}`}

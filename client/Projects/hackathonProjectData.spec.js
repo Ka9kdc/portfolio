@@ -31,7 +31,7 @@ describe('hackathon Project Data', () => {
       (project) =>
         (project.video && project.video.src) ||
         (project.gif && project.gif.src) ||
-        (project.image && project.image.src)
+        (project.images && project.images[0].src)
     );
     expect(filteredlist).to.have.lengthOf(projectData.length);
   });

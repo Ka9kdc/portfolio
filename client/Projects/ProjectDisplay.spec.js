@@ -26,8 +26,8 @@ describe('project display', () => {
   it('renders an image', () => {
     const imageList = container.find('img');
     expect(imageList).to.have.lengthOf(1);
-    expect(imageList.props().src).to.equal(projectData[0].image.src);
-    expect(imageList.props().alt).to.equal(projectData[0].image.alt);
+    expect(imageList.props().src).to.equal(projectData[0].images[0].src);
+    expect(imageList.props().alt).to.equal(projectData[0].images[0].alt);
   });
 
   it('renders a find out more button', () => {
