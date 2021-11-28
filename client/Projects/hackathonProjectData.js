@@ -413,6 +413,6 @@ const projectData = [
 ];
 
 export default projectData;
-// .sort(
-//   (projA, projB) => new Date(projB.date) - new Date(projA.date)
-// );
+export const projectsByDate = projectData
+  .slice()
+  .sort((projA, projB) => new Date(projB.date) - new Date(projA.date));
