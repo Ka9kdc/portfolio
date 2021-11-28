@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ProjectDisplay = ({ project }) => {
-  console.log(project.images)
+  console.log(project.images);
   return (
     <section className="box white">
       {project.video ? (

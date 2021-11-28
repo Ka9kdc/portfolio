@@ -12,13 +12,16 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/aDogsJourney',
       },
     ],
-    images:[{
-      src: 'images/projects/smartmockups_kjkmxumj.png',
-      alt: "Mock up of the A Dog's Journey Game",
-    }, {
-      src: 'images/ThreeJs_Medium_Cover_Photo.png',
-      alt: "Mock up of the A Dog's Journey Game",
-    }],
+    images: [
+      {
+        src: 'images/projects/smartmockups_kjkmxumj.png',
+        alt: "Mock up of the A Dog's Journey Game",
+      },
+      {
+        src: 'images/ThreeJs_Medium_Cover_Photo.png',
+        alt: "Mock up of the A Dog's Journey Game",
+      },
+    ],
     text: [
       'A simple 3D browser game built with Three.js where the player moves a dog around the field collecting dog bones and avoid obstacles.',
       'This was a 4 day hackathon style project, where I had to learn a new piece of technology.',
@@ -43,10 +46,12 @@ const projectData = [
         url: 'https://github.com/grace-shopper-team-c/grace-shopper',
       },
     ],
-    images:[{
-      src: 'images/projects/smartmockups_kjkotk4z.png',
-      alt: 'Mock up of the Bros Apothacary e-commerce store.',
-    }],
+    images: [
+      {
+        src: 'images/projects/smartmockups_kjkotk4z.png',
+        alt: 'Mock up of the Bros Apothacary e-commerce store.',
+      },
+    ],
     text: [
       'A mock e-Commerce website selling your everyday (hu)man apothecary essentials.',
       'Wrote the vertical code slices and test using Express, Sequelize, Redux, React, Mocha and Chai for all items, single item and admin components ',
@@ -82,10 +87,12 @@ const projectData = [
       allowFullScreen: true,
       title: 'demo video of createmates',
     },
-    images:[{
-      src: 'images/projects/smartmockups_kjkhgdqm.png',
-      alt: "Mock up of the createmate's wep application",
-    }],
+    images: [
+      {
+        src: 'images/projects/smartmockups_kjkhgdqm.png',
+        alt: "Mock up of the createmate's wep application",
+      },
+    ],
     text: [
       'A Progressive Web Application for artists seeking to connect and collaborate. Artists can link up, chat, and enter a video conference room to reinvigorate a working practice and have access to community during a prolonged time of isolation.',
       'Using Node, Express, React, Redux, Postgres/Sequelize as well as Socket.io, we created a Progressive Web App with built-in video and chat features. We relied on Node.js’s WebRTC API and sockets to build a persistent connection between two users. For our front-end, we used Redux to manage state across many React components, Bootstrap for styling, and Digital Ocean to manage media storage. We learned the challenges of managing multi-form data, the various approaches to implement live video streaming and chat capabilities, and how to connect users in real-time.',
@@ -135,10 +142,12 @@ const projectData = [
       allowFullScreen: true,
       title: 'demo video of lunch time',
     },
-    images:[{
-      src: '',
-      alt: '',
-    }],
+    images: [
+      {
+        src: '',
+        alt: '',
+      },
+    ],
     text: [
       'In April 2021, Leslie Meng, Calvin Lowe and I built Lunch Time as part of the Mintbean and StepZen weeklong learn-a-thon. The goal of the project was to make a web application using GraphQL and the StepZen API.',
       'Lunch Time is a web application that will tell a user if they can afford to buy lunch and still pay all of their bills before their next paycheck. Lunch Time was build using Next.js, GraphQL, StepZen, React and Material-ui .',
@@ -168,10 +177,12 @@ const projectData = [
       },
     ],
 
-    images:[{
-      src: 'images/projects/ezgif.com-gif-maker_7.gif',
-      alt: 'gif of block crusher game play',
-    }],
+    images: [
+      {
+        src: 'images/projects/ezgif.com-gif-maker_7.gif',
+        alt: 'gif of block crusher game play',
+      },
+    ],
     text: [
       'Block Crusher is a candy crush style puzzle game.',
       'The game was built over the course of one week for a Mintbean Learn-a-thon in March 2021. The goal of the learn-a-thon was to build a browser turn-based puzzle game.',
@@ -197,11 +208,13 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/tetrix',
       },
     ],
-    images:[{
-      style: { width: '80%', height: 'auto' },
-      src: 'images/projects/ezgif.com-gif-maker.gif',
-      title: 'gif of tetris blocks rotating',
-    }],
+    images: [
+      {
+        style: { width: '80%', height: 'auto' },
+        src: 'images/projects/ezgif.com-gif-maker.gif',
+        title: 'gif of tetris blocks rotating',
+      },
+    ],
     text: [
       'This is a tetris Clone. In this version of Tetris the speed at which the blocks fall will increase as your level increases.',
       'The game was built over the course of one week for a Mintbean hire-a-thon in August 2021. The goal of the hire-a-thon was to build a 2D game without a game engine.',
@@ -241,10 +254,12 @@ const projectData = [
       allowFullScreen: true,
       title: 'submission video for notes for friends',
     },
-    images:[{
-      src: '',
-      alt: '',
-    }],
+    images: [
+      {
+        src: '',
+        alt: '',
+      },
+    ],
     text: [
       'Notes for Friends connects people via chat.',
       'Notes for Friends is a full-stack application built with Node.js,  Express, React, Redux, and Sequelize. We also utilized bootstrap to  help aid with front-end styling, and vanilla JS to tie in some fun  add-on functionality.',
@@ -265,10 +280,12 @@ const projectData = [
         url: 'https://w9ccu.org',
       },
     ],
-    images: [{
-      src: 'images/projects/smartmockups_kuehezis.jpg',
-      alt: 'Mock ups of the WCRA website',
-    }],
+    images: [
+      {
+        src: 'images/projects/smartmockups_kuehezis.jpg',
+        alt: 'Mock ups of the WCRA website',
+      },
+    ],
     text: [
       'In March 2021, the w9ccu website crashed due to the hosting service no longer supporting the php version used on the website. At the request of the WCRA board, I was asked to remake the website using wordpress.',
       '',
@@ -292,10 +309,12 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/Learn-a-bit/tree/ChallengeSet02/Projects/ChallengeSet02',
       },
     ],
-    images:[{
-      src: 'images/projects/smartmockups_kuapdm3b.jpg',
-      alt: 'Mock up of my learn a bit project',
-    }],
+    images: [
+      {
+        src: 'images/projects/smartmockups_kuapdm3b.jpg',
+        alt: 'Mock up of my learn a bit project',
+      },
+    ],
     text: [
       'Their learn-a-bit challenges are small static webpage creations focusing on html and css responsive design. For the challenge you are given an image of what your site should look like in a mobile friendly view and on a desktop.',
       "For the first week's challenge; we were tasked with making a header section and an image gallery. During this challenge I focused on learning and implementing css animations and transitions in a mobile first designs.",
@@ -325,19 +344,24 @@ const projectData = [
         url: 'https://github.com/Ka9kdc/PixelArt',
       },
     ],
-    images:[{
-      src: 'images/projects/ezgif.com-gif-maker_4.gif',
-      alt: 'Full screen gif of drawing pokeball',
-    },{
-      src: 'images/projects/PixalArtGalleryScreenShot.png',
-      alt: 'Screan Shot of the public art gallery',
-    },{
-      src: 'images/projects/ezgif.com-gif-maker_5.gif',
-      alt: 'Painting pokemon ball gif',
-    },{
-      src: 'images/projects/ezgif.com-gif-maker_2.gif',
-      alt: 'Painting Trees gif',
-    }],
+    images: [
+      {
+        src: 'images/projects/ezgif.com-gif-maker_4.gif',
+        alt: 'Full screen gif of drawing pokeball',
+      },
+      {
+        src: 'images/projects/PixalArtGalleryScreenShot.png',
+        alt: 'Screan Shot of the public art gallery',
+      },
+      {
+        src: 'images/projects/ezgif.com-gif-maker_5.gif',
+        alt: 'Painting pokemon ball gif',
+      },
+      {
+        src: 'images/projects/ezgif.com-gif-maker_2.gif',
+        alt: 'Painting Trees gif',
+      },
+    ],
     text: [
       'This is a pixel art drawing app. Choose from 5 different canvas sizes to draw wonderful pixel art. Each canvas is a square and the larger the canvas size the smaller the pixels will appear to be. You can choose from one of ten basic colors to start drawing or add a new color to your paint pallette. You can click a single pixel to color it or click and drag to color several in a row.',
       'There are also some overall actions you can take like filling all the empty pixels with your choosen color, filling all the cells a single color.',
@@ -389,11 +413,10 @@ const projectData = [
 ];
 
 const sortProjects = (projA, projB) => {
-    const dateA = new Date(projA.date)
-    const dateB = new Date(projB.date)
-    console.log(projA.date, dateA, projB.date, dateB)
-    return dateB - dateA
-}
-
+  const dateA = new Date(projA.date);
+  const dateB = new Date(projB.date);
+  console.log(projA.date, dateA, projB.date, dateB);
+  return dateB - dateA;
+};
 
 export default projectData.sort(sortProjects);
