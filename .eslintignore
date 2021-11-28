@@ -1,2 +1,3 @@
 client/Other/ConfactForm.spec.js
-scripts
+script/encrypt-heroku-auth-token.js
+./scripts

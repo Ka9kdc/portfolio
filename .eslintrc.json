@@ -36,8 +36,6 @@
     "sort-vars": "warn",
     "spaced-comment": "warn",
     "array-bracket-newline": "warn",
-    "array-bracket-spacing": ["warn", "always", { "singleValue": false }],
-    "array-element-newline": "warn",
     "arrow-spacing": "warn",
     "block-spacing": "warn",
     "brace-style": "warn",

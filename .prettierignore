@@ -4,3 +4,4 @@ package-lock.json
 package.json
 scripts
 client/Other/ConfactForm.spec.js
+script/encrypt-heroku-auth-token.js
