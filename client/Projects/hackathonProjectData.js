@@ -332,8 +332,8 @@ const projectData = [
     name: 'Pixal Art',
     links: [
       // {
-      //   name: 'Submission',
-      //   url: '',
+      //   Name: 'Submission',
+      //   Url: '',
       // },
       {
         name: 'Deployed',
@@ -384,31 +384,31 @@ const projectData = [
     solo: true,
   },
   // {id:10,
-  //    name: '',
-  //   links: [
+  //    Name: '',
+  //   Links: [
   //     {
-  //       name: 'Submission',
-  //       url: '',
+  //       Name: 'Submission',
+  //       Url: '',
   //     },
   //     {
-  //       name: 'Deployed',
-  //       url: '',
+  //       Name: 'Deployed',
+  //       Url: '',
   //     },
   //     {
-  //       name: 'GitHub Repo',
-  //       url: '',
+  //       Name: 'GitHub Repo',
+  //       Url: '',
   //     },
   //   ],
-  //   images:[{
-  //     src: '',
-  //     alt: '',
+  //   Images:[{
+  //     Src: '',
+  //     Alt: '',
   //   }],
-  //   text: ['', ''],
-  //   techUsed: [],
-  //   hackathon: true,
-  //   org: 'Mintbean',
-  //   date: '2021',
-  // solo: true
+  //   Text: ['', ''],
+  //   TechUsed: [],
+  //   Hackathon: true,
+  //   Org: 'Mintbean',
+  //   Date: '2021',
+  // Solo: true
   // },
 ];
 

@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { workHistory } = require('./data');
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
-const OAuth2 = google.auth.OAuth2;
+const { OAuth2 } = google.auth;
 
 if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
   require('../secrets');
@@ -50,7 +50,7 @@ router.post('/email', (req, res, next) => {
         text: text,
       };
 
-      transporter.sendMail(mailOptions, function (err, info) {
+      transporter.sendMail(mailOptions, (err, info) => {
         if (err) {
           throw err;
         } else {

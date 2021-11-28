@@ -123,6 +123,7 @@ const updateTravisYAML = (app, key) => {
 };
 
 const main = async () => {
+  // eslint-disable-next-line no-prototype-builtins
   const verbose = process.argv.hasOwnProperty(2);
   const { fullName, appName } = await getNamesFromGit();
 
@@ -135,7 +136,7 @@ const main = async () => {
   /* Download the repo's public key supplied by Travis. */
   const travisURL = `https://api.travis-ci.org/repos/${fullName}/key`;
   const travisResponse = await axios.get(travisURL);
-  const key = travisResponse.data.key;
+  const { key } = travisResponse.data;
   const keyBuffer = Buffer.from(key, 'utf-8');
   if (verbose) console.log('Received Travis pubkey:\n', keyBuffer.toString());
 

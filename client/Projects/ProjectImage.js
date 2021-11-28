@@ -23,24 +23,17 @@ const ProjectImage = ({ project }) => {
       {project.images.map((image) => {
         if (image.src) {
           return <ImageDiv image={image} key={image.alt} />;
-        } else {
-          return null;
         }
+        return null;
       })}
     </section>
   );
 };
 
-const ImageDiv = ({ image }) => {
-  return (
-    <div className="box white gif_frame">
-      <img
-        className="image_wrapper"
-        src={`.././${image.src}`}
-        alt={image.alt}
-      />
-    </div>
-  );
-};
+const ImageDiv = ({ image }) => (
+  <div className="box white gif_frame">
+    <img className="image_wrapper" src={`.././${image.src}`} alt={image.alt} />
+  </div>
+);
 
 export default ProjectImage;

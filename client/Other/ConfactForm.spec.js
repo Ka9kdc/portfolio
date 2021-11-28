@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { expect } from 'chai';
 import ContactForm from './ContactForm';
 import ContactLinks from '../About/Contact';
@@ -298,7 +298,7 @@ describe('contact form', () => {
     });
 
     it('a confermation message appears', () => {
-      let confirmation = container.find('h2');
+      const confirmation = container.find('h2');
       expect(confirmation).to.have.lengthOf(1);
       expect(confirmation.text()).to.equal(
         `Thank you, ${testProps.sender} for your message. I look forward to connecting with you.`

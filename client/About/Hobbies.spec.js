@@ -1,7 +1,7 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { expect } from 'chai';
-import Hobbies, { myHobbies, SingleHobby } from './Hobbies';
+import Hobbies, { SingleHobby, myHobbies } from './Hobbies';
 
 describe('Hobbies component', () => {
   let container;

@@ -7,7 +7,7 @@ import Exprience, { SingleJob } from './Exprience';
 import Education, { Institute } from './Education';
 import Summary from './Summary';
 import ContactLinks, { SingleLink } from './Contact';
-import Hobbies, { myHobbies, SingleHobby } from './Hobbies';
+import Hobbies, { SingleHobby, myHobbies } from './Hobbies';
 import Resume from './Resume';
 import { BrowserRouter } from 'react-router-dom';
 import TechUsed from '../Projects/TechUsed';
@@ -26,7 +26,7 @@ describe('About Component', () => {
     });
 
     it('has a link to 5 of the 6 sections', () => {
-      let links = container.find('a').map((node) => node.props().href);
+      const links = container.find('a').map((node) => node.props().href);
       expect(links).to.be.lengthOf(5);
       expect(links.indexOf('#Hobbies')).to.not.equal(-1);
       expect(links.indexOf('#Education')).to.not.equal(-1);

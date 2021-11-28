@@ -2,7 +2,7 @@ import React from 'react';
 import librariesUsed from '../Skills/LibrariesObject';
 
 const TechUsed = ({ tech, className }) => {
-  let name = tech.split('.')[0];
+  const name = tech.split('.')[0];
   const techImg = librariesUsed[name];
 
   return (

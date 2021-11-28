@@ -39,29 +39,25 @@ export const myHobbies = [
   },
 ];
 
-export const SingleHobby = ({ hobby }) => {
-  return (
-    <section>
-      <img
-        src={`images/Hobbies/${hobby.image}`}
-        alt={`Photo of ${hobby.activity}`}
-      />
-      <p className="title">{hobby.activity}</p>
-    </section>
-  );
-};
+export const SingleHobby = ({ hobby }) => (
+  <section>
+    <img
+      src={`images/Hobbies/${hobby.image}`}
+      alt={`Photo of ${hobby.activity}`}
+    />
+    <p className="title">{hobby.activity}</p>
+  </section>
+);
 
-const Hobbies = () => {
-  return (
-    <article id="Hobbies">
-      <h2 className="section_title">Hobbies</h2>
-      <section className="image_flex_row box white">
-        {myHobbies.map((hobby) => {
-          return <SingleHobby hobby={hobby} key={hobby.activity} />;
-        })}
-      </section>
-    </article>
-  );
-};
+const Hobbies = () => (
+  <article id="Hobbies">
+    <h2 className="section_title">Hobbies</h2>
+    <section className="image_flex_row box white">
+      {myHobbies.map((hobby) => (
+        <SingleHobby hobby={hobby} key={hobby.activity} />
+      ))}
+    </section>
+  </article>
+);
 
 export default Hobbies;

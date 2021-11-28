@@ -2,3 +2,5 @@ public/bundle.js
 public/bundle.js.map
 package-lock.json
 package.json
+scripts
+client/Other/ConfactForm.spec.js

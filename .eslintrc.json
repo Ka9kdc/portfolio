@@ -1,5 +1,5 @@
 {
-  "extends": "fullstack",
+  "extends": ["fullstack", "eslint:recommended"],
   "root": true,
   "overrides": [
     {
@@ -11,7 +11,38 @@
   ],
   "rules": {
     "no-console": "warn",
-    "no-unused-vars": "warn"
+    "no-duplicate-imports": "warn",
+    "no-await-in-loop": "warn",
+    "default-case-last": "warn",
+    "camelcase": "warn",
+    "capitalized-comments": "warn",
+    "arrow-body-style": "warn",
+    "eqeqeq": "warn",
+    "dot-notation": "warn",
+    "no-confusing-arrow": "warn",
+    "no-else-return": "warn",
+    "no-lonely-if": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-useless-return": "warn",
+    "no-var": "error",
+    "one-var-declaration-per-line": "warn",
+    "prefer-arrow-callback": "warn",
+    "prefer-const": "warn",
+    "prefer-object-spread": "warn",
+    "prefer-promise-reject-errors": "error",
+    "prefer-template": "warn",
+    "prefer-spread": "warn",
+    "require-await": "warn",
+    "sort-vars": "warn",
+    "spaced-comment": "warn",
+    "array-bracket-newline": "warn",
+    "array-bracket-spacing": ["warn", "always", { "singleValue": false }],
+    "array-element-newline": "warn",
+    "arrow-spacing": "warn",
+    "block-spacing": "warn",
+    "brace-style": "warn",
+    "comma-spacing": ["warn", { "before": false, "after": true }],
+    "comma-style": ["warn", "last"]
   },
   "settings": {
     "react": {

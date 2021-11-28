@@ -14,19 +14,17 @@ const SingleProject = () => {
       <section className="grid faded">
         <section>
           <section className="flex_wrap_row ">
-            {project.links.map((link) => {
-              return (
-                <a
-                  href={link.url}
-                  key={`${link.name}:${link.url}`}
-                  className="find_out_more_contianer"
-                >
-                  <button type="button" className="find_out_more">
-                    {link.name}
-                  </button>
-                </a>
-              );
-            })}
+            {project.links.map((link) => (
+              <a
+                href={link.url}
+                key={`${link.name}:${link.url}`}
+                className="find_out_more_contianer"
+              >
+                <button type="button" className="find_out_more">
+                  {link.name}
+                </button>
+              </a>
+            ))}
           </section>
           <section className="center">
             <h3>Developed: {project.date}</h3>
@@ -36,10 +34,10 @@ const SingleProject = () => {
           </section>
         </section>
         <section className="center">
-          {project.text.map((fact, idx) => {
+          {project.text.map((fact, idx) => (
             // eslint-disable-next-line react/no-array-index-key
-            return <p key={project.name + ':' + idx}>{fact}</p>;
-          })}
+            <p key={`${project.name}:${idx}`}>{fact}</p>
+          ))}
         </section>
       </section>
       <ProjectImage project={project} />
