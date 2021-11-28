@@ -35,21 +35,19 @@ const ContactLinks = () => {
           </button>
         </Link>
       ) : null}
-      {contactLinksArr.map((link) => {
-        return <SingleLink key={link.name} link={link} />;
-      })}
+      {contactLinksArr.map((link) => (
+        <SingleLink key={link.name} link={link} />
+      ))}
     </article>
   );
 };
 
-export const SingleLink = ({ link }) => {
-  return (
-    <a href={link.url}>
-      <button type="button" className="title find_out_more">
-        <img src={link.src} alt={link.alt} />
-      </button>
-    </a>
-  );
-};
+export const SingleLink = ({ link }) => (
+  <a href={link.url}>
+    <button type="button" className="title find_out_more">
+      <img src={link.src} alt={link.alt} />
+    </button>
+  </a>
+);
 
 export default ContactLinks;

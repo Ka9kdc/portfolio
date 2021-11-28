@@ -50,9 +50,9 @@ const Projects = () => {
         </button>
       </div>
       <section className="project_grid">
-        {projectsDisplayed.map((project) => {
-          return <ProjectDisplay project={project} key={project.name} />;
-        })}
+        {projectsDisplayed.map((project) => (
+          <ProjectDisplay project={project} key={project.name} />
+        ))}
       </section>
       <MainTechStack />
     </article>

@@ -7,14 +7,12 @@ import './mobile.css';
 import './main.css';
 import Top from './Other/Top';
 
-const Main = () => {
-  return (
-    <>
-      <Header />
-      <Routes />
-      <Top />
-    </>
-  );
-};
+const Main = () => (
+  <>
+    <Header />
+    <Routes />
+    <Top />
+  </>
+);
 
 export default Main;

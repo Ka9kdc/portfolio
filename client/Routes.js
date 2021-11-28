@@ -8,18 +8,16 @@ import SingleProject from './Projects/SingleProject';
 import Publications from './Publications';
 import Skills from './Skills';
 
-const Routes = () => {
-  return (
-    <Switch>
-      <Route path="/Project/:id" component={SingleProject} />
-      <Route path="/Projects" component={Projects} />
-      <Route path="/Skills" component={Skills} />
-      <Route path="/Publications" component={Publications} />
-      <Route path="/ContactMe" component={ContactForm} />
-      <Route path="/About" component={About} />
-      <Route path="/" component={Home} />
-    </Switch>
-  );
-};
+const Routes = () => (
+  <Switch>
+    <Route path="/Project/:id" component={SingleProject} />
+    <Route path="/Projects" component={Projects} />
+    <Route path="/Skills" component={Skills} />
+    <Route path="/Publications" component={Publications} />
+    <Route path="/ContactMe" component={ContactForm} />
+    <Route path="/About" component={About} />
+    <Route path="/" component={Home} />
+  </Switch>
+);
 
 export default Routes;

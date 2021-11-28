@@ -139,8 +139,8 @@ const librariesUsed = {
     transparent: false,
     key: 28,
   },
-  heroku: {
-    name: 'heroku',
+  Heroku: {
+    name: 'Heroku',
     logo: 'images/libraries/Heroku_logo.png',
     comfortLevel: okay_with,
     transparent: false,

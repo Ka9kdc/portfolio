@@ -8,7 +8,7 @@ module.exports = {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js',
   },
-  //coding from babeljs.io
+  // Coding from babeljs.io
   module: {
     rules: [
       {
@@ -27,7 +27,7 @@ module.exports = {
     ],
   },
   // Creates "source map" files (ex. "bundle.js.map"). Modern browsers can automatically
-  // request these to "rebuild" your original source code in your dev tools (i.e. the Sources tab).
+  // Request these to "rebuild" your original source code in your dev tools (i.e. the Sources tab).
   // This makes debugging much, much nicer
   devtool: 'source-map',
 };
