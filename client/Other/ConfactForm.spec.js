@@ -19,7 +19,8 @@ describe('contact form', () => {
     it('has a form', () => {
       expect(container.find('form')).to.have.lengthOf(1);
       expect(container.find('input')).to.have.lengthOf.greaterThan(0);
-      expect(container.find('form').children().last().type()).to.equal(
+      expect(container.find('form').children().last()
+.type()).to.equal(
         'button'
       );
       expect(container.find('form').props().onSubmit).to.exist;
