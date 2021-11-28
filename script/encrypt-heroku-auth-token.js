@@ -72,7 +72,8 @@ const getNamesFromGit = () =>
         fullName: GitUrlParse(getRemoteURL('origin', res)).full_name,
         appName: GitUrlParse(getRemoteURL('heroku', res)).name,
       });
-    }));
+    })
+  );
 
 /* Use the openssl command to encrypt an authentication token. */
 const encryptHerokuToken = async () => {

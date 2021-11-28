@@ -44,7 +44,7 @@ const ContactForm = (props) => {
       setErrMessage(false);
     }
     if (sender && message && email) {
-      console.log(message);
+      // console.log(message);
       setSent(true);
       axios.post('/api/email', { sender, email, subject, message });
     }

@@ -4,7 +4,6 @@ const ProjectImage = ({ project }) => {
   const count =
     ['video', 'gif'].filter((str) => project[str] && project[str].src).length +
     project.images.length;
-  console.log(count);
   return (
     <section className={count !== 1 ? 'grid' : 'soloBox'}>
       {project.video && project.video.src && (
