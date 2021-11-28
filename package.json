@@ -14,9 +14,9 @@
     "test": "NODE_ENV='test' mocha \"./client/**/*.spec.js\" \"./server/**/*.spec.js\" --require @babel/polyfill --require ignore-styles --require @babel/register  --exit",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint-fix": "npm run lint -- --fix",
-    "prepare": "if [ -d .git ]; then npm-merge-driver install; fi",
     "prettify": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
-    "prettier": "npm run lint-fix && prettier --write ./ --ignore-path .gitignore"
+    "prettier": "npm run lint-fix && prettier --write ./ --ignore-path .gitignore",
+    "prepare": "husky install"
   },
   "author": "Kelsey Schroeder",
   "license": "ISC",
@@ -60,6 +60,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1",
-    "yaml": "^1.10.0"
+    "yaml": "^1.10.0",
+    "husky": "^7.0.0"
   }
 }
