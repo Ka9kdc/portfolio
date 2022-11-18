@@ -1,7 +1,6 @@
 import React from 'react';
 import { workHistory } from './data';
 
-
 export const SingleJob = ({ job }) => (
   <section className="box white">
     <div className="flex_wrap_row">
@@ -23,18 +22,15 @@ export const SingleJob = ({ job }) => (
   </section>
 );
 
-const Exprience = () => {
-
-  return (
-    <article id="Experience">
-      <h1 className="section_title">Experience</h1>
-      <div className="grid">
-        {workHistory.map((job) => (
-          <SingleJob job={job} key={`Job#${job.key}`} />
-        ))}
-      </div>
-    </article>
-  );
-};
+const Exprience = () => (
+  <article id="Experience">
+    <h1 className="section_title">Experience</h1>
+    <div className="grid">
+      {workHistory.map((job) => (
+        <SingleJob job={job} key={`Job#${job.key}`} />
+      ))}
+    </div>
+  </article>
+);
 
 export default Exprience;

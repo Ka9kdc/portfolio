@@ -7,6 +7,7 @@ const Header = () => {
 
   function handleDarkMode(evt) {
     evt.preventDefault();
+    // eslint-disable-next-line no-undef
     const body = document.getElementsByTagName('body')[0];
     if (darkMode) {
       body.className = 'lightMode';

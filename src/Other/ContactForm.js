@@ -13,6 +13,7 @@ const ContactForm = (props) => {
   const [errMessage, setErrMessage] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line no-undef
     if (process.env.NODE_ENV === 'test') {
       if (props.sender) {
         setSender(props.sender);

@@ -1,7 +1,7 @@
 import Enzyme from 'enzyme';
-// import Adapter from 'enzyme-adapter-react-16';
-// import axios from 'axios';
-// import MockAdaptor from 'axios-mock-adapter';
+// Import Adapter from 'enzyme-adapter-react-16';
+// Import axios from 'axios';
+// Import MockAdaptor from 'axios-mock-adapter';
 import { fakeJob } from './About/Exprience';
 const { JSDOM } = require('jsdom');
 

@@ -1,1 +1,1 @@
-export * from "./workHistory"
+export * from './workHistory';
