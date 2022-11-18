@@ -1,15 +1,23 @@
 {
-  "extends": [ "eslint:recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "root": true,
   "overrides": [
     {
       "files": ["*.test.js", "*.spec.js"],
       "rules": {
-        "no-unused-expressions": "off"
+        "no-unused-expressions": "off",
+        "no-undef": "off"
       }
     }
   ],
+
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
   "rules": {
+    "react/prop-types": "warn",
+    "react/no-unescaped-entities": "off",
     "no-console": "warn",
     "no-duplicate-imports": "warn",
     "no-await-in-loop": "warn",
