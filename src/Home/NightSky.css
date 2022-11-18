@@ -201,7 +201,7 @@ body.lightMode .moon {
   font-size: 0.9em;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: url('/client/Home/paper_plane_PNG56.png');
+  background-image: url('/src/Home/paper_plane_PNG56.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

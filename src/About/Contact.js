@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router';
+// import { Link } from 'react-router-dom';
+// import { useLocation } from 'react-router';
 
 export const contactLinksArr = [
   {
@@ -24,7 +24,7 @@ export const contactLinksArr = [
 ];
 
 const ContactLinks = () => {
-  const location = useLocation().pathname;
+  // const location = useLocation().pathname;
   return (
     <article className="flex_wrap_row multi_img" id="Contacts">
       <h1 className="title">Contact Links:</h1>
