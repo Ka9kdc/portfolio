@@ -18,6 +18,11 @@ OAuth2Client.setCredentials({
 });
 module.exports = router;
 
+router.use("*", (req, res, next) => {
+  console.log(req.path)
+  next()
+})
+
 router.get('/work', (req, res, next) => {
   res.send(workHistory);
 });
