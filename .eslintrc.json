@@ -1,5 +1,5 @@
 {
-  "extends": ["fullstack", "eslint:recommended"],
+  "extends": [ "eslint:recommended"],
   "root": true,
   "overrides": [
     {
