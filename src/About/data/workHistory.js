@@ -1,13 +1,14 @@
 export const workHistory = [
-  {
-    key: 8,
-    companyLogo: 'images/LittleLogoTransparent.png',
-    companyName: 'Fluz',
-    JobTitle: 'Software Engineer',
-    start: 'February 2022',
-    end: 'Present',
-    description: [],
-  },
+  //Todo: add fluz
+  // {
+  //   key: 8,
+  //   companyLogo: 'images/LittleLogoTransparent.png',
+  //   companyName: 'Fluz',
+  //   JobTitle: 'Software Engineer',
+  //   start: 'February 2022',
+  //   end: 'Present',
+  //   description: [],
+  // },
   {
     key: 7,
     companyLogo: 'images/LittleLogoTransparent.png',
