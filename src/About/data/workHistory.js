@@ -1,14 +1,33 @@
 export const workHistory = [
-  //Todo: add fluz
-  // {
-  //   key: 8,
-  //   companyLogo: 'images/LittleLogoTransparent.png',
-  //   companyName: 'Fluz',
-  //   JobTitle: 'Software Engineer',
-  //   start: 'February 2022',
-  //   end: 'Present',
-  //   description: [],
-  // },
+  {
+    key: 9,
+    companyLogo: 'images/fluz-logo.svg',
+    companyName: 'Fluz',
+    JobTitle: 'Software Engineer',
+    start: 'February 2022',
+    end: 'Present',
+    description: [
+      'Develop automation for grabbing and processing daily settlement reports from our payment gateway processors',
+      'Created daily reporting for the bank on user balances and activity',
+      'Worked with a team to develop Virtual Cards usage flow',
+    ],
+    customLogoStyle: {backgroundImage: "linear-gradient(0deg, rgb(253,194,81) 0%, rgb(250,188,153) 41%, rgb(247,180,245) 50%, rgb(166,180,247) 76%, rgb(115,181,255) 99%)", padding: "10px", borderRadius: "20px"}
+  },
+  {
+    key: 8,
+    companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
+    companyName: 'Fullstack Academy',
+    JobTitle: 'Amazon Career Choice - Software Engineering/Web Development Mentor II - Part Time',
+    start: 'February 2023',
+    end: 'Present',
+    description: [
+      'Teaching assistant and Mentor to cohorts junior web developers covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design, and pair programming',
+      'Libraries and frameworks taught were: Javascript, React, Node, Express, SQL, CSS and HTML',
+      'Acted as project manager and technical mentor for students during various projects, employing the use of agile methodologies',
+      'Conducted mock technical interviews and impromptu lectures',
+      'Ran weekly Office Hours and weekly whiteboard algo practice',
+    ],
+  },
   {
     key: 7,
     companyLogo: 'images/LittleLogoTransparent.png',
@@ -31,14 +50,14 @@ export const workHistory = [
     end: 'Present',
     description: [
       'Teaching assistant and Mentor to cohorts junior web developers covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design, and pair programming',
-      'Librarys and frameworks taught were: Javascript, React, Node, Express, SQL, CSS and HTML',
+      'Libraries and frameworks taught were: Javascript, React, Node, Express, SQL, CSS and HTML',
       'Acted as project manager and technical mentor for students during various projects, employing the use of agile methodologies',
       'Conducted mock technical interviews and impromptu lectures',
-      'Ran weekly Office Hours and weekly whiteboarding algo practice',
+      'Ran weekly Office Hours and weekly whiteboard algo practice',
     ],
   },
   {
-    key: 5,
+    key: 4,
     companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
     companyName: 'Fullstack Academy',
     JobTitle: 'Software Engineering/Web Development Instructional Associate',
@@ -46,13 +65,13 @@ export const workHistory = [
     end: 'December 2021',
     description: [
       'Teaching assistant to a cohort of 12 junior web developers covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design, and pair programming',
-      'Librarys and frameworks taught were: jquery, Javascript, React, Node, Express, SQL, CSS and HTML',
+      'Libraries and frameworks taught were: jquery, Javascript, React, Node, Express, SQL, CSS and HTML',
       'Conducted mock technical interviews and impromptu lectures',
-      'Ran weekly Office Hours and weekly whiteboarding algo practice',
+      'Ran weekly Office Hours and weekly whiteboard algo practice',
     ],
   },
   {
-    key: 3,
+    key: 5,
     companyLogo: 'images/LittleLogoTransparent.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Webmaster',
@@ -67,7 +86,7 @@ export const workHistory = [
     ],
   },
   {
-    key: 4,
+    key: 1.3,
     companyLogo: 'images/fullstack-academy-logo-color-on-white.png',
     companyName: 'Fullstack Academy',
     JobTitle: 'Software Engineering/Web Development Teaching Fellow',
@@ -77,11 +96,11 @@ export const workHistory = [
       'Teaching assistant to a cohort of 40+ students covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design and pair programming',
       'Acted as project manager and technical mentor for teams of 4 students during 4 projects, employing the use of agile methodologies',
       'Conducted technical admissions interviews',
-      'Ran weekly whiteboarding algo lectures',
+      'Ran weekly whiteboard algo lectures',
     ],
   },
   {
-    key: 1,
+    key: 2,
     companyLogo: 'images/LittleLogoTransparent.png',
     companyName: 'Wheaton Community Radio Amateurs',
     JobTitle: 'Hamfest Chairman',
@@ -94,7 +113,7 @@ export const workHistory = [
     ],
   },
   {
-    key: 2,
+    key: 1,
     companyLogo: 'images/209-2092285_office-depot-office-max-png-logo.png',
     companyName: 'Office Depot',
     JobTitle: 'Print and Copy Supervisor',
@@ -107,4 +126,4 @@ export const workHistory = [
       'Achieved over department sales goals almost every quarter',
     ],
   },
-];
+].sort((a,b) => b.key - a.key);

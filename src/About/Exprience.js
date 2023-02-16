@@ -4,13 +4,12 @@ import { workHistory } from './data';
 export const SingleJob = ({ job }) => (
   <section className="box white">
     <div className="flex_wrap_row">
-      <img src={job.companyLogo} alt={`${job.companyName} Logo`} />
       <div>
+      <img src={job.companyLogo} alt={`${job.companyName} Logo`} style={job.customLogoStyle}/>
         <h2>{job.JobTitle}</h2>
         <p>
           {job.start} - {job.end}
         </p>
-        {job.link ? <a href={`http://${job.link}`}>{job.link}</a> : null}
       </div>
     </div>
     <ul>
