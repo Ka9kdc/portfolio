@@ -4,7 +4,7 @@ import TechUsed from '../Projects/TechUsed';
 import librariesUsed from '../Skills/LibrariesObject';
 
 const MainTechStack = () => {
-  const mainStack = ['React', 'Redux', 'Node', 'Postgres', 'Express'];
+  const mainStack = ['React', 'Node', 'Postgres', 'Express', 'Sequelize', 'HTML'];//Jest
   const { pathname } = useLocation();
 
   return (

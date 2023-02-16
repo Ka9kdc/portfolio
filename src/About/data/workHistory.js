@@ -47,7 +47,7 @@ export const workHistory = [
     companyName: 'Fullstack Academy',
     JobTitle: 'Univ Software Engineering/Web Development Mentor - Part Time',
     start: 'December 2021',
-    end: 'Present',
+    end: 'February 2023',
     description: [
       'Teaching assistant and Mentor to cohorts junior web developers covering: software engineering concepts, computer science fundamentals, debugging techniques, schema design, and pair programming',
       'Libraries and frameworks taught were: Javascript, React, Node, Express, SQL, CSS and HTML',

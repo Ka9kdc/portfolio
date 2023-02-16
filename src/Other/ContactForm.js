@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ContactLinks from '../About/Contact';
 
@@ -44,20 +44,25 @@ const ContactForm = (props) => {
     } else {
       setErrMessage(false);
     }
-    if (sender && message && email) {
+    // if (sender && message && email) {
       // Console.log(message);
       setSent(true);
-      axios.post('/api/email', { sender, email, subject, message });
-    }
+      // axios.post('/api/email', { sender, email, subject, message });
+    // }
   };
 
   if (sent) {
     return (
       <article>
-        <h2 className="title">
+        {/* <h2 className="title">
           Thank you, {sender} for your message. I look forward to connecting
           with you.
+        </h2> */}
+        <div className='box white'>
+         <h2 className="title">
+          Due to changes in deployment location. You message can not be sent directly from Kelsey Site. Please use linkedin to contact Kelsey at this time.
         </h2>
+        <p>{message}</p></div>
         <section className="box white">
           <ContactLinks />
         </section>
@@ -69,6 +74,8 @@ const ContactForm = (props) => {
     <article>
       <h1 className="title">Send Kelsey Schroeder a Message</h1>
       <form onSubmit={handleSubmit} className="box white">
+        <span style={{color: "red"}}>Due to changes in deployment location. Your message can not be sent directly from this page. Please use linkedin to contact Kelsey at this time.
+</span>
         <input
           className="form_input"
           type="text"
