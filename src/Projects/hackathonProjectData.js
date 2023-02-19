@@ -8,7 +8,23 @@ const projectData = [
         url: 'https://kmschroeder91.medium.com/building-a-game-with-three-js-f5796ecf15cf',
       },
       {
-        name: 'GitHub Repo',
+        name: 'Version 1: GitHub Repo - Ball and Stars',
+        url: 'https://github.com/Ka9kdc/ThreeJsGame',
+      },
+      {
+        name: "Version 1: Deployment",
+        url: 'https://ka9kdc.github.io/ThreeJsGame/'
+      },
+      {
+        name: 'Version 2: GitHub Repo - Dog in Woods',
+        url: 'https://github.com/Ka9kdc/aDogsJourney/tree/movement',
+      },
+      {
+        name: "Version 2: Deployment",
+        url: 'https://ka9kdc.github.io/aDogsJourney/'
+      },
+      {
+        name: 'Version 3: GitHub Repo - Dog on Ice ',
         url: 'https://github.com/Ka9kdc/aDogsJourney',
       },
     ],
@@ -25,7 +41,10 @@ const projectData = [
     text: [
       'A simple 3D browser game built with Three.js where the player moves a dog around the field collecting dog bones and avoid obstacles.',
       'This was a 4 day hackathon style project, where I had to learn a new piece of technology.',
-      ' Along with building the game, I wrote an article on how to build the game.',
+      'Along with building the game, I wrote an article on how to build the game.',
+      'Version 1 has a ball rolling around the field with the camera following it. In this version the ball and camera move but the trees and stars are set in fixed locations on the field.',
+      'In Version 2, A dog is walking through the woods. The trees and ground move past as the dog turns and stays in the center of the screen trying to eat dog bones.',
+      'The Version 3 repo has a mix of the two occurring. The dog and camera move but not very well. the icebergs and dog bones will occasional relocate.'
     ],
     techUsed: ['Three.js', 'HTML', 'CSS', 'Javascript'],
     hackathon: true,
@@ -37,10 +56,11 @@ const projectData = [
     id: 1,
     name: 'Bros-Apothecary',
     links: [
-      {
-        name: 'Deployed',
-        url: 'http://bros-apothecary.herokuapp.com/',
-      },
+      // No longer deployed - make video
+      // {
+      //   name: 'Deployed',
+      //   url: 'http://bros-apothecary.herokuapp.com/',
+      // },
       {
         name: 'GitHub Repo',
         url: 'https://github.com/grace-shopper-team-c/grace-shopper',
@@ -68,10 +88,11 @@ const projectData = [
     id: 2,
     name: 'Createmates',
     links: [
-      {
-        name: 'Deployed',
-        url: 'https://createmate.herokuapp.com',
-      },
+      //No longer deployed
+      // {
+      //   name: 'Deployed',
+      //   url: 'https://createmate.herokuapp.com',
+      // },
       {
         name: 'GitHub Repo',
         url: 'https://github.com/createmates/createmates',
@@ -235,10 +256,10 @@ const projectData = [
         name: 'DevPost Submission',
         url: 'https://devpost.com/software/notes-for-friends',
       },
-      {
-        name: 'Deployed',
-        url: 'https://notes-with-friends.herokuapp.com/',
-      },
+      // {
+      //   name: 'Deployed',
+      //   url: 'https://notes-with-friends.herokuapp.com/',
+      // },
       {
         name: 'GitHub Repo',
         url: 'https://github.com/HKLT-Together-Hackaton/Notes-For-Friends',
@@ -335,10 +356,10 @@ const projectData = [
       //   Name: 'Submission',
       //   Url: '',
       // },
-      {
-        name: 'Deployed',
-        url: 'https://pixal-art.herokuapp.com/',
-      },
+      // {
+      //   name: 'Deployed',
+      //   url: 'https://pixal-art.herokuapp.com/',
+      // },
       {
         name: 'GitHub Repo',
         url: 'https://github.com/Ka9kdc/PixelArt',
