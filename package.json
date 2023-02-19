@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My Profolio Website",
   "main": "index.js",
-  "homepage": "https://ka9kdc.github.io/portfolio/",
+  "homepage": "https://ka9kdc.github.io/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy":"gh-pages -d build",
