@@ -10,12 +10,12 @@ import Skills from './Skills';
 
 const AppRoute = () => (
   <Routes>
-    <Route path="/Project/:id" element={<SingleProject />} />
-    <Route path="/Projects" element={<Projects />} />
-    <Route path="/Skills" element={<Skills />} />
-    <Route path="/Publications" element={<Publications />} />
-    <Route path="/ContactMe" element={<ContactForm />} />
-    <Route path="/About" element={<About />} />
+    <Route path="/portfolio/Project/:id" element={<SingleProject />} />
+    <Route path="/portfolio/Projects" element={<Projects />} />
+    <Route path="/portfolio/Skills" element={<Skills />} />
+    <Route path="/portfolio/Publications" element={<Publications />} />
+    <Route path="/portfolio/ContactMe" element={<ContactForm />} />
+    <Route path="/portfolio/About" element={<About />} />
     <Route path="/portfolio" element={<Home />} />
     <Route path="/" element={<Home />} />
   </Routes>

@@ -7,7 +7,7 @@ const Resume = () => (
       <iframe
         id="Resume"
         className="responsive-iframe"
-        src="/Kelsey_Schroeder_Resume_September_2021.pdf"
+        src="Kelsey_Schroeder_Resume_September_2021.pdf"
       />
     </div>
     <Link

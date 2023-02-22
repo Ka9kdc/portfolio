@@ -19,13 +19,13 @@ const Home = () => {
           animationPaused ? 'plane_container paused' : 'plane_container '
         }
       >
-        <Link to="/About" className="plane">
+        <Link to="/portfolio/About" className="plane">
           <div>About</div>
         </Link>
-        <Link to="/Skills" className="down_screen plane">
+        <Link to="/portfolio/Skills" className="down_screen plane">
           <div>Skills</div>
         </Link>
-        <Link to="/Projects" className="plane">
+        <Link to="/portfolio/Projects" className="plane">
           <div>Projects</div>
         </Link>
       </section>

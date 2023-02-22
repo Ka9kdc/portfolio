@@ -33,7 +33,7 @@ const ProjectDisplay = ({ project }) => (
         <li key={`${project.name}:${tech}`}>{tech}</li>
       ))}
     </ul>
-    <Link to={`/Project/${project.id}`} className="find_out_more_container">
+    <Link to={`/portfolio/Project/${project.id}`} className="find_out_more_container">
       <button type="button" className="find_out_more">
         Find Out More
       </button>

@@ -37,7 +37,7 @@ const About = () => (
           Resume
         </button>
       </a>
-      <Link to="/Projects">
+      <Link to="/portfolio/Projects">
         <button type="button" className="title find_out_more">
           Projects
         </button>

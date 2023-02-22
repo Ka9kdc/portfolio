@@ -14,8 +14,8 @@ const MainTechStack = () => {
         const { key, comfortLevel } = librariesUsed[tech];
         return <TechUsed tech={tech} key={key} className={comfortLevel} />;
       })}
-      {pathname === '/Skills' ? null : (
-        <Link to="/Skills">
+      {pathname === '/Skills' || pathname === '/portfolio/Skills' ? null : (
+        <Link to="/portfolio/Skills">
           <button type="button" className="title find_out_more">
             See More Libraries Known
           </button>

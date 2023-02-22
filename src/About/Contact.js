@@ -9,7 +9,7 @@ const ContactLinks = () => {
  return ( <article className="flex_wrap_row multi_img" id="Contacts">
     <h1 className="title">Contact Links:</h1>
     {location !== '/ContactMe' ? (
-        <Link to="/ContactMe">
+        <Link to="/portfolio/ContactMe">
           <button type="button" className="title find_out_more">
             Contact Me Form
           </button>

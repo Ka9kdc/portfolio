@@ -8,7 +8,7 @@ const TechUsed = ({ tech, className }) => {
   return (
     <div className={className ? className : ''}>
       {techImg && techImg.logo ? (
-        <img src={`.././${techImg.logo}`} alt={`${tech} logo`} />
+        <img src={techImg.logo} alt={`${tech} logo`} />
       ) : (
         <p className="title">{tech}</p>
       )}

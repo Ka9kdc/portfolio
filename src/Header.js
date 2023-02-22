@@ -26,7 +26,7 @@ const Header = () => {
         </li>
         <li className="item">
           <NavLink
-            to="/"
+            to="/portfolio/"
             onClick={() => {
               setActive(!active);
             }}
@@ -36,7 +36,7 @@ const Header = () => {
         </li>
         <li className="item">
           <NavLink
-            to="/About"
+            to="/portfolio/About"
             onClick={() => {
               setActive(!active);
             }}
@@ -46,7 +46,7 @@ const Header = () => {
         </li>
         <li className="item">
           <NavLink
-            to="/Projects"
+            to="/portfolio/Projects"
             onClick={() => {
               setActive(!active);
             }}
@@ -56,7 +56,7 @@ const Header = () => {
         </li>
         <li className="item">
           <NavLink
-            to="/Skills"
+            to="/portfolio/Skills"
             onClick={() => {
               setActive(!active);
             }}
@@ -66,7 +66,7 @@ const Header = () => {
         </li>
         <li className="item">
           <NavLink
-            to="/Publications"
+            to="/portfolio/Publications"
             onClick={() => {
               setActive(!active);
             }}
