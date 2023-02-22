@@ -16,6 +16,7 @@ const AppRoute = () => (
     <Route path="/Publications" element={<Publications />} />
     <Route path="/ContactMe" element={<ContactForm />} />
     <Route path="/About" element={<About />} />
+    <Route path="/portfolio" element={<Home />} />
     <Route path="/" element={<Home />} />
   </Routes>
 );

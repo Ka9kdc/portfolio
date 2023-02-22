@@ -2,7 +2,7 @@ import React from 'react';
 
 const Summary = () => (
   <section id="Summary">
-    <img src="images/kelsey.png" alt="head shot of Kelsey" className="circle" />
+    <img src="/images/kelsey.png" alt="head shot of Kelsey" className="circle" />
     <article className="faded">
       <p>
         I am a pilot and amateur radio operator who after taking on the

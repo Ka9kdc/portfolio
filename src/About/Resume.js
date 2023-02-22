@@ -7,11 +7,11 @@ const Resume = () => (
       <iframe
         id="Resume"
         className="responsive-iframe"
-        src="Kelsey_Schroeder_Resume September_2021.pdf"
+        src="/Kelsey_Schroeder_Resume_September_2021.pdf"
       />
     </div>
     <Link
-      to="Kelsey_Schroeder_Resume September_2021.pdf"
+      to="Kelsey_Schroeder_Resume_September_2021.pdf"
       target="_blank"
       download
       className="find_out_more_container "
